@@ -1,19 +1,39 @@
 {
   "name": "element-ui",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
-    "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier -uw --cache .",
+    "format:check": "prettier -uc --cache .",
+    "postinstall": "pnpm lint:ws",
+    "lint": "turbo lint --continue -- --max-warnings 0 --cache --cache-location node_modules/.cache/eslint/.eslintcache",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/eslint/.eslintcache",
+    "lint:ws": "sherif",
+    "prepare": "husky",
+    "typecheck": "turbo typecheck"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   },
   "devDependencies": {
-    "prettier": "^3.2.5",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@repo/eslint-config": "workspace:*",
+    "commitlint": "^19.4.1",
+    "cz-git": "^1.9.4",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "prettier-plugin-packagejson": "^2.5.2",
+    "sherif": "^1.0.0",
     "turbo": "^2.1.1",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.4"
   },
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.9.0",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   }
 }
