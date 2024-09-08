@@ -4,14 +4,18 @@
   "type": "module",
   "scripts": {
     "build": "turbo build",
+    "check-exports": "turbo check-exports",
+    "clean": "turbo clean && rm -rf .turbo node_modules",
     "dev": "turbo dev",
     "format": "prettier -uw --cache .",
     "format:check": "prettier -uc --cache .",
+    "generate:changesets": "pnpm changeset-conventional",
     "postinstall": "pnpm lint:ws",
     "lint": "turbo lint --continue -- --max-warnings 0 --cache --cache-location node_modules/.cache/eslint/.eslintcache",
     "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/eslint/.eslintcache",
     "lint:ws": "sherif",
     "prepare": "husky",
+    "test": "turbo test",
     "typecheck": "turbo typecheck"
   },
   "config": {
@@ -20,8 +24,11 @@
     }
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.1",
+    "@changesets/cli": "^2.27.8",
     "@commitlint/config-conventional": "^19.4.1",
     "@repo/eslint-config": "workspace:*",
+    "changeset-conventional-commits": "^0.2.5",
     "commitlint": "^19.4.1",
     "cz-git": "^1.9.4",
     "husky": "^9.1.5",

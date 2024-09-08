@@ -3,12 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "exports": {
-    "./button": "./src/button.tsx",
-    "./card": "./src/card.tsx",
-    "./code": "./src/code.tsx"
-  },
+  "main": "dist/index.js",
   "scripts": {
+    "build": "tsc -b",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "clean": "rm -rf .turbo node_modules",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit"

@@ -7,6 +7,7 @@
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+    "check-exports": {},
     "clean": {
       "cache": false
     },
@@ -15,10 +16,13 @@
       "persistent": true
     },
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^lint"],
+      "outputs": ["node_modules/.cache/eslint/.eslintcache"]
     },
+    "test": {},
     "typecheck": {
-      "dependsOn": ["^typecheck"]
+      "dependsOn": ["^typecheck"],
+      "outputs": ["node_modules/.cache/typescript/*.tsbuildinfo"]
     }
   }
 }
