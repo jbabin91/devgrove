@@ -18,6 +18,7 @@
     "local-release": "changeset version && changeset publish",
     "prepare": "husky",
     "prepublishOnly": "pnpm run ci",
+    "preview": "turbo preview",
     "release": "pnpm build && changeset publish",
     "test": "turbo test",
     "typecheck": "turbo typecheck",

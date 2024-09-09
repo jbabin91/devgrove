@@ -7,7 +7,7 @@
     "build": "next build",
     "dev": "next dev --turbo",
     "lint": "eslint .",
-    "start": "next start",
+    "preview": "next start",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -19,6 +19,10 @@
       "dependsOn": ["^lint"],
       "outputs": ["node_modules/.cache/eslint/.eslintcache"]
     },
+    "preview": {
+      "cache": false,
+      "persistent": true
+    },
     "test": {},
     "typecheck": {
       "dependsOn": ["^typecheck"],
