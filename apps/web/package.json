@@ -11,16 +11,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@devgrove/ui": "workspace:*",
     "next": "14.2.8",
     "react": "^18.3.1",
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^14.2.8",
+    "@next/eslint-plugin-next": "^14.2.9",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "^22.5.4",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0"
   }
