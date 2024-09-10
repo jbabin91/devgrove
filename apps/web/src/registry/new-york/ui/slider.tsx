@@ -41,7 +41,7 @@ function SliderOutput({
  * @component
  * @param {AriaSliderProps} props - The props for the Slider component.
  * @param {string} [props.className] - The class name for the Slider component.
- * @param {string} [props.orientation='horizontal'] - The orientation of the slider. Can be 'horizontal' or 'vertical'.
+ * @param {'horizontal' | 'vertical'} [props.orientation='horizontal'] - The orientation of the slider. Can be 'horizontal' or 'vertical'.
  * @returns {JSX.Element} The rendered slider component.
  */
 function Slider({

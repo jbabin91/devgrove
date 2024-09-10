@@ -13,7 +13,7 @@ import { cn } from '~/lib/utils';
  * @component
  * @param {AriaSeparatorProps} props - The props for the separator component.
  * @param {string} [props.className] - The class name for the separator component.
- * @param {string} [props.orientation='horizontal'] - The orientation of the separator. Can be 'horizontal' or 'vertical'.
+ * @param {'horizontal' | 'vertical'} [props.orientation='horizontal'] - The orientation of the separator. Can be 'horizontal' or 'vertical'.
  * @returns {JSX.Element} The rendered separator component.
  */
 function Separator({

@@ -21,7 +21,7 @@ import { Icons } from './icons';
  * @component
  * @param {GroveRadioGroupProps} props - The props for the GroveRadioGroup component.
  * @param {string} [props.className] - The class name for the radio group component.
- * @param {string} [props.orientation='vertical'] - The orientation of the radio group. Can be 'vertical' or 'horizontal'.
+ * @param {'horizontal' | 'vertical'} [props.orientation='vertical'] - The orientation of the radio group. Can be 'vertical' or 'horizontal'.
  * @returns {JSX.Element} The rendered GroveRadioGroup component.
  */
 function RadioGroup({
