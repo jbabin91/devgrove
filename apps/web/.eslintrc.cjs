@@ -14,5 +14,11 @@ module.exports = {
         '@typescript-eslint/no-redundant-type-constituents': 'off',
       },
     },
+    {
+      files: ['**/scripts/**'],
+      rules: {
+        'unicorn/no-process-exit': 'off',
+      },
+    },
   ],
 };

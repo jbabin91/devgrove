@@ -1,0 +1,14 @@
+{
+  "name": "link",
+  "type": "registry:ui",
+  "dependencies": ["react-aria-components", "class-variance-authority"],
+  "registryDependencies": ["https://jollyui.dev/r/styles/new-york/button.json"],
+  "files": [
+    {
+      "path": "ui/link.tsx",
+      "content": "'use client';\n\nimport { type VariantProps } from 'class-variance-authority';\nimport {\n  composeRenderProps,\n  Link as AriaLink,\n  type LinkProps as AriaLinkProps,\n} from 'react-aria-components';\n\nimport { cn } from '~/lib/utils';\n\nimport { buttonVariants } from './button';\n\n/**\n * Represents the props for the Link component.\n *\n * @remarks\n * This interface extends the AriaLinkProps interface and adds additional props for the Link component.\n *\n * @public\n */\ntype LinkProps = {} & AriaLinkProps & VariantProps<typeof buttonVariants>;\n\n/**\n * Renders a link component.\n *\n * @component\n * @param {LinkProps} props - The link component props.\n * @param {string} [props.className] - The class name for the link component.\n * @param {string} [props.variant] - The variant for the link component.\n * @param {string} [props.size] - The size for the link component.\n * @returns {JSX.Element} The rendered link component.\n */\nfunction Link({ className, variant, size, ...props }: LinkProps): JSX.Element {\n  return (\n    <AriaLink\n      className={composeRenderProps(className, (className) =>\n        cn(\n          buttonVariants({\n            variant,\n            size,\n            className,\n          }),\n        ),\n      )}\n      {...props}\n    />\n  );\n}\n\nexport type { LinkProps };\nexport { Link };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

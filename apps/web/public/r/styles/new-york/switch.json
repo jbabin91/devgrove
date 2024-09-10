@@ -1,0 +1,13 @@
+{
+  "name": "switch",
+  "type": "registry:ui",
+  "dependencies": ["react-aria-components"],
+  "files": [
+    {
+      "path": "ui/switch.tsx",
+      "content": "'use client';\n\nimport {\n  composeRenderProps,\n  Switch as AriaSwitch,\n  type SwitchProps as AriaSwitchProps,\n} from 'react-aria-components';\n\nimport { cn } from '~/lib/utils';\n\n/**\n * Renders a switch component.\n *\n * @component\n * @param {AriaSwitchProps} props - The props for the switch component.\n * @param {string} [props.className] - The class name for the switch component.\n * @param {React.ReactNode} [props.children] - The children for the switch component.\n * @returns {JSX.Element} The rendered switch component.\n */\nfunction Switch({\n  children,\n  className,\n  ...props\n}: AriaSwitchProps): JSX.Element {\n  return (\n    <AriaSwitch\n      className={composeRenderProps(className, (className) =>\n        cn(\n          'group inline-flex items-center gap-2 text-sm font-medium leading-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-70',\n          className,\n        ),\n      )}\n      {...props}\n    >\n      {composeRenderProps(children, (children) => (\n        <>\n          <div\n            className={cn(\n              'peer inline-flex h-5 w-9 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent shadow-sm transition-colors',\n              /* Focus Visible */\n              'group-data-[focus-visible]:outline-none group-data-[focus-visible]:ring-2 group-data-[focus-visible]:ring-ring group-data-[focus-visible]:ring-offset-2 group-data-[focus-visible]:ring-offset-background',\n              /* Disabled */\n              'group-data-[disabled]:cursor-not-allowed group-data-[disabled]:opacity-50',\n              /* Selected */\n              'bg-input group-data-[selected]:bg-primary',\n              /* Readonly */\n              'group-data-[readonly]:cursor-default',\n              /* Resets */\n              'focus-visible:outline-none',\n            )}\n          >\n            <div\n              className={cn(\n                'pointer-events-none block size-4 rounded-full bg-background shadow-lg ring-0 transition-transform',\n                /* Selected */\n                'translate-x-0 group-data-[selected]:translate-x-4',\n              )}\n            />\n          </div>\n          {children}\n        </>\n      ))}\n    </AriaSwitch>\n  );\n}\n\nexport { Switch };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

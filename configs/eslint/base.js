@@ -9,6 +9,7 @@ module.exports = {
     '.eslintrc.cjs',
     '.eslintrc.js',
     '*.gen.ts',
+    '__registry__',
   ],
   extends: [
     'turbo',

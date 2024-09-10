@@ -1,0 +1,18 @@
+{
+  "cssVars": {},
+  "dependencies": [
+    "tailwindcss-animate",
+    "class-variance-authority",
+    "lucide-react",
+    ""
+  ],
+  "files": [],
+  "name": "default",
+  "registryDependencies": ["utils"],
+  "tailwind": {
+    "config": {
+      "plugins": ["require(\"tailwindcss-animate\")"]
+    }
+  },
+  "type": "registry:style"
+}
