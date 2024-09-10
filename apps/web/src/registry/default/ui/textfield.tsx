@@ -26,6 +26,7 @@ const TextField = AriaTextField;
  *
  * @component
  * @param {AriaInputProps} props - The input component props.
+ * @param {string} [props.className] - The class name for the input component.
  * @returns {JSX.Element} The rendered input component.
  */
 function Input({ className, ...props }: AriaInputProps): JSX.Element {
@@ -53,7 +54,7 @@ function Input({ className, ...props }: AriaInputProps): JSX.Element {
  *
  * @component
  * @param {AriaTextAreaProps} props - The props for the TextArea component.
- * @param {string} props.className - The class name for the TextArea component.
+ * @param {string} [props.className] - The class name for the TextArea component.
  * @returns {JSX.Element} The rendered TextArea component.
  */
 function TextArea({ className, ...props }: AriaTextAreaProps): JSX.Element {
@@ -97,21 +98,20 @@ type GroveTextFieldProps = {
  * Renders a GroveTextField component.
  *
  * @component
- * @example
  * @param {GroveTextFieldProps} props - The props for the GroveTextField component.
- * @param {string} props.label - The label for the text field.
- * @param {string} props.description - The description for the text field.
- * @param {string | ((validation: AriaValidationResult) => string)} props.errorMessage - The error message for the text field.
- * @param {boolean} props.textArea - Indicates whether the text field is a textarea.
- * @param {string} props.className - The class name for the text field.
+ * @param {string} [props.className] - The class name for the GroveTextField component.
+ * @param {string} [props.label] - The label for the GroveTextField component.
+ * @param {string} [props.description] - The description for the GroveTextField component.
+ * @param {string} [props.errorMessage] - The error message for the GroveTextField component.
+ * @param {boolean} [props.textArea] - Indicates whether the GroveTextField component is a textarea.
  * @returns {JSX.Element} The rendered GroveTextField component.
  */
 function GroveTextField({
+  className,
   label,
   description,
   errorMessage,
   textArea,
-  className,
   ...props
 }: GroveTextFieldProps): JSX.Element {
   return (
@@ -124,7 +124,7 @@ function GroveTextField({
       <Label>{label}</Label>
       {textArea ? <TextArea /> : <Input />}
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}

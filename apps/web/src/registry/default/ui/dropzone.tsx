@@ -13,6 +13,7 @@ import { cn } from '~/lib/utils';
  *
  * @component
  * @param {AriaDropZoneProps} props - The props for the drop zone.
+ * @param {string} [props.className] - The CSS class name for the drop zone.
  * @returns {JSX.Element} The rendered drop zone component.
  */
 function DropZone({ className, ...props }: AriaDropZoneProps): JSX.Element {

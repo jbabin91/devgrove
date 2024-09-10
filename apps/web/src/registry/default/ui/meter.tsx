@@ -23,10 +23,10 @@ type MeterProps = {
  *
  * @component
  * @param {MeterProps} props - The props for the Meter component.
- * @param {string} props.className - The class name for the Meter component.
- * @param {string} props.barClassName - The class name for the meter bar.
- * @param {string} props.fillClassName - The class name for the meter fill.
- * @param {ReactNode} props.children - The children to be rendered inside the Meter component.
+ * @param {string} [props.className] - The class name for the Meter component.
+ * @param {string} [props.barClassName] - The class name for the meter bar.
+ * @param {string} [props.fillClassName] - The class name for the meter fill.
+ * @param {React.ReactNode} [props.children] - The children of the Meter component.
  * @returns {JSX.Element} The rendered Meter component.
  */
 function Meter({
@@ -86,11 +86,14 @@ type GroveMeterProps = {
  *
  * @component
  * @param {GroveMeterProps} props - The props for the GroveMeter component.
+ * @param {string} [props.className] - The class name for the GroveMeter component.
+ * @param {string} [props.label] - The label for the GroveMeter component.
+ * @param {boolean} [props.showValue=true] - Whether to show the value of the meter.
  * @returns {JSX.Element} The rendered GroveMeter component.
  */
 function GroveMeter({
-  label,
   className,
+  label,
   showValue = true,
   ...props
 }: GroveMeterProps): JSX.Element {

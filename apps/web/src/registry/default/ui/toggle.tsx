@@ -26,7 +26,7 @@ const toggleVariants = cva(
     /* Selected */
     'data-[selected]:bg-accent data-[selected]:text-accent-foreground',
     /* Focus Visible */
-    'data-[focus-visible]:ring-ring data-[focus-visible]:outline-none data-[focus-visible]:ring-2 data-[focus-visible]:ring-offset-2',
+    'data-[focus-visible]:outline-none data-[focus-visible]:ring-2 data-[focus-visible]:ring-ring data-[focus-visible]:ring-offset-2',
     /* Resets */
     'focus-visible:outline-none',
   ],
@@ -35,7 +35,7 @@ const toggleVariants = cva(
       variant: {
         default: 'bg-transparent',
         outline:
-          'border-input data-[hovered]:bg-accent data-[hovered]:text-accent-foreground border bg-transparent',
+          'border border-input bg-transparent data-[hovered]:bg-accent data-[hovered]:text-accent-foreground',
       },
       size: {
         default: 'h-10 px-3',
@@ -61,6 +61,9 @@ type ToggleProps = {} & AriaToggleButtonProps &
  *
  * @component
  * @param {ToggleProps} props - The toggle component props.
+ * @param {string} [props.className] - The class name for the toggle component.
+ * @param {string} [props.variant] - The variant for the toggle component.
+ * @param {string} [props.size] - The size for the toggle component.
  * @returns {JSX.Element} The rendered toggle component.
  */
 function Toggle({

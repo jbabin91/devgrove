@@ -1,6 +1,5 @@
 'use client';
 
-import { Check, Minus } from 'lucide-react';
 import {
   Checkbox as AriaCheckbox,
   CheckboxGroup as AriaCheckboxGroup,
@@ -16,6 +15,7 @@ import {
 import { cn } from '~/lib/utils';
 
 import { labelVariants } from './field';
+import { Icons } from './icons';
 
 /**
  * Represents a checkbox group component.
@@ -27,6 +27,8 @@ const CheckboxGroup = AriaCheckboxGroup;
  *
  * @component
  * @param {AriaCheckboxProps} props - The props for the checkbox component.
+ * @param {string} [props.className] - The class name for the checkbox component.
+ * @param {React.ReactNode} [props.children] - The children for the checkbox component.
  * @returns {JSX.Element} The rendered checkbox component.
  */
 function Checkbox({
@@ -51,9 +53,9 @@ function Checkbox({
         <>
           <div>
             {renderProps.isIndeterminate ? (
-              <Minus className="size-4" />
+              <Icons.Minus className="size-4" />
             ) : renderProps.isSelected ? (
-              <Check className="size-4" />
+              <Icons.Check className="size-4" />
             ) : null}
           </div>
           {children}
@@ -82,27 +84,22 @@ type GroveCheckboxGroupProps = {
  * Renders a group of checkboxes with a label, description, and error message.
  *
  * @component
- * @example
- * ```tsx
- * <GroveCheckboxGroup
- *   label="Fruits"
- *   description="Select your favorite fruits"
- *   errorMessage="Please select at least one fruit"
- * >
- *   <Checkbox value="apple">Apple</Checkbox>
- *   <Checkbox value="banana">Banana</Checkbox>
- *   <Checkbox value="orange">Orange</Checkbox>
- * </GroveCheckboxGroup>
- * ```
+ * @param {GroveCheckboxGroupProps} props - The props for the GroveCheckboxGroup component.
+ * @param {string} [props.className] - The class name for the checkbox group.
+ * @param {string} [props.label] - The label for the checkbox group.
+ * @param {string} [props.description] - The description for the checkbox group.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the checkbox group.
+ * @param {React.ReactNode} [props.children] - The children for the checkbox group.
+ * @returns {JSX.Element} The rendered checkbox group component.
  */
 function GroveCheckboxGroup({
+  className,
   label,
   description,
   errorMessage,
-  className,
   children,
   ...props
-}: GroveCheckboxGroupProps) {
+}: GroveCheckboxGroupProps): JSX.Element {
   return (
     <CheckboxGroup
       className={composeRenderProps(className, (className) =>
@@ -115,7 +112,7 @@ function GroveCheckboxGroup({
           <Label>{label}</Label>
           {children}
           {description && (
-            <Text className="text-muted-foreground text-sm" slot="description">
+            <Text className="text-sm text-muted-foreground" slot="description">
               {description}
             </Text>
           )}

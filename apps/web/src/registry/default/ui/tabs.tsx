@@ -19,7 +19,7 @@ import { cn } from '~/lib/utils';
  *
  * @component
  * @param {AriaTabsProps} props - The props for the Tabs component.
- * @param {string} props.className - The class name for the Tabs component.
+ * @param {string} [props.className] - The class name for the Tabs component.
  * @returns {JSX.Element} The rendered Tabs component.
  */
 function Tabs({ className, ...props }: AriaTabsProps): JSX.Element {
@@ -41,8 +41,10 @@ function Tabs({ className, ...props }: AriaTabsProps): JSX.Element {
 /**
  * Renders a tab list component.
  *
+ * @component
  * @template T - The type of the tab list items.
  * @param {AriaTabListProps<T>} props - The props for the tab list.
+ * @param {string} [props.className] - The class name for the tab list.
  * @returns {JSX.Element} - The rendered tab list component.
  */
 function TabList<T extends object>({
@@ -69,6 +71,7 @@ function TabList<T extends object>({
  *
  * @component
  * @param {AriaTabProps} props - The props for the tab component.
+ * @param {string} [props.className] - The class name for the tab component.
  * @returns {JSX.Element} The rendered tab component.
  */
 function Tab({ className, ...props }: AriaTabProps): JSX.Element {
@@ -98,6 +101,7 @@ function Tab({ className, ...props }: AriaTabProps): JSX.Element {
  *
  * @component
  * @param {AriaTabPanelProps} props - The props for the tab panel.
+ * @param {string} [props.className] - The class name for the tab panel.
  * @returns {JSX.Element} The rendered tab panel.
  */
 function TabPanel({ className, ...props }: AriaTabPanelProps): JSX.Element {

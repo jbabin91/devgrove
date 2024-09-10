@@ -1,6 +1,5 @@
 'use client';
 
-import { ChevronDown } from 'lucide-react';
 import {
   Button as AriaButton,
   type ButtonProps as AriaButtonProps,
@@ -19,6 +18,7 @@ import {
 import { cn } from '~/lib/utils';
 
 import { FieldError, Label } from './field';
+import { Icons } from './icons';
 import {
   ListBoxCollection,
   ListBoxHeader,
@@ -55,8 +55,10 @@ const SelectCollection = ListBoxCollection;
 /**
  * Renders the value of a select component.
  *
+ * @component
  * @template T - The type of the select value.
  * @param {AriaSelectValueProps<T>} props - The props for the select value component.
+ * @param {string} [props.className] - The class name for the select value component.
  * @returns {JSX.Element} - The rendered select value component.
  */
 function SelectValue<T extends object>({
@@ -83,6 +85,8 @@ function SelectValue<T extends object>({
  *
  * @component
  * @param {AriaButtonProps} props - The props for the select trigger.
+ * @param {string} [props.className] - The class name for the select trigger.
+ * @param {React.ReactNode} [props.children] - The children for the select trigger.
  * @returns {JSX.Element} The rendered select trigger component.
  */
 function SelectTrigger({
@@ -109,7 +113,7 @@ function SelectTrigger({
       {composeRenderProps(children, (children) => (
         <>
           {children}
-          <ChevronDown aria-hidden="true" className="size-4 opacity-50" />
+          <Icons.ChevronDown aria-hidden className="size-4 opacity-50" />
         </>
       ))}
     </AriaButton>
@@ -119,9 +123,10 @@ function SelectTrigger({
 /**
  * Renders a select popover component.
  *
- * @param className - The class name for the select popover.
- * @param props - Additional props for the select popover.
- *@returns {JSX.Element} The rendered select popover component.
+ * @component
+ * @param {AriaPopoverProps} props - The props for the select popover.
+ * @param {string} [props.className] - The class name for the select popover.
+ * @returns {JSX.Element} The rendered select popover component.
  */
 function SelectPopover({ className, ...props }: AriaPopoverProps): JSX.Element {
   return (
@@ -137,8 +142,10 @@ function SelectPopover({ className, ...props }: AriaPopoverProps): JSX.Element {
 /**
  * Renders a select list box component.
  *
+ * @component
  * @template T - The type of the objects in the list box.
  * @param {AriaListBoxProps<T>} props - The props for the select list box.
+ * @param {string} [props.className] - The class name for the select list box.
  * @returns {JSX.Element} - The rendered select list box component.
  */
 function SelectListBox<T extends object>({
@@ -179,16 +186,22 @@ type GroveSelectProps<T extends object> = {
 /**
  * Renders a custom select component with Grove styling.
  *
+ * @component
  * @template T - The type of the select items.
  * @param {GroveSelectProps<T>} props - The props for the GroveSelect component.
+ * @param {string} [props.className] - The class name for the GroveSelect component.
+ * @param {string} [props.label] - The label for the GroveSelect component.
+ * @param {string} [props.description] - The description for the GroveSelect component.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the GroveSelect component.
+ * @param {Iterable<T>} [props.items] - The items for the GroveSelect component.
  * @returns {JSX.Element} - The rendered GroveSelect component.
  */
 function GroveSelect<T extends object>({
+  className,
   label,
   description,
   errorMessage,
   children,
-  className,
   items,
   ...props
 }: GroveSelectProps<T>): JSX.Element {
@@ -204,7 +217,7 @@ function GroveSelect<T extends object>({
         <SelectValue />
       </SelectTrigger>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}

@@ -23,22 +23,11 @@ type ProgressProps = {
  *
  * @component
  * @param {ProgressProps} props - The props for the GroveProgressBar component.
- * @param {string} props.className - The class name for the ProgressBar component.
- * @param {string} props.barClassName - The class name for the progress bar.
- * @param {string} props.fillClassName - The class name for the progress fill.
- * @param {ReactNode} props.children - The children to be rendered inside the ProgressBar component.
+ * @param {string} [props.className] - The class name for the progress bar.
+ * @param {string} [props.barClassName] - The class name for the progress bar.
+ * @param {string} [props.fillClassName] - The class name for the progress bar fill.
+ * @param {React.ReactNode} [props.children] - The children to be rendered inside the progress bar.
  * @returns {JSX.Element} The rendered ProgressBar component.
- * @example
- * ```tsx
- * <Progress
- *   className="my-progress"
- *   barClassName="my-progress-bar"
- *   fillClassName="my-progress-fill"
- *   percentage={50}
- * >
- *   Loading...
- * </Progress>
- * ```
  */
 function Progress({
   className,
@@ -97,11 +86,14 @@ type GroveProgressBarProps = {
  *
  * @component
  * @param {GroveProgressBarProps} props - The props for the GroveProgressBar component.
+ * @param {string} [props.className] - The class name for the progress bar.
+ * @param {string} [props.label] - The label for the progress bar.
+ * @param {boolean} [props.showValue=true] - Indicates whether to show the progress bar value.
  * @returns {JSX.Element} The rendered GroveProgressBar component.
  */
 function GroveProgressBar({
-  label,
   className,
+  label,
   showValue = true,
   ...props
 }: GroveProgressBarProps): JSX.Element {

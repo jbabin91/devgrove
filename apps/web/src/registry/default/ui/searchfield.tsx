@@ -1,6 +1,5 @@
 'use client';
 
-import { SearchIcon, XIcon } from 'lucide-react';
 import {
   Button as AriaButton,
   type ButtonProps as AriaButtonProps,
@@ -18,12 +17,14 @@ import {
 import { cn } from '~/lib/utils';
 
 import { FieldError, FieldGroup, Label } from './field';
+import { Icons } from './icons';
 
 /**
  * Renders a search field component.
  *
  * @component
  * @param {AriaSearchFieldProps} props - The props for the search field.
+ * @param {string} [props.className] - The class name for the search field.
  * @returns {JSX.Element} The rendered search field component.
  */
 function SearchField({
@@ -45,6 +46,7 @@ function SearchField({
  *
  * @component
  * @param {AriaInputProps} props - The input props.
+ * @param {string} [props.className] - The class name for the search field input.
  * @returns {JSX.Element} The rendered search field input component.
  */
 function SearchFieldInput({
@@ -68,8 +70,8 @@ function SearchFieldInput({
  * Renders a search field group component.
  *
  * @component
- * @param {Object} props - The component props.
- * @param {string} props.className - The class name for the component.
+ * @param {AriaGroupProps} props - The component props.
+ * @param {string} [props.className] - The class name for the component.
  * @returns {JSX.Element} The rendered search field group component.
  */
 function SearchFieldGroup({
@@ -98,6 +100,7 @@ function SearchFieldGroup({
  *
  * @component
  * @param {AriaButtonProps} props - The props for the clear button.
+ * @param {string} [props.className] - The class name for the clear button.
  * @returns {JSX.Element} - The rendered clear button.
  */
 function SearchFieldClear({
@@ -143,26 +146,16 @@ type GroveSearchFieldProps = {
  *
  * @component
  * @param {GroveSearchFieldProps} props - The props for the GroveSearchField component.
- * @param {string} props.label - The label for the search field.
- * @param {string} props.description - The description for the search field.
- * @param {string} props.className - The CSS class name for the search field.
- * @param {string} props.errorMessage - The error message to display for the search field.
+ * @param {string} [props.className] - The class name for the GroveSearchField component.
+ * @param {string} [props.label] - The label for the GroveSearchField component.
+ * @param {string} [props.description] - The description for the GroveSearchField component.
+ * @param {string} [props.errorMessage] - The error message for the GroveSearchField component.
  * @returns {JSX.Element} The rendered GroveSearchField component.
- * @example
- * ```tsx
- * <GroveSearchField
- *   label="Search"
- *   description="Enter a keyword to search"
- *   className="custom-search-field"
- *   errorMessage="Invalid search query"
- *   onChange={handleSearch}
- * />
- * ```
  */
 function GroveSearchField({
+  className,
   label,
   description,
-  className,
   errorMessage,
   ...props
 }: GroveSearchFieldProps): JSX.Element {
@@ -175,14 +168,14 @@ function GroveSearchField({
     >
       <Label>{label}</Label>
       <FieldGroup>
-        <SearchIcon aria-hidden className="text-muted-foreground size-4" />
+        <Icons.Search aria-hidden className="size-4 text-muted-foreground" />
         <SearchFieldInput placeholder="Search..." />
         <SearchFieldClear>
-          <XIcon aria-hidden className="size-4" />
+          <Icons.X aria-hidden className="size-4" />
         </SearchFieldClear>
       </FieldGroup>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}

@@ -1,6 +1,5 @@
 'use client';
 
-import { CalendarIcon } from 'lucide-react';
 import {
   composeRenderProps,
   DatePicker as AriaDatePicker,
@@ -11,7 +10,6 @@ import {
   Dialog as AriaDialog,
   type DialogProps as AriaDialogProps,
   type PopoverProps as AriaPopoverProps,
-  RangeCalendar,
   Text,
   type ValidationResult as AriaValidationResult,
 } from 'react-aria-components';
@@ -27,9 +25,11 @@ import {
   CalendarGridHeader,
   CalendarHeaderCell,
   CalendarHeading,
+  RangeCalendar,
 } from './calendar';
 import { DateInput } from './datefield';
 import { FieldError, FieldGroup, Label } from './field';
+import { Icons } from './icons';
 import { Popover } from './popover';
 
 /**
@@ -93,15 +93,20 @@ type GroveDatePickerProps<T extends AriaDateValue> = {
 /**
  * Renders a GroveDatePicker component.
  *
+ * @component
  * @template T - The type of the AriaDateValue.
  * @param {GroveDatePickerProps<T>} props - The props for the GroveDatePicker component.
+ * @param {string} [props.className] - The class name for the GroveDatePicker component.
+ * @param {string} [props.label] - The label for the GroveDatePicker component.
+ * @param {string} [props.description] - The description for the GroveDatePicker component.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the GroveDatePicker component.
  * @returns {JSX.Element} - The rendered GroveDatePicker component.
  */
 function GroveDatePicker<T extends AriaDateValue>({
+  className,
   label,
   description,
   errorMessage,
-  className,
   ...props
 }: GroveDatePickerProps<T>): JSX.Element {
   return (
@@ -119,11 +124,11 @@ function GroveDatePicker<T extends AriaDateValue>({
           size="icon"
           variant="ghost"
         >
-          <CalendarIcon aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden className="size-4" />
         </Button>
       </FieldGroup>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}
@@ -163,15 +168,20 @@ type GroveDateRangePickerProps<T extends AriaDateValue> = {
 /**
  * Renders a date range picker component.
  *
+ * @component
  * @template T - The type of the AriaDateValue.
  * @param {GroveDateRangePickerProps<T>} props - The props for the GroveDateRangePicker component.
+ * @param {string} [props.className] - The class name for the GroveDateRangePicker component.
+ * @param {string} [props.label] - The label for the GroveDateRangePicker component.
+ * @param {string} [props.description] - The description for the GroveDateRangePicker component.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the GroveDateRangePicker component.
  * @returns {JSX.Element} - The rendered date range picker component.
  */
 function GroveDateRangePicker<T extends AriaDateValue>({
+  className,
   label,
   description,
   errorMessage,
-  className,
   ...props
 }: GroveDateRangePickerProps<T>): JSX.Element {
   return (
@@ -184,7 +194,7 @@ function GroveDateRangePicker<T extends AriaDateValue>({
       <Label>{label}</Label>
       <FieldGroup>
         <DateInput slot={'start'} variant="ghost" />
-        <span aria-hidden className="text-muted-foreground px-2 text-sm">
+        <span aria-hidden className="px-2 text-sm text-muted-foreground">
           -
         </span>
         <DateInput className="flex-1" slot={'end'} variant="ghost" />
@@ -194,11 +204,11 @@ function GroveDateRangePicker<T extends AriaDateValue>({
           size="icon"
           variant="ghost"
         >
-          <CalendarIcon aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden className="size-4" />
         </Button>
       </FieldGroup>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}

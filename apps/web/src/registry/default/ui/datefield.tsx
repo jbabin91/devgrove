@@ -36,6 +36,7 @@ const TimeField = AriaTimeField;
  *
  * @component
  * @param {AriaDateSegmentProps} props - The props for the component.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered DateSegment component.
  */
 function DateSegment({
@@ -73,9 +74,9 @@ type DateInputProps = {} & AriaDateInputProps &
  * Renders a date input component.
  *
  * @component
- * @param {Object} props - The component props.
- * @param {string} props.className - The CSS class name for the component.
- * @param {string} props.variant - The variant of the component.
+ * @param {DateInputProps} props - The props for the DateInput component.
+ * @param {string} [props.className] - The CSS class name for the component.
+ * @param {string} [props.variant] - The variant for the component.
  * @returns {JSX.Element} The rendered DateInput component.
  */
 function DateInput({
@@ -113,14 +114,19 @@ type GroveDateFieldProps<T extends AriaDateValue> = {
 /**
  * Renders a GroveDateField component.
  *
+ * @component
  * @template T - The type of the AriaDateValue.
  * @param {GroveDateFieldProps<T>} props - The props for the GroveDateField component.
+ * @param {string} [props.className] - The class name for the GroveDateField component.
+ * @param {string} [props.label] - The label for the GroveDateField component.
+ * @param {string} [props.description] - The description for the GroveDateField component.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the GroveDateField component.
  * @returns {JSX.Element} - The rendered GroveDateField component.
  */
 function GroveDateField<T extends AriaDateValue>({
+  className,
   label,
   description,
-  className,
   errorMessage,
   ...props
 }: GroveDateFieldProps<T>): JSX.Element {
@@ -134,7 +140,7 @@ function GroveDateField<T extends AriaDateValue>({
       <Label>{label}</Label>
       <DateInput />
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}
@@ -161,15 +167,20 @@ type GroveTimeFieldProps<T extends AriaTimeValue> = {
 /**
  * Renders a time field component.
  *
+ * @component
  * @template T - The type of the AriaTimeValue.
  * @param {GroveTimeFieldProps<T>} props - The props for the GroveTimeField component.
+ * @param {string} [props.className] - The class name for the GroveTimeField component.
+ * @param {string} [props.label] - The label for the GroveTimeField component.
+ * @param {string} [props.description] - The description for the GroveTimeField component.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the GroveTimeField component.
  * @returns {JSX.Element} - The rendered GroveTimeField component.
  */
 function GroveTimeField<T extends AriaTimeValue>({
+  className,
   label,
   description,
   errorMessage,
-  className,
   ...props
 }: GroveTimeFieldProps<T>): JSX.Element {
   return (

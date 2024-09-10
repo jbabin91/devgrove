@@ -1,7 +1,6 @@
 'use client';
 
 import { cva } from 'class-variance-authority';
-import { XIcon } from 'lucide-react';
 import {
   Button as AriaButton,
   composeRenderProps,
@@ -17,6 +16,7 @@ import {
 import { cn } from '~/lib/utils';
 
 import { Label } from './field';
+import { Icons } from './icons';
 
 /**
  * Represents a tag group component.
@@ -26,8 +26,10 @@ const TagGroup = AriaTagGroup;
 /**
  * Renders a list of tags.
  *
+ * @component
  * @template T - The type of the tag object.
  * @param {AriaTagListProps<T>} props - The props for the TagList component.
+ * @param {string} [props.className] - The class name for the TagList component.
  * @returns {JSX.Element} - The rendered TagList component.
  */
 function TagList<T extends object>({
@@ -62,7 +64,7 @@ const badgeVariants = cva(
   [
     'inline-flex items-center gap-2 rounded-full border px-2.5 py-0.5 text-xs font-semibold ring-offset-background transition-colors',
     /* Focus */
-    'data-[focused]:ring-ring data-[focused]:outline-none data-[focused]:ring-2 data-[focused]:ring-offset-2',
+    'data-[focused]:outline-none data-[focused]:ring-2 data-[focused]:ring-ring data-[focused]:ring-offset-2',
     /* Disabled */
     'data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50',
   ],
@@ -70,17 +72,17 @@ const badgeVariants = cva(
     variants: {
       variant: {
         default: [
-          'bg-primary text-primary-foreground border-transparent',
+          'border-transparent bg-primary text-primary-foreground',
           /* Hover */
           'data-[hovered]:bg-primary/80',
         ],
         secondary: [
-          'bg-secondary text-secondary-foreground border-transparent',
+          'border-transparent bg-secondary text-secondary-foreground',
           /* Hover */
           'data-[hovered]:bg-secondary/80',
         ],
         destructive: [
-          'bg-destructive text-destructive-foreground border-transparent',
+          'border-transparent bg-destructive text-destructive-foreground',
           /* Hover */
           'data-[hovered]:bg-destructive/80',
         ],
@@ -98,9 +100,11 @@ const badgeVariants = cva(
  *
  * @component
  * @param {AriaTagProps} props - The props for the tag component.
+ * @param {string} [props.className] - The class name for the tag component.
+ * @param {React.ReactNode} [props.children] - The children for the tag component.
  * @returns {JSX.Element} The rendered tag component.
  */
-function Tag({ children, className, ...props }: AriaTagProps): JSX.Element {
+function Tag({ className, children, ...props }: AriaTagProps): JSX.Element {
   const textValue = typeof children === 'string' ? children : undefined;
   return (
     <AriaTag
@@ -134,7 +138,7 @@ function Tag({ children, className, ...props }: AriaTagProps): JSX.Element {
               )}
               slot="remove"
             >
-              <XIcon aria-hidden className="size-3" />
+              <Icons.X aria-hidden className="size-3" />
             </AriaButton>
           )}
         </>
@@ -163,14 +167,21 @@ type GroveTagGroupProps<T> = {
 /**
  * Renders a group of tags with optional label, description, and error message.
  *
+ * @component
  * @template T - The type of the items in the tag group.
  * @param {GroveTagGroupProps<T>} props - The props for the GroveTagGroup component.
+ * @param {string} [props.className] - The class name for the tag group.
+ * @param {string} [props.label] - The label for the tag group.
+ * @param {string} [props.description] - The description for the tag group.
+ * @param {string} [props.errorMessage] - The error message for the tag group.
+ * @param {AriaTagListProps<T>['items']} [props.items] - The items for the tag list.
+ * @param {React.ReactNode} [props.children] - The children for the tag list.
  * @returns {JSX.Element} - The rendered tag group.
  */
 function GroveTagGroup<T extends object>({
+  className,
   label,
   description,
-  className,
   errorMessage,
   items,
   children,
@@ -184,12 +195,12 @@ function GroveTagGroup<T extends object>({
         {children}
       </TagList>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}
       {errorMessage && (
-        <Text className="text-destructive text-sm" slot="errorMessage">
+        <Text className="text-sm text-destructive" slot="errorMessage">
           {errorMessage}
         </Text>
       )}

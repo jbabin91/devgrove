@@ -1,6 +1,5 @@
 'use client';
 
-import { GripHorizontal } from 'lucide-react';
 import {
   Button as AriaButton,
   composeRenderProps,
@@ -13,12 +12,15 @@ import {
 import { cn } from '~/lib/utils';
 
 import { Checkbox } from './checkbox';
+import { Icons } from './icons';
 
 /**
  * Renders a grid list component.
  *
+ * @component
  * @template T - The type of the objects in the grid list.
  * @param {AriaGridListProps<T>} props - The props for the grid list.
+ * @param {React.ReactNode} [props.children] - The children of the grid list.
  * @returns {JSX.Element} - The rendered grid list component.
  */
 function GridList<T extends object>({
@@ -47,11 +49,13 @@ function GridList<T extends object>({
  *
  * @component
  * @param {AriaGridListItemProps} props - The props for the GridListItem component.
+ * @param {string} [props.className] - The class name for the GridListItem component.
+ * @param {React.ReactNode} [props.children] - The children of the GridListItem component.
  * @returns {JSX.Element} The rendered GridListItem component.
  */
 function GridListItem({
-  children,
   className,
+  children,
   ...props
 }: AriaGridListItemProps): JSX.Element {
   const textValue = typeof children === 'string' ? children : undefined;
@@ -81,7 +85,7 @@ function GridListItem({
           {/* Add elements for drag and drop and selection. */}
           {renderProps.allowsDragging && (
             <AriaButton slot="drag">
-              <GripHorizontal className="size-4" />
+              <Icons.GripHorizontal className="size-4" />
             </AriaButton>
           )}
           {renderProps.selectionMode === 'multiple' &&

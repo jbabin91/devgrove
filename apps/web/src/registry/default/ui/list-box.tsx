@@ -1,6 +1,5 @@
 'use client';
 
-import { Check } from 'lucide-react';
 import {
   Collection as AriaCollection,
   composeRenderProps,
@@ -13,6 +12,8 @@ import {
 } from 'react-aria-components';
 
 import { cn } from '~/lib/utils';
+
+import { Icons } from './icons';
 
 /**
  * Represents a ListBoxSection component.
@@ -28,8 +29,10 @@ const ListBoxCollection = AriaCollection;
 /**
  * ListBox component.
  *
+ * @component
  * @template T - The type of objects in the ListBox.
  * @param {AriaListBoxProps<T>} props - The props for the ListBox component.
+ * @param {string} [props.className] - The class name for the ListBox component.
  * @returns {JSX.Element} - The rendered ListBox component.
  */
 function ListBox<T extends object>({
@@ -54,8 +57,11 @@ function ListBox<T extends object>({
 /**
  * ListBoxItem component represents an item in a list box.
  *
+ * @component
  * @template T - The type of the item.
  * @param {AriaListBoxItemProps<T>} props - The props for the ListBoxItem component.
+ * @param {string} [props.className] - The class name for the ListBoxItem component.
+ * @param {React.ReactNode} [props.children] - The children of the ListBoxItem component.
  * @returns {JSX.Element} - The rendered ListBoxItem component.
  */
 function ListBoxItem<T extends object>({
@@ -88,7 +94,7 @@ function ListBoxItem<T extends object>({
         <>
           {renderProps.isSelected && (
             <span className="absolute left-2 flex size-4 items-center justify-center">
-              <Check className="size-4" />
+              <Icons.Check className="size-4" />
             </span>
           )}
           {children}
@@ -103,6 +109,7 @@ function ListBoxItem<T extends object>({
  *
  * @component
  * @param {React.ComponentProps<typeof AriaHeader>} props - The props for the ListBoxHeader component.
+ * @param {string} [props.className] - The class name for the ListBoxHeader component.
  * @returns {JSX.Element} The rendered ListBoxHeader component.
  */
 function ListBoxHeader({

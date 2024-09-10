@@ -21,8 +21,9 @@ import { labelVariants } from './field';
 /**
  * Renders the output for a slider component.
  *
- * @param className - The CSS class name for the slider output.
- * @param props - The rest of the props for the slider output.
+ * @component
+ * @param {AriaSliderOutputProps} props - The props for the SliderOutput component.
+ * @param {string} [props.className] - The class name for the slider output component.
  * @returns {JSX.Element} The rendered slider output component.
  */
 function SliderOutput({
@@ -38,9 +39,9 @@ function SliderOutput({
  * Renders a slider component.
  *
  * @component
- * @param {Object} props - The props for the Slider component.
- * @param {string} [props.className] - The class name for the slider.
- * @param {string} [props.orientation='horizontal'] - The orientation of the slider.
+ * @param {AriaSliderProps} props - The props for the Slider component.
+ * @param {string} [props.className] - The class name for the slider component.
+ * @param {'horizontal' | 'vertical'} [props.orientation='horizontal'] - The orientation of the slider.
  * @returns {JSX.Element} - The rendered Slider component.
  */
 function Slider({
@@ -71,6 +72,7 @@ function Slider({
  *
  * @component
  * @param {AriaSliderTrackProps} props - The props for the SliderTrack component.
+ * @param {string} [props.className] - The class name for the slider track component.
  * @returns {JSX.Element} The rendered SliderTrack component.
  */
 function SliderTrack({
@@ -101,6 +103,7 @@ function SliderTrack({
  *
  * @component
  * @param {React.HTMLAttributes<HTMLDivElement>} props - The HTML attributes for the div element.
+ * @param {string} [props.className] - The class name for the fill track.
  * @returns {JSX.Element} The rendered fill track.
  */
 function SliderFillTrack({
@@ -128,10 +131,15 @@ function SliderFillTrack({
 /**
  * Renders the thumb component for the slider.
  *
- * @param className - The CSS class name for the thumb component.
+ * @component
+ * @param {AriaSliderThumbProps} props - The props for the SliderThumb component.
+ * @param {string} [props.className] - The class name for the slider thumb component.
  * @returns {JSX.Element} The rendered thumb component.
  */
-function SliderThumb({ className }: AriaSliderThumbProps): JSX.Element {
+function SliderThumb({
+  className,
+  ...props
+}: AriaSliderThumbProps): JSX.Element {
   return (
     <AriaSliderThumb
       className={composeRenderProps(className, (className) =>
@@ -144,6 +152,7 @@ function SliderThumb({ className }: AriaSliderThumbProps): JSX.Element {
           className,
         ),
       )}
+      {...props}
     />
   );
 }

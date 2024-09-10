@@ -21,9 +21,9 @@ type LinkProps = {} & AriaLinkProps & VariantProps<typeof buttonVariants>;
  *
  * @component
  * @param {LinkProps} props - The props for the Link component.
- * @param {string} props.className - The class name for the link.
- * @param {string} props.variant - The variant of the link.
- * @param {string} props.size - The size of the link.
+ * @param {string} [props.className] - The class name for the link.
+ * @param {string} [props.variant] - The variant of the link.
+ * @param {string} [props.size] - The size of the link.
  * @returns {JSX.Element} The rendered Link component.
  */
 function Link({ className, variant, size, ...props }: LinkProps): JSX.Element {

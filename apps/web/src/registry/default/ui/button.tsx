@@ -24,7 +24,7 @@ const buttonVariants = cva(
     /* Disabled */
     'data-[disabled]:pointer-events-none data-[disabled]:opacity-50 ',
     /* Focus Visible */
-    'data-[focus-visible]:ring-ring data-[focus-visible]:outline-none data-[focus-visible]:ring-2 data-[focus-visible]:ring-offset-2',
+    'data-[focus-visible]:outline-none data-[focus-visible]:ring-2 data-[focus-visible]:ring-ring data-[focus-visible]:ring-offset-2',
     /* Resets */
     'focus-visible:outline-none',
   ],
@@ -36,7 +36,7 @@ const buttonVariants = cva(
         destructive:
           'bg-destructive text-destructive-foreground data-[hovered]:bg-destructive/90',
         outline:
-          'border-input data-[hovered]:bg-accent data-[hovered]:text-accent-foreground border bg-background',
+          'border border-input bg-background data-[hovered]:bg-accent data-[hovered]:text-accent-foreground',
         secondary:
           'bg-secondary text-secondary-foreground data-[hovered]:bg-secondary/80',
         ghost: 'data-[hovered]:bg-accent data-[hovered]:text-accent-foreground',
@@ -65,15 +65,10 @@ type ButtonProps = {} & AriaButtonProps & VariantProps<typeof buttonVariants>;
  * Renders a button component.
  *
  * @component
- * @example
- * ```tsx
- * <Button variant="primary" size="large" onClick={handleClick}>Click me</Button>
- * ```
- *
  * @param {ButtonProps} props - The button component props.
- * @param {string} props.className - The CSS class name for the button.
- * @param {string} props.variant - The variant of the button (e.g., "primary", "secondary").
- * @param {string} props.size - The size of the button (e.g., "small", "medium", "large").
+ * @param {string} [props.className] - The CSS class name for the button.
+ * @param {string} [props.variant] - The variant of the button (e.g., "primary", "secondary").
+ * @param {string} [props.size] - The size of the button (e.g., "small", "medium", "large").
  * @returns {JSX.Element} The rendered button component.
  */
 function Button({

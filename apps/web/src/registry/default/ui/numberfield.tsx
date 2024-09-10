@@ -1,6 +1,5 @@
 'use client';
 
-import { ChevronDown, ChevronUp } from 'lucide-react';
 import {
   type ButtonProps as AriaButtonProps,
   composeRenderProps,
@@ -16,6 +15,7 @@ import { cn } from '~/lib/utils';
 
 import { Button } from './button';
 import { FieldError, FieldGroup, Label } from './field';
+import { Icons } from './icons';
 
 /**
  * Represents a number field component.
@@ -27,6 +27,7 @@ const NumberField = AriaNumberField;
  *
  * @component
  * @param {AriaInputProps} props - The input props.
+ * @param {string} [props.className] - The class name for the input field.
  * @returns {JSX.Element} The rendered NumberFieldInput component.
  */
 function NumberFieldInput({
@@ -51,7 +52,7 @@ function NumberFieldInput({
  *
  * @component
  * @param {React.ComponentProps<'div'>} props - The component props.
- * @param {string} props.className - The class name for the component.
+ * @param {string} [props.className] - The class name for the steppers.
  * @returns {JSX.Element} The rendered component.
  */
 function NumberFieldSteppers({
@@ -67,11 +68,11 @@ function NumberFieldSteppers({
       {...props}
     >
       <NumberFieldStepper slot="increment">
-        <ChevronUp aria-hidden className="size-4" />
+        <Icons.ChevronUp aria-hidden className="size-4" />
       </NumberFieldStepper>
       <div className="border-b" />
       <NumberFieldStepper slot="decrement">
-        <ChevronDown aria-hidden className="size-4" />
+        <Icons.ChevronDown aria-hidden className="size-4" />
       </NumberFieldStepper>
     </div>
   );
@@ -80,8 +81,9 @@ function NumberFieldSteppers({
 /**
  * Renders a stepper button for a number field.
  *
- * @param className - The CSS class name for the stepper button.
- * @param props - Additional props for the stepper button.
+ * @component
+ * @param {AriaButtonProps} props - The button props.
+ * @param {string} [props.className] - The class name for the stepper button.
  * @returns {JSX.Element} The rendered stepper button component.
  */
 function NumberFieldStepper({
@@ -120,13 +122,17 @@ type GroveNumberFieldProps = {
  *
  * @component
  * @param {GroveNumberFieldProps} props - The props for the GroveNumberField component.
+ * @param {string} [props.className] - The class name for the GroveNumberField component.
+ * @param {string} [props.label] - The label for the GroveNumberField component.
+ * @param {string} [props.description] - The description for the GroveNumberField component.
+ * @param {string} [props.errorMessage] - The error message for the GroveNumberField component.
  * @returns {JSX.Element} - The rendered GroveNumberField component.
  */
 function GroveNumberField({
+  className,
   label,
   description,
   errorMessage,
-  className,
   ...props
 }: GroveNumberFieldProps): JSX.Element {
   return (
@@ -142,7 +148,7 @@ function GroveNumberField({
         <NumberFieldSteppers />
       </FieldGroup>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}

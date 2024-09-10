@@ -1,6 +1,5 @@
 'use client';
 
-import { ChevronRight, MoreHorizontal } from 'lucide-react';
 import {
   Breadcrumb as AriaBreadcrumb,
   type BreadcrumbProps as AriaBreadcrumbProps,
@@ -13,11 +12,15 @@ import {
 
 import { cn } from '~/lib/utils';
 
+import { Icons } from './icons';
+
 /**
  * Renders a set of breadcrumbs.
  *
+ * @component
  * @template T - The type of the object.
  * @param {AriaBreadcrumbsProps<T>} props - The props for the breadcrumbs.
+ * @param {string} [props.className] - The class name for the breadcrumbs.
  * @returns {JSX.Element} - The rendered breadcrumbs component.
  */
 function Breadcrumbs<T extends object>({
@@ -40,7 +43,7 @@ function Breadcrumbs<T extends object>({
  *
  * @component
  * @param {AriaBreadcrumbProps} props - The props for the breadcrumb item.
- * @param {string} props.className - The class name for the breadcrumb item.
+ * @param {string} [props.className] - The class name for the breadcrumb item.
  * @returns {JSX.Element} The rendered breadcrumb item.
  */
 function BreadcrumbItem({
@@ -60,6 +63,7 @@ function BreadcrumbItem({
  *
  * @component
  * @param {AriaLinkProps} props - The props for the breadcrumb link.
+ * @param {string} [props.className] - The class name for the breadcrumb link.
  * @returns {JSX.Element} The rendered breadcrumb link.
  */
 function BreadcrumbLink({ className, ...props }: AriaLinkProps): JSX.Element {
@@ -86,16 +90,16 @@ function BreadcrumbLink({ className, ...props }: AriaLinkProps): JSX.Element {
  * Renders a separator for breadcrumbs.
  *
  * @component
- * @example
- * ```tsx
- * <BreadcrumbSeparator />
- * ```
+ * @param {React.ComponentProps<'span'>} props - The props for the breadcrumb separator.
+ * @param {string} [props.className] - The class name for the breadcrumb separator.
+ * @param {React.ReactNode} [props.children] - The children for the breadcrumb separator.
+ * @returns {JSX.Element} The rendered breadcrumb separator.
  */
 function BreadcrumbSeparator({
-  children,
   className,
+  children,
   ...props
-}: React.ComponentProps<'span'>) {
+}: React.ComponentProps<'span'>): JSX.Element {
   return (
     <span
       aria-hidden
@@ -103,7 +107,7 @@ function BreadcrumbSeparator({
       role="presentation"
       {...props}
     >
-      {children ?? <ChevronRight />}
+      {children ?? <Icons.ChevronRight />}
     </span>
   );
 }
@@ -113,7 +117,7 @@ function BreadcrumbSeparator({
  *
  * @component
  * @param {React.ComponentProps<'span'>} props - The component props.
- * @param {string} props.className - The class name for the component.
+ * @param {string} [props.className] - The class name for the component.
  * @returns {JSX.Element} The rendered breadcrumb ellipsis component.
  */
 function BreadcrumbEllipsis({
@@ -127,7 +131,7 @@ function BreadcrumbEllipsis({
       role="presentation"
       {...props}
     >
-      <MoreHorizontal className="size-4" />
+      <Icons.MoreHorizontal className="size-4" />
       <span className="sr-only">More</span>
     </span>
   );
@@ -141,7 +145,9 @@ type BreadcrumbPageProps = {} & Omit<AriaLinkProps, 'href'>;
 /**
  * Renders a breadcrumb page component.
  *
+ * @component
  * @param {BreadcrumbPageProps} props - The props for the breadcrumb page component.
+ * @param {string} [props.className] - The class name for the breadcrumb page component.
  * @returns {JSX.Element} The rendered breadcrumb page component.
  */
 function BreadcrumbPage({

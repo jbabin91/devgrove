@@ -89,6 +89,7 @@ function ColorWheel({
  *
  * @component
  * @param {AriaColorAreaProps} props - The props for the color area.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered color area component.
  */
 function ColorArea({ className, ...props }: AriaColorAreaProps): JSX.Element {
@@ -108,8 +109,9 @@ function ColorArea({ className, ...props }: AriaColorAreaProps): JSX.Element {
 /**
  * Renders the track component for a slider.
  *
- * @param className - The CSS class name for the component.
- * @param props - Additional props for the component.
+ * @component
+ * @param {AriaSliderTrackProps} props - The props for the track component.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered track component.
  */
 function SliderTrack({
@@ -131,6 +133,7 @@ function SliderTrack({
  *
  * @component
  * @param {AriaColorThumbProps} props - The props for the color thumb component.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered color thumb component.
  */
 function ColorThumb({ className, ...props }: AriaColorThumbProps): JSX.Element {
@@ -154,6 +157,7 @@ function ColorThumb({ className, ...props }: AriaColorThumbProps): JSX.Element {
  *
  * @component
  * @param {AriaColorSwatchPickerProps} props - The props for the color swatch picker.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered color swatch picker component.
  */
 function ColorSwatchPicker({
@@ -175,6 +179,7 @@ function ColorSwatchPicker({
  *
  * @component
  * @param {AriaColorSwatchPickerItemProps} props - The props for the color swatch picker item.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered color swatch picker item.
  */
 function ColorSwatchPickerItem({
@@ -205,6 +210,7 @@ function ColorSwatchPickerItem({
  *
  * @component
  * @param {AriaColorSwatchProps} props - The props for the color swatch.
+ * @param {string} [props.className] - The CSS class name for the component.
  * @returns {JSX.Element} The rendered color swatch component.
  */
 function ColorSwatch({

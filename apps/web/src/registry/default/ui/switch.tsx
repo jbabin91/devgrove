@@ -13,11 +13,13 @@ import { cn } from '~/lib/utils';
  *
  * @component
  * @param {AriaSwitchProps} props - The props for the switch component.
+ * @param {string} [props.className] - The class name for the switch component.
+ * @param {React.ReactNode} [props.children] - The children of the switch component.
  * @returns {JSX.Element} The rendered switch component.
  */
 function Switch({
-  children,
   className,
+  children,
   ...props
 }: AriaSwitchProps): JSX.Element {
   return (

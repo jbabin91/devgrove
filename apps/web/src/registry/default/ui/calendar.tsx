@@ -1,7 +1,6 @@
 'use client';
 
 import { getLocalTimeZone, today } from '@internationalized/date';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { useContext } from 'react';
 import {
   Button as AriaButton,
@@ -30,6 +29,7 @@ import {
 import { cn } from '~/lib/utils';
 
 import { buttonVariants } from './button';
+import { Icons } from './icons';
 
 /**
  * Represents a calendar component.
@@ -44,12 +44,13 @@ const RangeCalendar = AriaRangeCalendar;
 /**
  * Renders the heading section of the calendar component.
  *
- * @param props - HTML attributes for the heading element.
+ * @component
+ * @param {React.HTMLAttributes<HTMLElement>} props - HTML attributes for the heading element.
  * @returns {JSX.Element} The rendered heading component.
  */
-function CalendarHeading(
-  props: React.HTMLAttributes<HTMLElement>,
-): JSX.Element {
+function CalendarHeading({
+  ...props
+}: React.HTMLAttributes<HTMLElement>): JSX.Element {
   const { direction } = useLocale();
 
   return (
@@ -64,9 +65,9 @@ function CalendarHeading(
         slot="previous"
       >
         {direction === 'rtl' ? (
-          <ChevronRight aria-hidden className="size-4" />
+          <Icons.ChevronRight aria-hidden className="size-4" />
         ) : (
-          <ChevronLeft aria-hidden className="size-4" />
+          <Icons.ChevronLeft aria-hidden className="size-4" />
         )}
       </AriaButton>
       <AriaHeading className="grow text-center text-sm font-medium" />
@@ -80,9 +81,9 @@ function CalendarHeading(
         slot="next"
       >
         {direction === 'rtl' ? (
-          <ChevronLeft aria-hidden className="size-4" />
+          <Icons.ChevronLeft aria-hidden className="size-4" />
         ) : (
-          <ChevronRight aria-hidden className="size-4" />
+          <Icons.ChevronRight aria-hidden className="size-4" />
         )}
       </AriaButton>
     </header>
@@ -94,6 +95,7 @@ function CalendarHeading(
  *
  * @component
  * @param {AriaCalendarGridProps} props - The props for the calendar grid.
+ * @param {string} [props.className] - The CSS class name for the calendar grid.
  * @returns {JSX.Element} The rendered calendar grid component.
  */
 function CalendarGrid({
@@ -114,7 +116,8 @@ function CalendarGrid({
 /**
  * Renders the header component for the calendar grid.
  *
- * @param props - The props for the CalendarGridHeader component.
+ * @component
+ * @param {AriaCalendarGridHeaderProps} props - The props for the CalendarGridHeader component.
  * @returns {JSX.Element} The rendered CalendarGridHeader component.
  */
 function CalendarGridHeader({
@@ -126,8 +129,9 @@ function CalendarGridHeader({
 /**
  * Renders a header cell for the calendar.
  *
- * @param className - The CSS class name for the header cell.
- * @param props - Additional props for the header cell.
+ * @component
+ * @param {AriaCalendarHeaderCellProps} props - The props for the header cell component.
+ * @param {string} [props.className] - The CSS class name for the header cell component.
  * @returns {JSX.Element} The rendered header cell component.
  */
 function CalendarHeaderCell({
@@ -148,8 +152,9 @@ function CalendarHeaderCell({
 /**
  * Renders the body of the calendar grid.
  *
- * @param className - The CSS class name for the calendar grid body.
- * @param props - Additional props for the calendar grid body.
+ * @component
+ * @param {AriaCalendarGridBodyProps} props - The props for the CalendarGridBody component.
+ * @param {string} [props.className] - The CSS class name for the calendar grid body.
  * @returns {JSX.Element} The rendered calendar grid body.
  */
 function CalendarGridBody({
@@ -169,6 +174,7 @@ function CalendarGridBody({
  *
  * @component
  * @param {AriaCalendarCellProps} props - The props for the CalendarCell component.
+ * @param {string} [props.className] - The CSS class name for the CalendarCell component.
  * @returns {JSX.Element} The rendered CalendarCell component.
  */
 function CalendarCell({
@@ -233,13 +239,16 @@ type GroveCalendarProps<T extends AriaDateValue> = {
 /**
  * Renders a GroveCalendar component.
  *
+ * @component
  * @template T - The type of AriaDateValue.
  * @param {GroveCalendarProps<T>} props - The props for the GroveCalendar component.
+ * @param {string} [props.className] - The CSS class name for the GroveCalendar component.
+ * @param {string} [props.errorMessage] - An optional error message.
  * @returns {JSX.Element} - The rendered GroveCalendar component.
  */
 function GroveCalendar<T extends AriaDateValue>({
-  errorMessage,
   className,
+  errorMessage,
   ...props
 }: GroveCalendarProps<T>): JSX.Element {
   return (
@@ -259,7 +268,7 @@ function GroveCalendar<T extends AriaDateValue>({
         </CalendarGridBody>
       </CalendarGrid>
       {errorMessage && (
-        <Text className="text-destructive text-sm" slot="errorMessage">
+        <Text className="text-sm text-destructive" slot="errorMessage">
           {errorMessage}
         </Text>
       )}
@@ -281,13 +290,16 @@ type GroveRangeCalendarProps<T extends AriaDateValue> = {
 /**
  * Renders a GroveRangeCalendar component.
  *
+ * @component
  * @template T - The type of the AriaDateValue.
  * @param {GroveRangeCalendarProps<T>} props - The props for the GroveRangeCalendar component.
+ * @param {string} [props.className] - The CSS class name for the GroveRangeCalendar component.
+ * @param {string} [props.errorMessage] - An optional error message.
  * @returns {JSX.Element} - The rendered GroveRangeCalendar component.
  */
 function GroveRangeCalendar<T extends AriaDateValue>({
-  errorMessage,
   className,
+  errorMessage,
   ...props
 }: GroveRangeCalendarProps<T>): JSX.Element {
   return (
@@ -307,7 +319,7 @@ function GroveRangeCalendar<T extends AriaDateValue>({
         </CalendarGridBody>
       </CalendarGrid>
       {errorMessage && (
-        <Text className="text-destructive text-sm" slot="errorMessage">
+        <Text className="text-sm text-destructive" slot="errorMessage">
           {errorMessage}
         </Text>
       )}

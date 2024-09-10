@@ -21,9 +21,9 @@ const PopoverTrigger = AriaDialogTrigger;
  * Renders a popover component.
  *
  * @component
- * @param {Object} props - The component props.
- * @param {string} [props.className] - The class name for the popover.
- * @param {number} [props.offset=4] - The offset value for the popover.
+ * @param {AriaPopoverProps} props - The props for the popover component.
+ * @param {string} [props.className] - The class name for the popover component.
+ * @param {number} [props.offset=4] - The offset for the popover.
  * @returns {JSX.Element} The rendered popover component.
  */
 function Popover({
@@ -56,7 +56,7 @@ function Popover({
  *
  * @component
  * @param {AriaDialogProps} props - The props for the popover dialog.
- * @param {string} className - The CSS class name for the popover dialog.
+ * @param {string} [props.className] - The class name for the popover dialog component.
  * @returns {JSX.Element} The rendered popover dialog component.
  */
 function PopoverDialog({ className, ...props }: AriaDialogProps): JSX.Element {

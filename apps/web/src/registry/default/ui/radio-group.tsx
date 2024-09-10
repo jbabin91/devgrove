@@ -1,6 +1,5 @@
 'use client';
 
-import { Circle } from 'lucide-react';
 import {
   composeRenderProps,
   Radio as AriaRadio,
@@ -14,14 +13,15 @@ import {
 import { cn } from '~/lib/utils';
 
 import { FieldError, Label, labelVariants } from './field';
+import { Icons } from './icons';
 
 /**
  * Renders a radio group component.
  *
  * @component
- * @param {Object} props - The component props.
- * @param {string} [props.className] - The CSS class name for the radio group.
- * @param {string} [props.orientation='vertical'] - The orientation of the radio group. Can be 'vertical' or 'horizontal'.
+ * @param {AriaRadioGroupProps} props - The component props.
+ * @param {string} [props.className] - The class name for the radio group.
+ * @param {'horizontal' | 'vertical'} [props.orientation='vertical'] - The orientation of the radio group.
  * @returns {JSX.Element} The rendered radio group component.
  */
 function RadioGroup({
@@ -49,9 +49,9 @@ function RadioGroup({
  * Renders a radio button component.
  *
  * @component
- * @param {string} className - The CSS class name for the radio button.
- * @param {ReactNode} children - The content to be rendered inside the radio button.
- * @param {AriaRadioProps} props - Additional props for the radio button.
+ * @param {AriaRadioProps} props - The component props.
+ * @param {string} [props.className] - The class name for the radio button.
+ * @param {React.ReactNode} [props.children] - The children of the radio button.
  * @returns {JSX.Element} The rendered radio button component.
  */
 function Radio({ className, children, ...props }: AriaRadioProps): JSX.Element {
@@ -84,7 +84,7 @@ function Radio({ className, children, ...props }: AriaRadioProps): JSX.Element {
             )}
           >
             {renderProps.isSelected && (
-              <Circle className="size-2.5 fill-current text-current" />
+              <Icons.Circle className="size-2.5 fill-current text-current" />
             )}
           </span>
           {children}
@@ -114,30 +114,17 @@ type GroveRadioGroupProps = {
  *
  * @component
  * @param {GroveRadioGroupProps} props - The props for the GroveRadioGroup component.
- * @param {ReactNode} props.children - The content to be rendered inside the radio group.
- * @param {string} [props.label] - The label for the radio group.
- * @param {string} [props.description] - The description for the radio group.
- * @param {string} [props.className] - The CSS class name for the radio group.
- * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the radio group.
+ * @param {string} [props.className] - The class name for the GroveRadioGroup component.
+ * @param {string} [props.label] - The label for the GroveRadioGroup component.
+ * @param {string} [props.description] - The description for the GroveRadioGroup component.
+ * @param {string} [props.errorMessage] - The error message for the GroveRadioGroup component.
+ * @param {React.ReactNode} [props.children] - The children of the GroveRadioGroup component.
  * @returns {JSX.Element} The rendered GroveRadioGroup component.
- * @example
- * ```tsx
- * <GroveRadioGroup
- *   label="Radio Group Label"
- *   description="Radio Group Description"
- *   className="radio-group"
- *   errorMessage="Error Message"
- * >
- *   <Radio value="option1">Option 1</Radio>
- *   <Radio value="option2">Option 2</Radio>
- *   <Radio value="option3">Option 3</Radio>
- * </GroveRadioGroup>
- * ```
  */
 function GroveRadioGroup({
+  className,
   label,
   description,
-  className,
   errorMessage,
   children,
   ...props
@@ -154,7 +141,7 @@ function GroveRadioGroup({
           <Label>{label}</Label>
           {children}
           {description && (
-            <Text className="text-muted-foreground text-sm" slot="description">
+            <Text className="text-sm text-muted-foreground" slot="description">
               {description}
             </Text>
           )}

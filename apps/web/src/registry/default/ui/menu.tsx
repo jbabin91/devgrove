@@ -1,7 +1,6 @@
 'use client';
 
 import { type VariantProps } from 'class-variance-authority';
-import { Check, ChevronRight, Circle } from 'lucide-react';
 import {
   composeRenderProps,
   Header as AriaHeader,
@@ -21,6 +20,7 @@ import {
 import { cn } from '~/lib/utils';
 
 import { Button, type buttonVariants } from './button';
+import { Icons } from './icons';
 import { ListBoxCollection, ListBoxSection } from './list-box';
 import { SelectPopover } from './select';
 
@@ -49,6 +49,7 @@ const MenuCollection = ListBoxCollection;
  *
  * @component
  * @param {PopoverProps} props - The popover component props.
+ * @param {string} [props.className] - The class name for the menu popover component.
  * @returns {JSX.Element} The rendered menu popover component.
  */
 function MenuPopover({ className, ...props }: PopoverProps): JSX.Element {
@@ -65,8 +66,10 @@ function MenuPopover({ className, ...props }: PopoverProps): JSX.Element {
 /**
  * Renders a menu component.
  *
+ * @component
  * @template T - The type of the menu items.
  * @param {AriaMenuProps<T>} props - The props for the menu component.
+ * @param {string} [props.className] - The class name for the menu component.
  * @returns {JSX.Element} - The rendered menu component.
  */
 function Menu<T extends object>({
@@ -89,11 +92,13 @@ function Menu<T extends object>({
  *
  * @component
  * @param {AriaMenuItemProps} props - The props for the menu item.
+ * @param {string} [props.className] - The class name for the menu item.
+ * @param {React.ReactNode} [props.children] - The children of the menu item.
  * @returns {JSX.Element} The rendered menu item.
  */
 function MenuItem({
-  children,
   className,
+  children,
   ...props
 }: AriaMenuItemProps): JSX.Element {
   return (
@@ -121,10 +126,10 @@ function MenuItem({
             {renderProps.isSelected && (
               <>
                 {renderProps.selectionMode == 'single' && (
-                  <Circle className="size-2 fill-current" />
+                  <Icons.Circle className="size-2 fill-current" />
                 )}
                 {renderProps.selectionMode == 'multiple' && (
-                  <Check className="size-4" />
+                  <Icons.Check className="size-4" />
                 )}
               </>
             )}
@@ -133,7 +138,7 @@ function MenuItem({
           {children}
 
           {renderProps.hasSubmenu && (
-            <ChevronRight className="ml-auto size-4" />
+            <Icons.ChevronRight className="ml-auto size-4" />
           )}
         </>
       ))}
@@ -157,10 +162,11 @@ type MenuHeaderProps = {
 /**
  * Renders the header component for the menu.
  *
- * @param className - The CSS class name for the component.
- * @param inset - Whether the header should be inset.
- * @param separator - Whether to display a separator below the header.
- * @param props - Additional props for the component.
+ * @component
+ * @param {MenuHeaderProps} props - The props for the MenuHeader component.
+ * @param {string} [props.className] - The class name for the menu header component.
+ * @param {boolean} [props.inset] - Indicates if the menu header should have an inset style.
+ * @param {boolean} [props.separator=true] - Indicates if the menu header should have a separator.
  * @returns {JSX.Element} The rendered header component.
  */
 function MenuHeader({
@@ -187,6 +193,7 @@ function MenuHeader({
  *
  * @component
  * @param {AriaSeparatorProps} props - The props for the MenuSeparator component.
+ * @param {string} [props.className] - The class name for the MenuSeparator component.
  * @returns {JSX.Element} The rendered MenuSeparator component.
  */
 function MenuSeparator({
@@ -206,6 +213,7 @@ function MenuSeparator({
  *
  * @component
  * @param {React.ComponentProps<typeof AriaKeyboard>} props - The props for the MenuKeyboard component.
+ * @param {string} [props.className] - The class name for the MenuKeyboard component.
  * @returns {JSX.Element} The rendered MenuKeyboard component.
  */
 function MenuKeyboard({
@@ -239,15 +247,20 @@ type GroveMenuProps<T> = {
 /**
  * Renders a GroveMenu component.
  *
+ * @component
  * @template T - The type of object.
  * @param {GroveMenuProps<T>} props - The props for the GroveMenu component.
+ * @param {string} [props.label] - The label for the GroveMenu component.
+ * @param {VariantProps<typeof buttonVariants>} [props.variant] - The variant for the GroveMenu component.
+ * @param {VariantProps<typeof buttonVariants>} [props.size] - The size for the GroveMenu component.
+ * @param {React.ReactNode} [props.children] - The children of the GroveMenu component.
  * @returns {JSX.Element} - The rendered GroveMenu component.
  */
 function GroveMenu<T extends object>({
   label,
-  children,
   variant,
   size,
+  children,
   ...props
 }: GroveMenuProps<T>): JSX.Element {
   return (

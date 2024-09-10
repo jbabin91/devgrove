@@ -13,7 +13,7 @@ import { cn } from '~/lib/utils';
  *
  * @component
  * @param {Object} props - The properties of the toolbar.
- * @param {string} props.className - The CSS class name for the toolbar.
+ * @param {string} [props.className] - The class name for the toolbar.
  * @returns {JSX.Element} The rendered toolbar component.
  */
 function Toolbar({ className, ...props }: ToolbarProps): JSX.Element {

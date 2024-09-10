@@ -18,9 +18,9 @@ const TooltipTrigger = AriaTooltipTrigger;
  * Renders a tooltip component.
  *
  * @component
- * @param {Object} props - The props object.
- * @param {string} [props.className] - The class name for the tooltip.
- * @param {number} [props.offset=4] - The offset value for the tooltip.
+ * @param {AriaTooltipProps} props - The props for the tooltip component.
+ * @param {string} [props.className] - The class name for the tooltip component.
+ * @param {number} [props.offset=4] - The offset for the tooltip component.
  * @returns {JSX.Element} The rendered tooltip component.
  */
 function Tooltip({

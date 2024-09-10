@@ -1,18 +1,13 @@
 'use client';
 
-import { ChevronsUpDown } from 'lucide-react';
 import {
   ComboBox as AriaComboBox,
   type ComboBoxProps as AriaComboBoxProps,
   composeRenderProps,
-  FieldError,
   Input as AriaInput,
   type InputProps as AriaInputProps,
-  Label,
   ListBox as AriaListBox,
-  ListBoxItem,
   type ListBoxProps as AriaListBoxProps,
-  Popover,
   type PopoverProps as AriaPopoverProps,
   Text,
   type ValidationResult as AriaValidationResult,
@@ -21,8 +16,15 @@ import {
 import { cn } from '~/lib/utils';
 
 import { Button } from './button';
-import { FieldGroup } from './field';
-import { ListBoxCollection, ListBoxHeader, ListBoxSection } from './list-box';
+import { FieldError, FieldGroup, Label } from './field';
+import { Icons } from './icons';
+import {
+  ListBoxCollection,
+  ListBoxHeader,
+  ListBoxItem,
+  ListBoxSection,
+} from './list-box';
+import { Popover } from './popover';
 
 /**
  * A custom combobox component.
@@ -54,6 +56,7 @@ const ComboboxCollection = ListBoxCollection;
  *
  * @component
  * @param {AriaInputProps} props - The props for the input component.
+ * @param {string} [props.className] - The CSS class name for the input component.
  * @returns {JSX.Element} The rendered input component.
  */
 function ComboboxInput({ className, ...props }: AriaInputProps): JSX.Element {
@@ -75,8 +78,9 @@ function ComboboxInput({ className, ...props }: AriaInputProps): JSX.Element {
 /**
  * Renders a popover component for the Combobox.
  *
- * @param className - The CSS class name for the popover.
- * @param props - Additional props for the popover component.
+ * @component
+ * @param {AriaPopoverProps} props - The props for the popover component.
+ * @param {string} [props.className] - The CSS class name for the popover component.
  * @returns {JSX.Element} The rendered popover component.
  */
 function ComboboxPopover({
@@ -96,8 +100,10 @@ function ComboboxPopover({
 /**
  * Renders a list box component for the Combobox.
  *
+ * @component
  * @template T - The type of the items in the list box.
  * @param {AriaListBoxProps<T>} props - The props for the list box.
+ * @param {string} [props.className] - The CSS class name for the list box.
  * @returns {JSX.Element} - The rendered list box component.
  */
 function ComboboxListBox<T extends object>({
@@ -136,15 +142,21 @@ type GroveComboBoxProps<T extends object> = {
 /**
  * Renders a GroveComboBox component.
  *
+ * @component
  * @template T - The type of the object.
  * @param {GroveComboBoxProps<T>} props - The props for the GroveComboBox component.
+ * @param {string} [props.className] - The CSS class name for the GroveComboBox component.
+ * @param {string} [props.label] - The label for the combobox.
+ * @param {string | null} [props.description] - The description for the combobox.
+ * @param {string | ((validation: AriaValidationResult) => string)} [props.errorMessage] - The error message for the combobox.
+ * @param {React.ReactNode | ((item: T) => React.ReactNode)} [props.children] - The children of the combobox.
  * @returns {JSX.Element} - The rendered GroveComboBox component.
  */
 function GroveComboBox<T extends object>({
+  className,
   label,
   description,
   errorMessage,
-  className,
   children,
   ...props
 }: GroveComboBoxProps<T>): JSX.Element {
@@ -159,11 +171,11 @@ function GroveComboBox<T extends object>({
       <FieldGroup className="p-0">
         <ComboboxInput />
         <Button className="mr-1 size-6 p-1" size="icon" variant="ghost">
-          <ChevronsUpDown aria-hidden="true" className="size-4 opacity-50" />
+          <Icons.ChevronsUpDown aria-hidden className="size-4 opacity-50" />
         </Button>
       </FieldGroup>
       {description && (
-        <Text className="text-muted-foreground text-sm" slot="description">
+        <Text className="text-sm text-muted-foreground" slot="description">
           {description}
         </Text>
       )}
