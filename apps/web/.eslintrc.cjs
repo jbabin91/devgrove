@@ -6,4 +6,13 @@ module.exports = {
   parserOptions: {
     project: true,
   },
+  overrides: [
+    {
+      files: ['**/registry/**'],
+      rules: {
+        'sort-keys-fix/sort-keys-fix': 'off',
+        '@typescript-eslint/no-redundant-type-constituents': 'off',
+      },
+    },
+  ],
 };

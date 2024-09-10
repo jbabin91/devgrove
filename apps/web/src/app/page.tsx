@@ -1,7 +1,14 @@
+'use client';
+
 import { Button } from '@devgrove/ui';
+import { enableReactTracking } from '@legendapp/state/config/enableReactTracking';
 import Image from 'next/image';
 
 import styles from './page.module.css';
+
+enableReactTracking({
+  auto: true,
+});
 
 export default function Home() {
   return (
