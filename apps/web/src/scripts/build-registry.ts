@@ -231,7 +231,7 @@ export const Index: Record<string, any> = {
             await fs.writeFile(targetFilePath, code, 'utf8');
 
             return {
-              component: `React.lazy(() => import("@/registry/${style.name}/${type}/${chunkName}")),`,
+              component: `React.lazy(() => import("~/registry/${style.name}/${type}/${chunkName}")),`,
               container: {
                 className: containerClassName,
               },
@@ -265,7 +265,7 @@ export const Index: Record<string, any> = {
         await fs.writeFile(sourcePath, sourceFile.getText());
       }
 
-      let componentPath = `@/registry/${style.name}/${type}/${item.name}`;
+      let componentPath = `~/registry/${style.name}/${type}/${item.name}`;
 
       if (item.files) {
         const files = item.files.map((file) =>
@@ -274,7 +274,7 @@ export const Index: Record<string, any> = {
             : file,
         );
         if (files?.length) {
-          componentPath = `@/registry/${style.name}/${files[0]?.path}`;
+          componentPath = `~/registry/${style.name}/${files[0]?.path}`;
         }
       }
 

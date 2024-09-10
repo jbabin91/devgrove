@@ -32,6 +32,7 @@ out/
 build
 dist
 dist-ssr
+.contentlayer
 
 # Logs
 logs

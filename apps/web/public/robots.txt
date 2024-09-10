@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ui.devgrove.com
+
+# Sitemaps
+Sitemap: https://ui.devgrove.com/sitemap.xml
