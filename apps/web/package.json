@@ -61,7 +61,6 @@
     "tailwindcss-animate": "^1.0.7",
     "ts-morph": "^23.0.0",
     "tsx": "^4.19.0",
-    "unist": "^0.0.1",
     "unist-builder": "^4.0.0",
     "unist-util-visit": "^5.0.0"
   }
