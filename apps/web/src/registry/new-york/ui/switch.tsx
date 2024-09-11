@@ -6,7 +6,7 @@ import {
   type SwitchProps as AriaSwitchProps,
 } from 'react-aria-components';
 
-import { cn } from '~/lib/utils';
+import { cn } from '~/libs/utils';
 
 /**
  * Renders a switch component.

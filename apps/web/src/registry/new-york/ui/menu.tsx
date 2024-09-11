@@ -17,7 +17,7 @@ import {
   SubmenuTrigger as AriaSubmenuTrigger,
 } from 'react-aria-components';
 
-import { cn } from '~/lib/utils';
+import { cn } from '~/libs/utils';
 
 import { Button, type buttonVariants } from './button';
 import { Icons } from './icons';

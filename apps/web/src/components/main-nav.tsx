@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 
 import { siteConfig } from '~/config/site';
-import { cn } from '~/lib/utils';
+import { cn } from '~/libs/utils';
 import { Link } from '~/registry/new-york/ui/link';
 
 import { Icons } from './icons';

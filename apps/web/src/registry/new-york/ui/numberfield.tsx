@@ -11,7 +11,7 @@ import {
   type ValidationResult as AriaValidationResult,
 } from 'react-aria-components';
 
-import { cn } from '~/lib/utils';
+import { cn } from '~/libs/utils';
 
 import { Button } from './button';
 import { FieldError, FieldGroup, Label } from './field';

@@ -13,8 +13,8 @@ import {
   fontOutfit,
   fontRaleway,
   fontSans,
-} from '~/lib/fonts';
-import { cn } from '~/lib/utils';
+} from '~/libs/fonts';
+import { cn } from '~/libs/utils';
 import { Providers } from '~/providers';
 
 export const metadata: Metadata = {

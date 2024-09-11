@@ -6,7 +6,7 @@ import {
   type ProgressBarProps as AriaProgressBarProps,
 } from 'react-aria-components';
 
-import { cn } from '~/lib/utils';
+import { cn } from '~/libs/utils';
 
 import { Label, labelVariants } from './field';
 

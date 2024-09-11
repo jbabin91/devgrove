@@ -7,7 +7,7 @@ import {
   composeRenderProps,
 } from 'react-aria-components';
 
-import { cn } from '~/lib/utils';
+import { cn } from '~/libs/utils';
 
 /**
  * Represents the variants and default styles for a button component.

@@ -9,8 +9,8 @@ import {
   syncFontFamily,
   syncGrayColor,
   syncThemeColor,
-} from '~/lib/use-theme-generator';
-import { themeStore$ } from '~/lib/use-theme-store';
+} from '~/libs/use-theme-generator';
+import { themeStore$ } from '~/libs/use-theme-store';
 import { Button } from '~/registry/new-york/ui/button';
 import { Icons } from '~/registry/new-york/ui/icons';
 import {
