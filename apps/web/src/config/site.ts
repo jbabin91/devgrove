@@ -9,9 +9,9 @@ export const siteConfig = {
   },
   name: 'DevGrove UI',
   ogImage: isProd
-    ? 'https://ui.devgrove.com/og.jpg'
+    ? 'https://ui.dev-grove.com/og.jpg'
     : 'http://localhost:3000/og.jpg',
-  url: isProd ? 'https://ui.devgrove.com' : 'http://localhost:3000',
+  url: isProd ? 'https://ui.dev-grove.com' : 'http://localhost:3000',
 };
 
 export type SiteConfig = typeof siteConfig;

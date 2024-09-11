@@ -2,5 +2,5 @@
 module.exports = {
   generateIndexSitemap: false,
   generateRobotsTxt: true,
-  siteUrl: 'https://ui.devgrove.com',
+  siteUrl: 'https://ui.dev-grove.com',
 };

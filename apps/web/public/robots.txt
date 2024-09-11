@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ui.devgrove.com
+Host: https://ui.dev-grove.com
 
 # Sitemaps
-Sitemap: https://ui.devgrove.com/sitemap.xml
+Sitemap: https://ui.dev-grove.com/sitemap.xml
