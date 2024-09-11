@@ -3,6 +3,8 @@ import '~/styles/mdx.css';
 
 import type { Metadata } from 'next';
 
+import { SiteFooter } from '~/components/site-footer';
+import { SiteHeader } from '~/components/site-header';
 import { siteConfig } from '~/config/site';
 import {
   fontInter,
@@ -94,7 +96,9 @@ export default function RootLayout({
       >
         <Providers>
           <div className="relative flex min-h-screen flex-col bg-background">
+            <SiteHeader />
             <main className="flex-1">{children}</main>
+            <SiteFooter />
           </div>
         </Providers>
       </body>
