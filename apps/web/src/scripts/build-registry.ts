@@ -27,7 +27,7 @@ const REGISTRY_INDEX_WHITELIST = new Set<
   z.infer<typeof registryItemTypeSchema>
 >([
   'registry:ui',
-  'registry:lib',
+  'registry:libs',
   'registry:hook',
   'registry:theme',
   'registry:block',
