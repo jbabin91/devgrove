@@ -110,7 +110,7 @@ function SelectTrigger({
       {composeRenderProps(children, (children) => (
         <>
           {children}
-          <Icons.CaretSort aria-hidden className="size-4 opacity-50" />
+          <Icons.ChevronsUpDown aria-hidden className="size-4 opacity-50" />
         </>
       ))}
     </AriaButton>

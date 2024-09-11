@@ -85,7 +85,7 @@ function GridListItem({
           {/* Add elements for drag and drop and selection. */}
           {renderProps.allowsDragging && (
             <AriaButton slot="drag">
-              <Icons.DragHandleHorizontal className="size-4" />
+              <Icons.MoreHorizontal className="size-4" />
             </AriaButton>
           )}
           {renderProps.selectionMode === 'multiple' &&

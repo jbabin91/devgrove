@@ -171,7 +171,7 @@ function GroveComboBox<T extends object>({
       <FieldGroup className="p-0">
         <ComboboxInput />
         <Button className="mr-1 size-6 p-1" size="icon" variant="ghost">
-          <Icons.CaretSort aria-hidden className="size-4 opacity-50" />
+          <Icons.ChevronsUpDown aria-hidden className="size-4 opacity-50" />
         </Button>
       </FieldGroup>
       {description && (

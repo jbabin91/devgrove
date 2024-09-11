@@ -9,8 +9,10 @@ import {
   CircleIcon,
   GripHorizontalIcon,
   MinusIcon,
+  MoonIcon,
   MoreHorizontalIcon,
   SearchIcon,
+  SunIcon,
   XIcon,
 } from 'lucide-react';
 
@@ -26,9 +28,11 @@ export const Icons = {
   ChevronsUpDown: ChevronsUpDownIcon,
   ChevronUp: ChevronUpIcon,
   Circle: CircleIcon,
+  Close: XIcon,
   GripHorizontal: GripHorizontalIcon,
   Minus: MinusIcon,
+  Moon: MoonIcon,
   MoreHorizontal: MoreHorizontalIcon,
   Search: SearchIcon,
-  X: XIcon,
+  Sun: SunIcon,
 };

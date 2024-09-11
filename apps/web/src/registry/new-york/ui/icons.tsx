@@ -12,6 +12,8 @@ import {
   DragHandleHorizontalIcon,
   MagnifyingGlassIcon,
   MinusIcon,
+  MoonIcon,
+  SunIcon,
 } from '@radix-ui/react-icons';
 
 /**
@@ -19,16 +21,18 @@ import {
  */
 export const Icons = {
   Calendar: CalendarIcon,
-  CaretDown: CaretDownIcon,
-  CaretSort: CaretSortIcon,
-  CaretUp: CaretUpIcon,
   Check: CheckIcon,
+  ChevronDown: CaretDownIcon,
   ChevronLeft: ChevronLeftIcon,
   ChevronRight: ChevronRightIcon,
-  Cross2: Cross2Icon,
+  ChevronsUpDown: CaretSortIcon,
+  ChevronUp: CaretUpIcon,
+  Close: Cross2Icon,
   DotFilled: DotFilledIcon,
-  DotsHorizontal: DotsHorizontalIcon,
-  DragHandleHorizontal: DragHandleHorizontalIcon,
-  MagnifyingGlass: MagnifyingGlassIcon,
+  GripHorizontal: DotsHorizontalIcon,
   Minus: MinusIcon,
+  Moon: MoonIcon,
+  MoreHorizontal: DragHandleHorizontalIcon,
+  Search: MagnifyingGlassIcon,
+  Sun: SunIcon,
 };

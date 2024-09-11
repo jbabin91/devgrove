@@ -171,7 +171,7 @@ function GroveSearchField({
         <Icons.Search aria-hidden className="size-4 text-muted-foreground" />
         <SearchFieldInput placeholder="Search..." />
         <SearchFieldClear>
-          <Icons.X aria-hidden className="size-4" />
+          <Icons.Close aria-hidden className="size-4" />
         </SearchFieldClear>
       </FieldGroup>
       {description && (

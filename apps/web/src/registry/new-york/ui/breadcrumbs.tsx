@@ -130,7 +130,7 @@ function BreadcrumbEllipsis({
       role="presentation"
       {...props}
     >
-      <Icons.DotsHorizontal className="size-4" />
+      <Icons.GripHorizontal className="size-4" />
       <span className="sr-only">More</span>
     </span>
   );

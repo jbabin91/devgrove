@@ -76,12 +76,7 @@ type ButtonProps = {} & AriaButtonProps & VariantProps<typeof buttonVariants>;
  * @param {string} [props.size] - The size for the button component.
  * @returns {JSX.Element} The rendered button component.
  */
-function Button({
-  className,
-  variant,
-  size,
-  ...props
-}: ButtonProps): JSX.Element {
+function Button({ className, variant, size, ...props }: ButtonProps) {
   return (
     <AriaButton
       className={composeRenderProps(className, (className) =>
