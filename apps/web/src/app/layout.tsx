@@ -1,10 +1,9 @@
 import '~/styles/globals.css';
 import '~/styles/mdx.css';
 
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 
-import { SiteFooter } from '~/components/site-footer';
-import { SiteHeader } from '~/components/site-header';
+import { TailwindIndicator } from '~/components/tailwind-indicator';
 import { siteConfig } from '~/config/site';
 import {
   fontInter,
@@ -32,7 +31,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
   },
   keywords: [
-    'shadcn-aria',
+    'Next.js',
     'React',
     'Tailwind CSS',
     'Server Components',
@@ -62,11 +61,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    creator: '@jbabin91',
+    creator: '@shadcn',
     description: siteConfig.description,
     images: [siteConfig.ogImage],
     title: siteConfig.name,
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { color: 'white', media: '(prefers-color-scheme: light)' },
+    { color: 'black', media: '(prefers-color-scheme: dark)' },
+  ],
 };
 
 export default function RootLayout({
@@ -88,18 +94,20 @@ export default function RootLayout({
       lang="en"
       style={{ '--font-sans': `var(--font-geist-sans)` } as React.CSSProperties}
     >
+      <head />
       <body
         className={cn(
-          fontSans.variable,
           'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable,
         )}
       >
         <Providers>
-          <div className="relative flex min-h-screen flex-col bg-background">
-            <SiteHeader />
-            <main className="flex-1">{children}</main>
-            <SiteFooter />
+          <div vaul-drawer-wrapper="">
+            <div className="relative flex min-h-screen flex-col bg-background">
+              {children}
+            </div>
           </div>
+          <TailwindIndicator />
         </Providers>
       </body>
     </html>

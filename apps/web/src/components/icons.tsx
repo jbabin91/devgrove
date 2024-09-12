@@ -1,6 +1,11 @@
+import { ArrowRightIcon } from '@radix-ui/react-icons';
+import { TerminalIcon } from 'lucide-react';
+
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
+  ArrowRight: ArrowRightIcon,
+  Terminal: TerminalIcon,
   apple: (props: IconProps) => (
     <svg role="img" viewBox="0 0 24 24" {...props}>
       <path

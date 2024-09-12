@@ -20,5 +20,11 @@ module.exports = {
         'unicorn/no-process-exit': 'off',
       },
     },
+    {
+      files: ['**/*.{jsx,tsx}'],
+      rules: {
+        'react/no-unknown-property': 'off',
+      },
+    },
   ],
 };
