@@ -1,5 +1,4 @@
 import { parseAbsoluteToLocal } from '@internationalized/date';
-import { CalendarIcon } from 'lucide-react';
 import { useState } from 'react';
 
 import { Button } from '~/registry/default/ui/button';
@@ -18,6 +17,7 @@ import {
 } from '~/registry/default/ui/date-picker';
 import { DateInput } from '~/registry/default/ui/datefield';
 import { FieldGroup, Label } from '~/registry/default/ui/field';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function DatepickerGranularity() {
   const [date, setDate] = useState(
@@ -40,7 +40,7 @@ export function DatepickerGranularity() {
             size="icon"
             variant="ghost"
           >
-            <CalendarIcon aria-hidden className="size-4" />
+            <Icons.Calendar aria-hidden="true" className="size-4" />
           </Button>
         </FieldGroup>
         <DatePickerContent>
@@ -72,7 +72,7 @@ export function DatepickerGranularity() {
             size="icon"
             variant="ghost"
           >
-            <CalendarIcon aria-hidden className="size-4" />
+            <Icons.Calendar aria-hidden="true" className="size-4" />
           </Button>
         </FieldGroup>
         <DatePickerContent>

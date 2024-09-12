@@ -65,9 +65,9 @@ function CalendarHeading({
         slot="previous"
       >
         {direction === 'rtl' ? (
-          <Icons.ChevronRight aria-hidden className="size-4" />
+          <Icons.ChevronRight aria-hidden="true" className="size-4" />
         ) : (
-          <Icons.ChevronLeft aria-hidden className="size-4" />
+          <Icons.ChevronLeft aria-hidden="true" className="size-4" />
         )}
       </AriaButton>
       <AriaHeading className="grow text-center text-sm font-medium" />
@@ -81,9 +81,9 @@ function CalendarHeading({
         slot="next"
       >
         {direction === 'rtl' ? (
-          <Icons.ChevronLeft aria-hidden className="size-4" />
+          <Icons.ChevronLeft aria-hidden="true" className="size-4" />
         ) : (
-          <Icons.ChevronRight aria-hidden className="size-4" />
+          <Icons.ChevronRight aria-hidden="true" className="size-4" />
         )}
       </AriaButton>
     </header>

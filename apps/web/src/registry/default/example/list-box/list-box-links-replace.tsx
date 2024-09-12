@@ -4,7 +4,7 @@ export function ListBoxLinksReplace() {
   return (
     <ListBox
       aria-label="Links"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       selectionBehavior="replace"
       selectionMode="multiple"
     >

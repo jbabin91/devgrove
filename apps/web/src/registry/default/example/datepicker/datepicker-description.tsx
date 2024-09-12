@@ -1,4 +1,3 @@
-import { CalendarIcon } from 'lucide-react';
 import { Text } from 'react-aria-components';
 
 import { Button } from '~/registry/default/ui/button';
@@ -17,6 +16,7 @@ import {
 } from '~/registry/default/ui/date-picker';
 import { DateInput } from '~/registry/default/ui/datefield';
 import { FieldError, FieldGroup, Label } from '~/registry/default/ui/field';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function DatepickerDescription() {
   return (
@@ -29,7 +29,7 @@ export function DatepickerDescription() {
           size="icon"
           variant="ghost"
         >
-          <CalendarIcon aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden="true" className="size-4" />
         </Button>
       </FieldGroup>
       <Text className="text-sm text-muted-foreground" slot="description">

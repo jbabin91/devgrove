@@ -4,7 +4,7 @@ export function ListBoxSelectionReplace() {
   return (
     <ListBox
       aria-label="Sandwich contents"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       selectionBehavior="replace"
       selectionMode="multiple"
     >

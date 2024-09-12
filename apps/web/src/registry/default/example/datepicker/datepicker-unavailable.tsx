@@ -1,5 +1,4 @@
 import { getLocalTimeZone, isWeekend, today } from '@internationalized/date';
-import { CalendarIcon } from 'lucide-react';
 import { type DateValue, useLocale } from 'react-aria-components';
 
 import { Button } from '~/registry/default/ui/button';
@@ -18,6 +17,7 @@ import {
 } from '~/registry/default/ui/date-picker';
 import { DateInput } from '~/registry/default/ui/datefield';
 import { FieldGroup, Label } from '~/registry/default/ui/field';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function DatepickerUnavailable() {
   const now = today(getLocalTimeZone());
@@ -49,7 +49,7 @@ export function DatepickerUnavailable() {
           size="icon"
           variant="ghost"
         >
-          <CalendarIcon aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden="true" className="size-4" />
         </Button>
       </FieldGroup>
       <DatePickerContent>

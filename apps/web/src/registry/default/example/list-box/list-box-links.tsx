@@ -2,7 +2,7 @@ import { ListBox, ListBoxItem } from '~/registry/default/ui/list-box';
 
 export function ListBoxLinks() {
   return (
-    <ListBox aria-label="Links" className={'max-h-[200px]'}>
+    <ListBox aria-label="Links" className="max-h-[200px]">
       <ListBoxItem href="https://adobe.com/" target="_blank">
         Adobe
       </ListBoxItem>

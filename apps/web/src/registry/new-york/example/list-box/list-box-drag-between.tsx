@@ -88,7 +88,7 @@ function DndListBox(props: DndListBoxProps) {
   return (
     <ListBox
       aria-label={props['aria-label']}
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       dragAndDropHooks={dragAndDropHooks}
       items={list.items}
       renderEmptyState={() => 'Drop items here'}

@@ -33,7 +33,7 @@ export function ListBoxDynamic() {
   return (
     <ListBox
       aria-label="Pick an animal"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       items={options}
       selectedKeys={selected}
       selectionMode="single"

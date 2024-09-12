@@ -1,5 +1,4 @@
 import { isWeekend } from '@internationalized/date';
-import { CalendarIcon } from 'lucide-react';
 import { useLocale } from 'react-aria-components';
 
 import { Button } from '~/registry/default/ui/button';
@@ -18,6 +17,7 @@ import {
 } from '~/registry/default/ui/date-picker';
 import { DateInput } from '~/registry/default/ui/datefield';
 import { FieldError, FieldGroup, Label } from '~/registry/default/ui/field';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function DatepickerCustomValidation() {
   const { locale } = useLocale();
@@ -37,7 +37,7 @@ export function DatepickerCustomValidation() {
           size="icon"
           variant="ghost"
         >
-          <CalendarIcon aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden="true" className="size-4" />
         </Button>
       </FieldGroup>
       <FieldError />

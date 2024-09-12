@@ -1,6 +1,5 @@
-import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
-
 import { FieldGroup, Label } from '~/registry/new-york/ui/field';
+import { Icons } from '~/registry/new-york/ui/icons';
 import {
   SearchField,
   SearchFieldClear,
@@ -12,13 +11,13 @@ export function SearchFieldDisabled() {
     <SearchField isDisabled className="max-w-[200px]">
       <Label>Search</Label>
       <FieldGroup>
-        <MagnifyingGlassIcon
-          aria-hidden
+        <Icons.Search
+          aria-hidden="true"
           className="size-4 text-muted-foreground"
         />
         <SearchFieldInput placeholder="Search..." />
         <SearchFieldClear>
-          <Cross2Icon aria-hidden className="size-4" />
+          <Icons.Close aria-hidden="true" className="size-4" />
         </SearchFieldClear>
       </FieldGroup>
     </SearchField>

@@ -16,7 +16,7 @@ export function ListBoxDisabledKeys() {
   return (
     <ListBox
       aria-label="Animals with disabledKeys"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       disabledKeys={[4, 6]}
       items={options}
       selectionMode="single"

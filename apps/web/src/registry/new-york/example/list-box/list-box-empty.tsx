@@ -4,7 +4,7 @@ export function ListBoxEmpty() {
   return (
     <ListBox
       aria-label="Search results"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       renderEmptyState={() => 'No results found.'}
     >
       {[]}

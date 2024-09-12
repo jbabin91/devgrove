@@ -88,7 +88,7 @@ function DndGridList(props: DndGridListProps) {
   return (
     <GridList
       aria-label={props['aria-label']}
-      className={'max-h-[200px] '}
+      className="max-h-[200px]"
       dragAndDropHooks={dragAndDropHooks}
       items={list.items}
       renderEmptyState={() => 'Drop items here'}

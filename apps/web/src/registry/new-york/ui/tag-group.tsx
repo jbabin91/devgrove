@@ -138,7 +138,7 @@ function Tag({ children, className, ...props }: AriaTagProps): JSX.Element {
               )}
               slot="remove"
             >
-              <Icons.Close aria-hidden className="size-3" />
+              <Icons.Close aria-hidden="true" className="size-3" />
             </AriaButton>
           )}
         </>

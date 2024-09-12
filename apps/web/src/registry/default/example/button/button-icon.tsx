@@ -1,11 +1,10 @@
-import { ChevronRight } from 'lucide-react';
-
 import { Button } from '~/registry/default/ui/button';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function ButtonIcon() {
   return (
     <Button aria-label="Next" size="icon" variant="outline">
-      <ChevronRight className="size-4" />
+      <Icons.ChevronRight className="size-4" />
     </Button>
   );
 }

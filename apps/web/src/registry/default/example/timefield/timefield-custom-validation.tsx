@@ -9,14 +9,14 @@ export function TimeFieldCustomValidation() {
   return (
     <Form className="flex flex-col gap-2">
       <TimeField
-        className={'group'}
+        className="group"
         defaultValue={new Time(9, 25)}
         validate={(time) =>
           time?.minute % 15 === 0 ? null : 'Meetings start every 15 minutes.'
         }
       >
         <Label>Meeting time</Label>
-        <DateInput className={'w-fit min-w-[100px]'} />
+        <DateInput className="w-fit min-w-[100px]" />
         <FieldError />
       </TimeField>
       <Button className="w-fit" type="submit">

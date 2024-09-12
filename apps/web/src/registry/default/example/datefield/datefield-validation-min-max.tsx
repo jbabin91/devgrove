@@ -10,11 +10,11 @@ export function DateFieldValidationMinMax() {
     <Form className="flex flex-col gap-2">
       <DateField
         isRequired
-        className={'flex min-w-[150px] flex-col gap-2'}
+        className="flex min-w-[150px] flex-col gap-2"
         minValue={today(getLocalTimeZone())}
       >
         <Label>Appointment date</Label>
-        <DateInput className={'w-[180px]'} />
+        <DateInput className="w-[180px]" />
         <FieldError />
       </DateField>
       <Button className="w-fit" type="submit">

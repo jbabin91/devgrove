@@ -5,7 +5,7 @@ export function TimeFieldDemo() {
   return (
     <TimeField className="space-y-1">
       <Label>Event time</Label>
-      <DateInput className={'min-w-[100px]'} />
+      <DateInput className="min-w-[100px]" />
     </TimeField>
   );
 }

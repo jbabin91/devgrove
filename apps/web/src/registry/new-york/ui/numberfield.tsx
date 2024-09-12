@@ -68,11 +68,11 @@ function NumberFieldSteppers({
       {...props}
     >
       <NumberFieldStepper slot="increment">
-        <Icons.ChevronUp aria-hidden className="size-4" />
+        <Icons.ChevronUp aria-hidden="true" className="size-4" />
       </NumberFieldStepper>
       <div className="border-b" />
       <NumberFieldStepper slot="decrement">
-        <Icons.ChevronDown aria-hidden className="size-4" />
+        <Icons.ChevronDown aria-hidden="true" className="size-4" />
       </NumberFieldStepper>
     </div>
   );

@@ -4,7 +4,7 @@ export function ListBoxDisabledItems() {
   return (
     <ListBox
       aria-label="Choose sandwich contents with disabled items"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       selectionMode="multiple"
     >
       <ListBoxItem>Lettuce</ListBoxItem>

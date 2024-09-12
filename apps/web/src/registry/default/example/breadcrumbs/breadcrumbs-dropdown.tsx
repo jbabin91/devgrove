@@ -1,4 +1,3 @@
-import { ChevronDown } from 'lucide-react';
 import { Button } from 'react-aria-components';
 
 import {
@@ -8,6 +7,7 @@ import {
   Breadcrumbs,
   BreadcrumbSeparator,
 } from '~/registry/default/ui/breadcrumbs';
+import { Icons } from '~/registry/default/ui/icons';
 import {
   Menu,
   MenuItem,
@@ -26,7 +26,7 @@ export function BreadcrumbsDropdown() {
         <MenuTrigger>
           <Button className="flex items-center gap-1">
             Components
-            <ChevronDown className="size-4" />
+            <Icons.ChevronDown className="size-4" />
           </Button>
           <MenuPopover>
             <Menu>

@@ -1,9 +1,12 @@
-import { Mail } from 'lucide-react';
-
 import { Button } from '~/registry/default/ui/button';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function ButtonWithIcon() {
-  return <Button icon={<Mail className="size-4" />}>Login with Email</Button>;
+  return (
+    <Button icon={<Icons.MailOpen className="size-4" />}>
+      Login with Email
+    </Button>
+  );
 }
 
 export default ButtonWithIcon;

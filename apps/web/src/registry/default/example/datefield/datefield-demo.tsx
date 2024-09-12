@@ -3,7 +3,7 @@ import { Label } from '~/registry/default/ui/field';
 
 export function DateFieldDemo() {
   return (
-    <DateField className={'min-w-[150px] space-y-1'}>
+    <DateField className="min-w-[150px] space-y-1">
       <Label>Birth date</Label>
       <DateInput />
     </DateField>

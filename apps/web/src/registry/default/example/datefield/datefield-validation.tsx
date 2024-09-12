@@ -7,7 +7,7 @@ import { FieldError, Label } from '~/registry/default/ui/field';
 export function DateFieldValidation() {
   return (
     <Form>
-      <DateField isRequired className={'min-w-[150px] space-y-1'}>
+      <DateField isRequired className="min-w-[150px] space-y-1">
         <Label>Appointment date</Label>
         <DateInput />
         <FieldError />

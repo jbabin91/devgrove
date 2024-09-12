@@ -1,11 +1,10 @@
-import { Bold } from 'lucide-react';
-
+import { Icons } from '~/registry/default/ui/icons';
 import { Toggle } from '~/registry/default/ui/toggle';
 
 export function ToggleDemo() {
   return (
     <Toggle aria-label="Toggle italic">
-      <Bold className="size-4" />
+      <Icons.FontBold className="size-4" />
     </Toggle>
   );
 }

@@ -1,7 +1,7 @@
-import { Cross2Icon, MagnifyingGlassIcon } from '@radix-ui/react-icons';
 import { Text } from 'react-aria-components';
 
 import { FieldGroup, Label } from '~/registry/new-york/ui/field';
+import { Icons } from '~/registry/new-york/ui/icons';
 import {
   SearchField,
   SearchFieldClear,
@@ -13,13 +13,13 @@ export function SearchFieldDescription() {
     <SearchField isRequired className="group flex min-w-[200px] flex-col gap-2">
       <Label>Search</Label>
       <FieldGroup className="w-fit min-w-[200px]">
-        <MagnifyingGlassIcon
-          aria-hidden
+        <Icons.Search
+          aria-hidden="true"
           className="size-4 text-muted-foreground"
         />
         <SearchFieldInput placeholder="Search..." />
         <SearchFieldClear>
-          <Cross2Icon aria-hidden className="size-4" />
+          <Icons.Close aria-hidden="true" className="size-4" />
         </SearchFieldClear>
       </FieldGroup>
       <Text className="text-sm text-muted-foreground" slot="description">

@@ -113,7 +113,7 @@ function SelectTrigger({
       {composeRenderProps(children, (children) => (
         <>
           {children}
-          <Icons.ChevronDown aria-hidden className="size-4 opacity-50" />
+          <Icons.ChevronDown aria-hidden="true" className="size-4 opacity-50" />
         </>
       ))}
     </AriaButton>

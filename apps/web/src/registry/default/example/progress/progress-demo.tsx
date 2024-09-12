@@ -12,7 +12,7 @@ export function ProgressDemo() {
   }, []);
 
   return (
-    <Progress className={'w-3/5'} value={progress}>
+    <Progress className="w-3/5" value={progress}>
       {({ valueText }) => (
         <div className="flex w-full justify-between">
           <Label>Loading...</Label>

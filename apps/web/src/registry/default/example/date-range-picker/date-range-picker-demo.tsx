@@ -1,5 +1,3 @@
-import { CalendarIcon } from 'lucide-react';
-
 import { Button } from '~/registry/default/ui/button';
 import {
   CalendarCell,
@@ -16,24 +14,25 @@ import {
 } from '~/registry/default/ui/date-picker';
 import { DateInput } from '~/registry/default/ui/datefield';
 import { FieldGroup, Label } from '~/registry/default/ui/field';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function DateRangePickerDemo() {
   return (
     <DateRangePicker className="min-w-[320px] space-y-1">
       <Label>Date range</Label>
       <FieldGroup>
-        <DateInput slot={'start'} variant="ghost" />
-        <span aria-hidden className="px-2 text-sm text-muted-foreground">
+        <DateInput slot="start" variant="ghost" />
+        <span aria-hidden="true" className="px-2 text-sm text-muted-foreground">
           -
         </span>
-        <DateInput className="flex-1" slot={'end'} variant="ghost" />
+        <DateInput className="flex-1" slot="end" variant="ghost" />
 
         <Button
           className="mr-1 size-6 data-[focus-visible]:ring-offset-0"
           size="icon"
           variant="ghost"
         >
-          <CalendarIcon aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden="true" className="size-4" />
         </Button>
       </FieldGroup>
       <DatePickerContent>

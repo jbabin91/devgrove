@@ -10,7 +10,7 @@ export function TimeFieldTimezone() {
       defaultValue={parseZonedDateTime('2022-11-07T00:45[America/Los_Angeles]')}
     >
       <Label>Event time</Label>
-      <DateInput className={'min-w-[100px]'} />
+      <DateInput className="min-w-[100px]" />
     </TimeField>
   );
 }

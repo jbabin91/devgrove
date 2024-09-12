@@ -29,7 +29,7 @@ export function ListBoxDragAndDrop() {
   return (
     <ListBox
       aria-label="Reorderable list"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       dragAndDropHooks={dragAndDropHooks}
       items={list.items}
       selectionMode="multiple"

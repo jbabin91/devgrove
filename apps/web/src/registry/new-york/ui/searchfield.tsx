@@ -168,10 +168,13 @@ function GroveSearchField({
     >
       <Label>{label}</Label>
       <FieldGroup>
-        <Icons.Search aria-hidden className="size-4 text-muted-foreground" />
+        <Icons.Search
+          aria-hidden="true"
+          className="size-4 text-muted-foreground"
+        />
         <SearchFieldInput placeholder="Search..." />
         <SearchFieldClear>
-          <Icons.Close aria-hidden className="size-4" />
+          <Icons.Close aria-hidden="true" className="size-4" />
         </SearchFieldClear>
       </FieldGroup>
       {description && (

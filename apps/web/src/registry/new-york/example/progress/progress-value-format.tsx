@@ -4,7 +4,7 @@ import { Progress } from '~/registry/new-york/ui/progress';
 export function ProgressValueFormat() {
   return (
     <Progress
-      className={'w-3/5'}
+      className="w-3/5"
       formatOptions={{ style: 'currency', currency: 'JPY' }}
       value={60}
     >

@@ -16,7 +16,7 @@ export function ListBoxContent() {
   return (
     <ListBox
       aria-label="Animals"
-      className={'max-h-[200px]'}
+      className="max-h-[200px]"
       items={options}
       selectionMode="single"
     >

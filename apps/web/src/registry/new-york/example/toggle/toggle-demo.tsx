@@ -1,11 +1,10 @@
-import { FontBoldIcon } from '@radix-ui/react-icons';
-
+import { Icons } from '~/registry/new-york/ui/icons';
 import { Toggle } from '~/registry/new-york/ui/toggle';
 
 export function ToggleDemo() {
   return (
     <Toggle aria-label="Toggle italic">
-      <FontBoldIcon className="size-4" />
+      <Icons.FontBold className="size-4" />
     </Toggle>
   );
 }

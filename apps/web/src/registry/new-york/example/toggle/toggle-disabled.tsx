@@ -1,11 +1,10 @@
-import { UnderlineIcon } from '@radix-ui/react-icons';
-
+import { Icons } from '~/registry/new-york/ui/icons';
 import { Toggle } from '~/registry/new-york/ui/toggle';
 
 export function ToggleDisabled() {
   return (
     <Toggle isDisabled aria-label="Toggle italic">
-      <UnderlineIcon className="size-4" />
+      <Icons.Underline className="size-4" />
     </Toggle>
   );
 }

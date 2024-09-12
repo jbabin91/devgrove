@@ -4,7 +4,7 @@ import { Meter } from '~/registry/default/ui/meter';
 export function MeterValueFormat() {
   return (
     <Meter
-      className={'w-3/5'}
+      className="w-3/5"
       formatOptions={{ style: 'currency', currency: 'JPY' }}
       value={60}
     >

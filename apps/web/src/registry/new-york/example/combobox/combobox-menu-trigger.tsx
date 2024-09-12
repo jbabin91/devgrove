@@ -1,5 +1,3 @@
-import { CaretSortIcon } from '@radix-ui/react-icons';
-
 import { Button } from '~/registry/new-york/ui/button';
 import {
   Combobox,
@@ -9,6 +7,7 @@ import {
   ComboboxPopover,
 } from '~/registry/new-york/ui/combobox';
 import { FieldGroup, Label } from '~/registry/new-york/ui/field';
+import { Icons } from '~/registry/new-york/ui/icons';
 
 export function ComboboxMenuTrigger() {
   return (
@@ -18,7 +17,10 @@ export function ComboboxMenuTrigger() {
         <FieldGroup className="p-0">
           <ComboboxInput />
           <Button className="mr-1 size-6 p-1" size="icon" variant="ghost">
-            <CaretSortIcon aria-hidden="true" className="size-4 opacity-50" />
+            <Icons.ChevronsUpDown
+              aria-hidden="true"
+              className="size-4 opacity-50"
+            />
           </Button>
         </FieldGroup>
         <ComboboxPopover>
@@ -37,7 +39,10 @@ export function ComboboxMenuTrigger() {
         <FieldGroup className="p-0">
           <ComboboxInput />
           <Button className="mr-1 size-6 p-1" size="icon" variant="ghost">
-            <CaretSortIcon aria-hidden="true" className="size-4 opacity-50" />
+            <Icons.ChevronsUpDown
+              aria-hidden="true"
+              className="size-4 opacity-50"
+            />
           </Button>
         </FieldGroup>
         <ComboboxPopover>
@@ -56,7 +61,10 @@ export function ComboboxMenuTrigger() {
         <FieldGroup className="p-0">
           <ComboboxInput />
           <Button className="mr-1 size-6 p-1" size="icon" variant="ghost">
-            <CaretSortIcon aria-hidden="true" className="size-4 opacity-50" />
+            <Icons.ChevronsUpDown
+              aria-hidden="true"
+              className="size-4 opacity-50"
+            />
           </Button>
         </FieldGroup>
         <ComboboxPopover>

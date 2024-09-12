@@ -124,7 +124,7 @@ function GroveDatePicker<T extends AriaDateValue>({
           size="icon"
           variant="ghost"
         >
-          <Icons.Calendar aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden="true" className="size-4" />
         </Button>
       </FieldGroup>
       {description && (
@@ -193,18 +193,18 @@ function GroveDateRangePicker<T extends AriaDateValue>({
     >
       <Label>{label}</Label>
       <FieldGroup>
-        <DateInput slot={'start'} variant="ghost" />
-        <span aria-hidden className="px-2 text-sm text-muted-foreground">
+        <DateInput slot="start" variant="ghost" />
+        <span aria-hidden="true" className="px-2 text-sm text-muted-foreground">
           -
         </span>
-        <DateInput className="flex-1" slot={'end'} variant="ghost" />
+        <DateInput className="flex-1" slot="end" variant="ghost" />
 
         <Button
           className="mr-1 size-6 data-[focus-visible]:ring-offset-0"
           size="icon"
           variant="ghost"
         >
-          <Icons.Calendar aria-hidden className="size-4" />
+          <Icons.Calendar aria-hidden="true" className="size-4" />
         </Button>
       </FieldGroup>
       {description && (

@@ -1,4 +1,3 @@
-import { ChevronsUpDown } from 'lucide-react';
 import { Form } from 'react-aria-components';
 
 import { Button } from '~/registry/default/ui/button';
@@ -10,6 +9,7 @@ import {
   ComboboxPopover,
 } from '~/registry/default/ui/combobox';
 import { FieldError, FieldGroup, Label } from '~/registry/default/ui/field';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function ComboboxValidation() {
   return (
@@ -19,7 +19,10 @@ export function ComboboxValidation() {
         <FieldGroup className="p-0">
           <ComboboxInput />
           <Button className="mr-1 size-6 p-1" size="icon" variant="ghost">
-            <ChevronsUpDown aria-hidden="true" className="size-4 opacity-50" />
+            <Icons.ChevronsUpDown
+              aria-hidden="true"
+              className="size-4 opacity-50"
+            />
           </Button>
         </FieldGroup>
         <FieldError />

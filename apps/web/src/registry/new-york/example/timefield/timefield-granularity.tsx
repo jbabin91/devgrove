@@ -11,7 +11,7 @@ export function TimeFieldGranularity() {
       granularity="second"
     >
       <Label>Event time</Label>
-      <DateInput className={'min-w-[100px]'} />
+      <DateInput className="min-w-[100px]" />
     </TimeField>
   );
 }

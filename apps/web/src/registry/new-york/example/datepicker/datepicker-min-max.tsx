@@ -1,5 +1,4 @@
 import { getLocalTimeZone, today } from '@internationalized/date';
-import { CalendarIcon } from '@radix-ui/react-icons';
 import { Form } from 'react-aria-components';
 
 import { Button } from '~/registry/new-york/ui/button';
@@ -18,6 +17,7 @@ import {
 } from '~/registry/new-york/ui/date-picker';
 import { DateInput } from '~/registry/new-york/ui/datefield';
 import { FieldError, FieldGroup, Label } from '~/registry/new-york/ui/field';
+import { Icons } from '~/registry/new-york/ui/icons';
 
 export function DatepickerMinMax() {
   return (
@@ -34,7 +34,7 @@ export function DatepickerMinMax() {
             size="icon"
             variant="ghost"
           >
-            <CalendarIcon aria-hidden className="size-4" />
+            <Icons.Calendar aria-hidden="true" className="size-4" />
           </Button>
         </FieldGroup>
         <FieldError />

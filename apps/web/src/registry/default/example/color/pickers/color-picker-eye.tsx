@@ -1,4 +1,3 @@
-import { Pipette } from 'lucide-react';
 import { useContext, useState } from 'react';
 import {
   ColorPickerStateContext,
@@ -20,6 +19,7 @@ import {
   SliderTrack,
 } from '~/registry/default/ui/color';
 import { Dialog, DialogTrigger } from '~/registry/default/ui/dialog';
+import { Icons } from '~/registry/default/ui/icons';
 import { Popover } from '~/registry/default/ui/popover';
 import {
   Select,
@@ -54,7 +54,7 @@ function EyeDropperButton() {
           );
       }}
     >
-      <Pipette />
+      <Icons.Pipette />
     </Button>
   );
 }

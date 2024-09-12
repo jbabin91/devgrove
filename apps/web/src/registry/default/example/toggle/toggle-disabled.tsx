@@ -1,11 +1,10 @@
-import { Underline } from 'lucide-react';
-
+import { Icons } from '~/registry/default/ui/icons';
 import { Toggle } from '~/registry/default/ui/toggle';
 
 export function ToggleDisabled() {
   return (
     <Toggle isDisabled aria-label="Toggle italic">
-      <Underline className="size-4" />
+      <Icons.Underline className="size-4" />
     </Toggle>
   );
 }

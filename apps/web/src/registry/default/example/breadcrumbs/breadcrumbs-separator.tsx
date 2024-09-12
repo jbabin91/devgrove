@@ -1,5 +1,3 @@
-import { Slash } from 'lucide-react';
-
 import {
   BreadcrumbItem,
   BreadcrumbLink,
@@ -7,6 +5,7 @@ import {
   Breadcrumbs,
   BreadcrumbSeparator,
 } from '~/registry/default/ui/breadcrumbs';
+import { Icons } from '~/registry/default/ui/icons';
 
 export function BreadcrumbsSeparator() {
   return (
@@ -14,13 +13,13 @@ export function BreadcrumbsSeparator() {
       <BreadcrumbItem>
         <BreadcrumbLink href="/home">Home</BreadcrumbLink>
         <BreadcrumbSeparator>
-          <Slash />
+          <Icons.Slash />
         </BreadcrumbSeparator>
       </BreadcrumbItem>
       <BreadcrumbItem>
         <BreadcrumbLink href="/docs">Docs</BreadcrumbLink>
         <BreadcrumbSeparator>
-          <Slash />
+          <Icons.Slash />
         </BreadcrumbSeparator>
       </BreadcrumbItem>
       <BreadcrumbItem>
