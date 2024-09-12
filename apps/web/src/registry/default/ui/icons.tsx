@@ -8,10 +8,12 @@ import {
   ChevronUpIcon,
   CircleIcon,
   GripHorizontalIcon,
+  LoaderCircleIcon,
   MinusIcon,
   MoonIcon,
   MoreHorizontalIcon,
   SearchIcon,
+  SlashIcon,
   SunIcon,
   XIcon,
 } from 'lucide-react';
@@ -33,6 +35,8 @@ export const Icons = {
   Minus: MinusIcon,
   Moon: MoonIcon,
   MoreHorizontal: MoreHorizontalIcon,
+  Reload: LoaderCircleIcon,
   Search: SearchIcon,
+  Slash: SlashIcon,
   Sun: SunIcon,
 };
