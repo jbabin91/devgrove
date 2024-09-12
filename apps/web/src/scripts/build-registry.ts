@@ -216,9 +216,12 @@ export const Index: Record<string, any> = {
 
             ${componnetImportLines.join('\n')}
 
-            export default function Component() {
+            export function Component() {
               return (${parentJsxElement.getText()})
-            }`;
+            }
+
+            export default Component;
+            `;
 
             const targetFile = file?.replace(item.name, `${chunkName}`);
             const targetFilePath = path.join(

@@ -9,6 +9,8 @@ import {
 
 import { cn } from '~/libs/utils';
 
+import { Icons } from './icons';
+
 /**
  * Represents the button variants configuration.
  *
@@ -64,7 +66,11 @@ const buttonVariants = cva(
  *
  * @public
  */
-type ButtonProps = {} & AriaButtonProps & VariantProps<typeof buttonVariants>;
+type ButtonProps = {
+  isLoading?: boolean;
+  icon?: React.ReactNode;
+} & AriaButtonProps &
+  VariantProps<typeof buttonVariants>;
 
 /**
  * Renders a button component.
@@ -74,9 +80,22 @@ type ButtonProps = {} & AriaButtonProps & VariantProps<typeof buttonVariants>;
  * @param {string} [props.className] - The class name for the button component.
  * @param {string} [props.variant] - The variant for the button component.
  * @param {string} [props.size] - The size for the button component.
+ * @param {boolean} [props.isLoading] - Indicates if the button is in a loading state.
+ * @param {boolean} [props.isDisabled] - Indicates if the button is disabled.
+ * @param {React.ReactNode} [props.icon] - The icon for the button component.
+ * @param {React.ReactNode} [props.children] - The children to render inside the button component.
  * @returns {JSX.Element} The rendered button component.
  */
-function Button({ className, variant, size, ...props }: ButtonProps) {
+function Button({
+  className,
+  variant,
+  size,
+  isLoading = false,
+  isDisabled = false,
+  icon,
+  children,
+  ...props
+}: ButtonProps): JSX.Element {
   return (
     <AriaButton
       className={composeRenderProps(className, (className) =>
@@ -88,8 +107,13 @@ function Button({ className, variant, size, ...props }: ButtonProps) {
           }),
         ),
       )}
+      isDisabled={isDisabled ?? isLoading}
       {...props}
-    />
+    >
+      {isLoading ? <Icons.Reload className="mr-2 size-4 animate-spin" /> : null}
+      {!isLoading && icon ? <span className="mr-2">{icon}</span> : null}
+      <>{children}</>
+    </AriaButton>
   );
 }
 

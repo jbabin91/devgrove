@@ -13,6 +13,8 @@ import {
   MagnifyingGlassIcon,
   MinusIcon,
   MoonIcon,
+  ReloadIcon,
+  SlashIcon,
   SunIcon,
 } from '@radix-ui/react-icons';
 
@@ -33,6 +35,8 @@ export const Icons = {
   Minus: MinusIcon,
   Moon: MoonIcon,
   MoreHorizontal: DragHandleHorizontalIcon,
+  Reload: ReloadIcon,
   Search: MagnifyingGlassIcon,
+  Slash: SlashIcon,
   Sun: SunIcon,
 };
