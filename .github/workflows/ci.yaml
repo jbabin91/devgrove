@@ -24,17 +24,20 @@ jobs:
       - name: Checkout Source code
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        uses: ./.github/actions/setup
-
-      - name: Branch Checks
-        uses: ./.github/actions/checks
-
       - name: Set Env Variables
         run: |
           echo "NEXT_PUBLIC_DOCSEARCH_API_KEY=${{secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY}}" >> .env
           echo "NEXT_PUBLIC_DOCSEARCH_APP_ID=${{secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID}}" >> .env
           echo "NEXT_PUBLIC_DOCSEARCH_INDEX_NAME=${{vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME}}" >> .env
+
+      - name: Install dependencies
+        uses: ./.github/actions/setup
+
+      - name: Build Docs
+        uses: ./.github/actions/build-docs
+
+      - name: Branch Checks
+        uses: ./.github/actions/checks
 
       - name: Build All
         uses: ./.github/actions/build-all

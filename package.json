@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "turbo build",
+    "build:docs": "turbo --filter web build",
     "build:registry": "turbo build:registry",
     "check-exports": "turbo check-exports",
     "ci": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build && pnpm run check-exports",

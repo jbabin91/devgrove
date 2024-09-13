@@ -1,0 +1,9 @@
+name: Build Docs
+description: Action to build docs
+
+runs:
+  using: composite
+  steps:
+    - name: Build Docs
+      shell: bash
+      run: pnpm build:docs

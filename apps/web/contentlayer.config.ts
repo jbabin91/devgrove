@@ -1,5 +1,6 @@
 /* eslint-disable unicorn/consistent-function-scoping */
 import {
+  type ComputedFields,
   defineDocumentType,
   defineNestedType,
   makeSource,
@@ -14,8 +15,7 @@ import { visit } from 'unist-util-visit';
 import { rehypeComponent } from './src/libs/rehype-component';
 import { rehypeNpmCommand } from './src/libs/rehype-npm-command';
 
-/** @type {import('contentlayer2/source-files').ComputedFields} */
-const computedFields = {
+const computedFields: ComputedFields = {
   slug: {
     resolve: (doc) => `/${doc._raw.flattenedPath}`,
     type: 'string',
