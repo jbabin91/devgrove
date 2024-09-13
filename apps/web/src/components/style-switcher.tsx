@@ -1,7 +1,7 @@
 'use client';
 
 import { useMounted } from '~/hooks/use-mounted';
-import { useThemeStore } from '~/libs/use-theme-store';
+import { useThemeStore } from '~/hooks/use-theme-store';
 import { cn } from '~/libs/utils';
 import {
   Select,

@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 import { copyToClipboardWithMeta } from '~/components/copy-button';
 import { Icons } from '~/components/icons';
-import { useThemeGenerator } from '~/libs/use-theme-generator';
+import { useThemeGenerator } from '~/hooks/use-theme-generator';
 import { cn } from '~/libs/utils';
 import { Button, buttonVariants } from '~/registry/new-york/ui/button';
 import {

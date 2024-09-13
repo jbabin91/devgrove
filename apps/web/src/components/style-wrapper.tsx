@@ -1,4 +1,4 @@
-import { useThemeStore } from '~/libs/use-theme-store';
+import { useThemeStore } from '~/hooks/use-theme-store';
 import { type Style } from '~/registry/styles';
 
 type StyleWrapperProps = {

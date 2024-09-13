@@ -8,8 +8,8 @@ import {
   syncFontFamily,
   syncGrayColor,
   syncThemeColor,
-} from '~/libs/use-theme-generator';
-import { useThemeStore } from '~/libs/use-theme-store';
+} from '~/hooks/use-theme-generator';
+import { useThemeStore } from '~/hooks/use-theme-store';
 import { Button } from '~/registry/new-york/ui/button';
 import { Icons } from '~/registry/new-york/ui/icons';
 import {
