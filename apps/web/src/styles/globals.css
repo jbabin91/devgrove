@@ -244,21 +244,21 @@
   --docsearch-container-background: rgba(0, 0, 0, 0.8);
 }
 
-.grove-GridList {
+.dev-grove-GridList {
   /* join selected items if :has selector is supported */
   @supports selector(:has(.foo)) {
     gap: 0;
 
-    .grove-GridListItem[data-selected]:has(+ [data-selected]),
-    .grove-GridListItem[data-selected]:has(
+    .dev-grove-GridListItem[data-selected]:has(+ [data-selected]),
+    .dev-grove-GridListItem[data-selected]:has(
         + .react-aria-DropIndicator + [data-selected]
       ) {
       border-end-start-radius: 0;
       border-end-end-radius: 0;
     }
 
-    .grove-GridListItem[data-selected] + [data-selected],
-    .grove-GridListItem[data-selected]
+    .dev-grove-GridListItem[data-selected] + [data-selected],
+    .dev-grove-GridListItem[data-selected]
       + .react-aria-DropIndicator
       + [data-selected] {
       border-start-start-radius: 0;
