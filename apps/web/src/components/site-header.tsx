@@ -1,10 +1,10 @@
+import { Icons } from '~/components/icons';
+import { MainNav } from '~/components/main-nav';
+import { MobileNav } from '~/components/mobile-nav';
+import { ModeToggle } from '~/components/mode-toggle';
+import { ThemeCustomizer } from '~/components/theme-customizer';
 import { siteConfig } from '~/config/site';
 import { Link } from '~/registry/new-york/ui/link';
-
-import { Icons } from './icons';
-import { MainNav } from './main-nav';
-import { MobileNav } from './mobile-nav';
-import { ModeToggle } from './mode-toggle';
 
 export function SiteHeader() {
   return (
@@ -18,7 +18,7 @@ export function SiteHeader() {
           </div> */}
           <nav className="flex flex-1 items-center justify-end gap-2">
             {/* <Search /> */}
-            {/* <ThemeCustomizer hide={true} shrink={true} /> */}
+            <ThemeCustomizer hide={true} shrink={true} />
             <Link
               className="hidden sm:inline-flex"
               href={siteConfig.links.github}

@@ -1,5 +1,3 @@
-import { useObservable, useSelector } from '@legendapp/state/react';
-
 import {
   type GrayColor,
   grayColors,
@@ -7,36 +5,26 @@ import {
   themes,
 } from '~/registry/themes';
 
-import { initialState, type Style, themeStore$ } from './use-theme-store';
+import { useThemeStore } from './use-theme-store';
 
 const borderRadius = ['0', '0.3', '0.5', '0.75', '1'] as const;
 
 export type BorderRadius = (typeof borderRadius)[number];
 
 export const useThemeGenerator = () => {
-  const currentAccentColor = useSelector(() => themeStore$.accentColor.get());
-  const currentGrayColor = useSelector(() => themeStore$.grayColor.get());
-  const currentFontFamily = useSelector(() => themeStore$.fontFamily.get());
-  const currentBorderRadius = useSelector(() => themeStore$.borderRadius.get());
-  const currentStyle = useSelector(() => themeStore$.style.get());
+  const currentAccentColor = useThemeStore((state) => state.accentColor);
+  const currentGrayColor = useThemeStore((state) => state.grayColor);
+  const currentFontFamily = useThemeStore((state) => state.fontFamily);
+  const currentBorderRadius = useThemeStore((state) => state.borderRadius);
+  const currentStyle = useThemeStore((state) => state.style);
 
-  const updateAccentColor = useObservable((value: ThemeColor) =>
-    themeStore$.accentColor.set(value),
-  );
-  const updateGrayColor = useObservable((value: GrayColor) =>
-    themeStore$.grayColor.set(value),
-  );
-  const updateFontFamily = useObservable((value: FontFamily) =>
-    themeStore$.fontFamily.set(value),
-  );
-  const updateBorderRadius = useObservable((value: BorderRadius) =>
-    themeStore$.borderRadius.set(value),
-  );
-  const updateStyle = useObservable((value: Style) =>
-    themeStore$.style.set(value),
-  );
+  const updateAccentColor = useThemeStore((state) => state.setAccentColor);
+  const updateGrayColor = useThemeStore((state) => state.setGrayColor);
+  const updateFontFamily = useThemeStore((state) => state.setFontFamily);
+  const updateBorderRadius = useThemeStore((state) => state.setBorderRadius);
+  const updateStyle = useThemeStore((state) => state.setStyle);
 
-  const reset = useObservable(() => themeStore$.set(initialState));
+  const reset = useThemeStore((state) => state.reset);
 
   return {
     borderRadius,
@@ -73,8 +61,8 @@ export const syncGrayColor = (
 
   const vars = (
     resolvedTheme === 'light'
-      ? { ...grayColor?.cssVars.light }
-      : { ...grayColor?.cssVars.dark }
+      ? { ...grayColor?.cssVars?.light }
+      : { ...grayColor?.cssVars?.dark }
   ) as Record<string, string>;
 
   if (Object.keys(vars))
@@ -101,8 +89,8 @@ export const syncThemeColor = (
 
   const vars = (
     resolvedTheme === 'light'
-      ? { ...grayColor?.cssVars.light }
-      : { ...grayColor?.cssVars.dark }
+      ? { ...grayColor?.cssVars?.light }
+      : { ...grayColor?.cssVars?.dark }
   ) as Record<string, string>;
 
   if (Object.keys(vars))

@@ -1,10 +1,23 @@
-import { ArrowRightIcon } from '@radix-ui/react-icons';
-import { TerminalIcon } from 'lucide-react';
+import {
+  ArrowRightIcon,
+  CheckIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  CopyIcon,
+  ExternalLinkIcon,
+  ResetIcon,
+} from '@radix-ui/react-icons';
+import { MoonIcon, Settings2Icon, SunIcon, TerminalIcon } from 'lucide-react';
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   ArrowRight: ArrowRightIcon,
+  Check: CheckIcon,
+  ChevronLeft: ChevronLeftIcon,
+  ChevronRight: ChevronRightIcon,
+  Copy: CopyIcon,
+  ExternalLink: ExternalLinkIcon,
   Menu: (props: IconProps) => (
     <svg
       className="size-5"
@@ -37,6 +50,10 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  Moon: MoonIcon,
+  Reset: ResetIcon,
+  Settings2: Settings2Icon,
+  Sun: SunIcon,
   Terminal: TerminalIcon,
   apple: (props: IconProps) => (
     <svg role="img" viewBox="0 0 24 24" {...props}>

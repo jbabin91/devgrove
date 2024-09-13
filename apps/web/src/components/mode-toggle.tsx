@@ -1,6 +1,5 @@
 'use client';
 
-import { useSelector } from '@legendapp/state/react';
 import { useTheme } from 'next-themes';
 import { useEffect } from 'react';
 
@@ -10,7 +9,7 @@ import {
   syncGrayColor,
   syncThemeColor,
 } from '~/libs/use-theme-generator';
-import { themeStore$ } from '~/libs/use-theme-store';
+import { useThemeStore } from '~/libs/use-theme-store';
 import { Button } from '~/registry/new-york/ui/button';
 import { Icons } from '~/registry/new-york/ui/icons';
 import {
@@ -22,10 +21,10 @@ import {
 
 export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();
-  const currentAccentColor = useSelector(() => themeStore$.accentColor.get());
-  const currentGrayColor = useSelector(() => themeStore$.grayColor.get());
-  const currentFontFamily = useSelector(() => themeStore$.fontFamily.get());
-  const currentBorderRadius = useSelector(() => themeStore$.borderRadius.get());
+  const currentGrayColor = useThemeStore((state) => state.grayColor);
+  const currentAccentColor = useThemeStore((state) => state.accentColor);
+  const currentFontFamily = useThemeStore((state) => state.fontFamily);
+  const currentBorderRadius = useThemeStore((state) => state.borderRadius);
 
   useEffect(() => {
     syncGrayColor(currentGrayColor, resolvedTheme);
