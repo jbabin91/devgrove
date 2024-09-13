@@ -17,27 +17,32 @@ jobs:
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
-      NEXT_PUBLIC_DOCSEARCH_API_KEY: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY }}
-      NEXT_PUBLIC_DOCSEARCH_APP_ID: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID }}
-      NEXT_PUBLIC_DOCSEARCH_INDEX_NAME: ${{ vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME }}
     steps:
       - name: Checkout Source code
         uses: actions/checkout@v4
 
-      - name: Set Env Variables
-        run: |
-          echo "NEXT_PUBLIC_DOCSEARCH_API_KEY=${{secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY}}" >> .env
-          echo "NEXT_PUBLIC_DOCSEARCH_APP_ID=${{secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID}}" >> .env
-          echo "NEXT_PUBLIC_DOCSEARCH_INDEX_NAME=${{vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME}}" >> .env
+      # - name: Set Env Variables
+      #   run: |
+      #     echo "NEXT_PUBLIC_DOCSEARCH_API_KEY=${{secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY}}" >> .env
+      #     echo "NEXT_PUBLIC_DOCSEARCH_APP_ID=${{secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID}}" >> .env
+      #     echo "NEXT_PUBLIC_DOCSEARCH_INDEX_NAME=${{vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME}}" >> .env
 
       - name: Install dependencies
         uses: ./.github/actions/setup
 
       - name: Build Docs
         uses: ./.github/actions/build-docs
+        env:
+          NEXT_PUBLIC_DOCSEARCH_API_KEY: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY }}
+          NEXT_PUBLIC_DOCSEARCH_APP_ID: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID }}
+          NEXT_PUBLIC_DOCSEARCH_INDEX_NAME: ${{ vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME }}
 
       - name: Branch Checks
         uses: ./.github/actions/checks
 
       - name: Build All
         uses: ./.github/actions/build-all
+        env:
+          NEXT_PUBLIC_DOCSEARCH_API_KEY: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY }}
+          NEXT_PUBLIC_DOCSEARCH_APP_ID: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID }}
+          NEXT_PUBLIC_DOCSEARCH_INDEX_NAME: ${{ vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME }}

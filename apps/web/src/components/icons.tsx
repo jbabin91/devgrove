@@ -3,17 +3,16 @@ import {
   CheckIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
+  CircleIcon,
   CopyIcon,
   ExternalLinkIcon,
-  ResetIcon,
-} from '@radix-ui/react-icons';
-import {
+  FileIcon,
+  LaptopIcon,
   MoonIcon,
-  SearchIcon,
-  Settings2Icon,
+  ResetIcon,
   SunIcon,
-  TerminalIcon,
-} from 'lucide-react';
+} from '@radix-ui/react-icons';
+import { SearchIcon, Settings2Icon, TerminalIcon } from 'lucide-react';
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -22,8 +21,11 @@ export const Icons = {
   Check: CheckIcon,
   ChevronLeft: ChevronLeftIcon,
   ChevronRight: ChevronRightIcon,
+  Circle: CircleIcon,
   Copy: CopyIcon,
   ExternalLink: ExternalLinkIcon,
+  File: FileIcon,
+  Laptop: LaptopIcon,
   Menu: (props: IconProps) => (
     <svg
       className="size-5"
