@@ -14,7 +14,6 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@devgrove/ui": "workspace:*",
     "@docsearch/react": "^3.6.1",
     "@internationalized/date": "^3.5.5",
     "@legendapp/state": "3.0.0-alpha.38",
