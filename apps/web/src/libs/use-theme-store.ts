@@ -49,7 +49,7 @@ export const useThemeStore = create<State & Actions>()(
         setStyle: (style) => set(() => ({ style })),
       }),
       {
-        name: 'jolly-ui-theme-store',
+        name: 'dev-grove-ui-theme-store',
         version: 2,
       },
     ),

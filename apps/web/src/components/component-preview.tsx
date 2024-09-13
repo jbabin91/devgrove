@@ -6,7 +6,7 @@ import { Index } from '~/__registry__';
 import { CopyButton, CopyWithClassNames } from '~/components/copy-button';
 import { Icons } from '~/components/icons';
 import { StyleSwitcher } from '~/components/style-switcher';
-import { config$ } from '~/hooks/use-config';
+import { useThemeStore } from '~/libs/use-theme-store';
 import { cn } from '~/libs/utils';
 import { Tab, TabList, TabPanel, Tabs } from '~/registry/default/ui/tabs';
 import { styles } from '~/registry/styles';
@@ -25,7 +25,7 @@ export function ComponentPreview({
   align = 'center',
   ...props
 }: ComponentPreviewProps) {
-  const currentStyle = config$.style.get();
+  const currentStyle = useThemeStore((state) => state.style);
   const index = styles.findIndex((style) => style.name === currentStyle);
 
   const Codes = React.Children.toArray(children) as React.ReactElement[];

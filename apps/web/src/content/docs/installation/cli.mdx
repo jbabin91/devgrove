@@ -1,0 +1,24 @@
+---
+title: CLI
+description: Use the command line to add DevGrove-UI components to your application.
+---
+
+## Add components from CLI
+
+There are two ways to add components to your project using the CLI.
+
+1. Using the `REGISTRY_URL` environment variable. (**Reccommended** as it will follow the shadcn components.json config)
+
+2. Using the components URL. (Note you will need to specify the style, e.g `https://ui.dev-grove.com/new-york/button`)
+
+### Using the `REGISTRY_URL` environment variable
+
+```bash
+REGISTRY_URL=https://ui.dev-grove.com/r npx shadcn@latest add button
+```
+
+### Using the components URL
+
+```bash
+npx shadcn@latest add https://ui.dev-grove.com/default/button
+```

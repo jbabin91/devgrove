@@ -14,8 +14,8 @@ import { ComponentSource } from '~/components/component-source';
 import { CopyButton, CopyNpmCommandButton } from '~/components/copy-button';
 import { FrameworkDocs } from '~/components/framework-docs';
 import { StyleWrapper } from '~/components/style-wrapper';
-import { config$ } from '~/hooks/use-config';
 import { type Event } from '~/libs/events';
+import { useThemeStore } from '~/libs/use-theme-store';
 import { cn } from '~/libs/utils';
 import { Tab, TabList, TabPanel, Tabs } from '~/registry/new-york/ui/tabs';
 import { type Style } from '~/registry/styles';
@@ -351,7 +351,7 @@ type MdxProps = {
 };
 
 export function Mdx({ code }: MdxProps) {
-  const currentStyle = config$.style.get();
+  const currentStyle = useThemeStore((state) => state.style);
   const Component = useMDXComponent(code, {
     style: currentStyle,
   });

@@ -1,4 +1,5 @@
 import '~/styles/globals.css';
+import '@docsearch/css';
 
 import type { Metadata, Viewport } from 'next';
 

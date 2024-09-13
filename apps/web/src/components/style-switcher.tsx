@@ -1,7 +1,7 @@
 'use client';
 
-import { config$ } from '~/hooks/use-config';
 import { useMounted } from '~/hooks/use-mounted';
+import { useThemeStore } from '~/libs/use-theme-store';
 import { cn } from '~/libs/utils';
 import {
   Select,
@@ -14,8 +14,8 @@ import {
 import { type Style, styles } from '~/registry/styles';
 
 export function StyleSwitcher({ className }: { className?: string }) {
-  const currentStyle = config$.style.get();
-  const updateStyle = (style: Style['name']) => config$.style.set(style);
+  const currentStyle = useThemeStore((state) => state.style);
+  const updateStyle = useThemeStore((state) => state.setStyle);
   const mounted = useMounted();
 
   return mounted ? (

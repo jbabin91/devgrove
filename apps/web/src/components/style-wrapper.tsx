@@ -1,4 +1,4 @@
-import { config$ } from '~/hooks/use-config';
+import { useThemeStore } from '~/libs/use-theme-store';
 import { type Style } from '~/registry/styles';
 
 type StyleWrapperProps = {
@@ -6,7 +6,7 @@ type StyleWrapperProps = {
 } & React.HTMLAttributes<HTMLDivElement>;
 
 export function StyleWrapper({ styleName, children }: StyleWrapperProps) {
-  const currentStyle = config$.get().style;
+  const currentStyle = useThemeStore((state) => state.style);
 
   if (!styleName || currentStyle === styleName) {
     return <>{children}</>;

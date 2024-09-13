@@ -6,7 +6,12 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "isolatedModules": false
+    "isolatedModules": false,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    }
   },
   "include": ["./contentlayer/generated", "./scripts/**/*.ts"]
 }

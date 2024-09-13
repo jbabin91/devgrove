@@ -7,7 +7,13 @@ import {
   ExternalLinkIcon,
   ResetIcon,
 } from '@radix-ui/react-icons';
-import { MoonIcon, Settings2Icon, SunIcon, TerminalIcon } from 'lucide-react';
+import {
+  MoonIcon,
+  SearchIcon,
+  Settings2Icon,
+  SunIcon,
+  TerminalIcon,
+} from 'lucide-react';
 
 type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -52,6 +58,7 @@ export const Icons = {
   ),
   Moon: MoonIcon,
   Reset: ResetIcon,
+  Search: SearchIcon,
   Settings2: Settings2Icon,
   Sun: SunIcon,
   Terminal: TerminalIcon,
