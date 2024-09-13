@@ -17,6 +17,9 @@ jobs:
     env:
       TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
       TURBO_TEAM: ${{ vars.TURBO_TEAM }}
+      NEXT_PUBLIC_DOCSEARCH_API_KEY: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY }}
+      NEXT_PUBLIC_DOCSEARCH_APP_ID: ${{ secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID }}
+      NEXT_PUBLIC_DOCSEARCH_INDEX_NAME: ${{ vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME }}
     steps:
       - name: Checkout Source code
         uses: actions/checkout@v4
