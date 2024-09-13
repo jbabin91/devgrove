@@ -30,5 +30,11 @@ jobs:
       - name: Branch Checks
         uses: ./.github/actions/checks
 
+      - name: Set Env Variables
+        run: |
+          echo "NEXT_PUBLIC_DOCSEARCH_API_KEY=${{secrets.NEXT_PUBLIC_DOCSEARCH_API_KEY}}" >> .env
+          echo "NEXT_PUBLIC_DOCSEARCH_APP_ID=${{secrets.NEXT_PUBLIC_DOCSEARCH_APP_ID}}" >> .env
+          echo "NEXT_PUBLIC_DOCSEARCH_INDEX_NAME=${{vars.NEXT_PUBLIC_DOCSEARCH_INDEX_NAME}}" >> .env
+
       - name: Build All
         uses: ./.github/actions/build-all
