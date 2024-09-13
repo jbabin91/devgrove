@@ -57,26 +57,65 @@ export const docsConfig: DocsConfig = {
       ],
       title: 'Installation',
     },
-
     {
       items: [
+        {
+          href: '/docs/components/combobox',
+          items: [],
+          title: 'ComboBox',
+        },
         {
           href: '/docs/components/button',
           items: [],
           title: 'Button',
         },
         {
-          href: '/docs/components/file-trigger',
+          href: '/docs/components/checkbox',
           items: [],
-          title: 'File Trigger',
+          title: 'Checkbox',
+        },
+        {
+          href: '/docs/components/select',
+          items: [],
+          title: 'Select',
+        },
+        {
+          href: '/docs/components/slider',
+          items: [],
+          title: 'Slider',
+        },
+        {
+          href: '/docs/components/switch',
+          items: [],
+          title: 'Switch',
+        },
+        {
+          href: '/docs/components/textfield',
+          items: [],
+          title: 'TextField',
         },
         {
           href: '/docs/components/toggle',
           items: [],
           title: 'Toggle Button',
         },
+        {
+          href: '/docs/components/file-trigger',
+          items: [],
+          title: 'File Trigger',
+        },
       ],
-      title: 'Buttons',
+      title: 'Inputs',
+    },
+    {
+      items: [
+        {
+          href: '/docs/components/badge',
+          items: [],
+          title: 'Badge',
+        },
+      ],
+      title: 'Data Display',
     },
     {
       items: [
@@ -175,11 +214,6 @@ export const docsConfig: DocsConfig = {
     {
       items: [
         {
-          href: '/docs/components/checkbox',
-          items: [],
-          title: 'Checkbox',
-        },
-        {
           href: '/docs/components/checkbox-group',
           items: [],
           title: 'Checkbox Group',
@@ -203,21 +237,6 @@ export const docsConfig: DocsConfig = {
           href: '/docs/components/searchfield',
           items: [],
           title: 'Searchfield',
-        },
-        {
-          href: '/docs/components/slider',
-          items: [],
-          title: 'Slider',
-        },
-        {
-          href: '/docs/components/switch',
-          items: [],
-          title: 'Switch',
-        },
-        {
-          href: '/docs/components/textfield',
-          items: [],
-          title: 'TextField',
         },
       ],
       title: 'Forms',
@@ -270,21 +289,6 @@ export const docsConfig: DocsConfig = {
     {
       items: [
         {
-          href: '/docs/components/combobox',
-          items: [],
-          title: 'ComboBox',
-        },
-        {
-          href: '/docs/components/select',
-          items: [],
-          title: 'Select',
-        },
-      ],
-      title: 'Pickers',
-    },
-    {
-      items: [
-        {
           href: '/docs/components/meter',
           items: [],
           title: 'Meter',
@@ -296,6 +300,16 @@ export const docsConfig: DocsConfig = {
         },
       ],
       title: 'Status',
+    },
+    {
+      items: [
+        {
+          href: '/docs/components/sonner',
+          items: [],
+          title: 'Sonner',
+        },
+      ],
+      title: 'Feedback',
     },
     {
       items: [

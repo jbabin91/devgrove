@@ -15,6 +15,7 @@ import {
 } from '~/libs/fonts';
 import { cn } from '~/libs/utils';
 import { Providers } from '~/providers';
+import { Toaster } from '~/registry/new-york/ui/sonner';
 
 export const metadata: Metadata = {
   authors: [
@@ -105,6 +106,7 @@ export default function RootLayout({
           <div vaul-drawer-wrapper="">
             <div className="relative flex min-h-screen flex-col bg-background">
               {children}
+              <Toaster />
             </div>
           </div>
           <TailwindIndicator />

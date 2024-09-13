@@ -120,6 +120,18 @@ export default async function DocPage({ params }: DocPageProps) {
         </div>
         {doc.links ? (
           <div className="flex items-center space-x-2 pt-4">
+            {doc.links?.ariaDoc ? (
+              <Link
+                className={cn(badgeVariants({ variant: 'secondary' }), 'gap-1')}
+                href={doc.links.ariaDoc}
+                rel="noreferrer"
+                target="_parent"
+              >
+                <Icons.aria className="size-3" />
+                Docs
+                <Icons.ExternalLink className="size-3" />
+              </Link>
+            ) : null}
             {doc.links?.doc ? (
               <Link
                 className={cn(badgeVariants({ variant: 'secondary' }), 'gap-1')}
@@ -127,7 +139,6 @@ export default async function DocPage({ params }: DocPageProps) {
                 rel="noreferrer"
                 target="_parent"
               >
-                <Icons.aria className="size-3" />
                 Docs
                 <Icons.ExternalLink className="size-3" />
               </Link>

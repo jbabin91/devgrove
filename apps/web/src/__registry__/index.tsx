@@ -368,6 +368,50 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "badge-demo": {
+      name: "badge-demo",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/new-york/example/badge/badge-demo.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/example/badge/badge-demo.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-destructive": {
+      name: "badge-destructive",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/new-york/example/badge/badge-destructive.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/example/badge/badge-destructive.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-outline": {
+      name: "badge-outline",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/new-york/example/badge/badge-outline.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/example/badge/badge-outline.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-secondary": {
+      name: "badge-secondary",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/new-york/example/badge/badge-secondary.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/example/badge/badge-secondary.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "breadcrumbs-demo": {
       name: "breadcrumbs-demo",
       type: "registry:example",
@@ -3239,6 +3283,17 @@ export const Index: Record<string, any> = {
       subcategory: "undefined",
       chunks: []
     },
+    "sonner-demo": {
+      name: "sonner-demo",
+      type: "registry:example",
+      registryDependencies: ["sonner"],
+      files: ["src/registry/new-york/example/sonner/sonner-demo.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/example/sonner/sonner-demo.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "group-demo": {
       name: "group-demo",
       type: "registry:example",
@@ -3653,6 +3708,50 @@ export const Index: Record<string, any> = {
       registryDependencies: undefined,
       files: ["src/registry/default/ui/toolbar.tsx"],
       component: React.lazy(() => import("~/registry/default/ui/toolbar.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-demo": {
+      name: "badge-demo",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/default/example/badge/badge-demo.tsx"],
+      component: React.lazy(() => import("~/registry/default/example/badge/badge-demo.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-destructive": {
+      name: "badge-destructive",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/default/example/badge/badge-destructive.tsx"],
+      component: React.lazy(() => import("~/registry/default/example/badge/badge-destructive.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-outline": {
+      name: "badge-outline",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/default/example/badge/badge-outline.tsx"],
+      component: React.lazy(() => import("~/registry/default/example/badge/badge-outline.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "badge-secondary": {
+      name: "badge-secondary",
+      type: "registry:example",
+      registryDependencies: ["badge"],
+      files: ["src/registry/default/example/badge/badge-secondary.tsx"],
+      component: React.lazy(() => import("~/registry/default/example/badge/badge-secondary.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -6524,6 +6623,17 @@ export const Index: Record<string, any> = {
       registryDependencies: ["progress"],
       files: ["src/registry/default/example/progress/progress-reusable.tsx"],
       component: React.lazy(() => import("~/registry/default/example/progress/progress-reusable.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "sonner-demo": {
+      name: "sonner-demo",
+      type: "registry:example",
+      registryDependencies: ["sonner"],
+      files: ["src/registry/default/example/sonner/sonner-demo.tsx"],
+      component: React.lazy(() => import("~/registry/default/example/sonner/sonner-demo.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

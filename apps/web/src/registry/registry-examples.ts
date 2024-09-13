@@ -2,6 +2,30 @@ import { type Registry } from './schema';
 
 export const examples: Registry = [
   {
+    name: 'badge-demo',
+    type: 'registry:example',
+    registryDependencies: ['badge'],
+    files: ['example/badge/badge-demo.tsx'],
+  },
+  {
+    name: 'badge-destructive',
+    type: 'registry:example',
+    registryDependencies: ['badge'],
+    files: ['example/badge/badge-destructive.tsx'],
+  },
+  {
+    name: 'badge-outline',
+    type: 'registry:example',
+    registryDependencies: ['badge'],
+    files: ['example/badge/badge-outline.tsx'],
+  },
+  {
+    name: 'badge-secondary',
+    type: 'registry:example',
+    registryDependencies: ['badge'],
+    files: ['example/badge/badge-secondary.tsx'],
+  },
+  {
     name: 'breadcrumbs-demo',
     type: 'registry:example',
     registryDependencies: ['breadcrumbs'],
@@ -1626,6 +1650,14 @@ export const examples: Registry = [
     type: 'registry:example',
     registryDependencies: ['progress'],
     files: ['example/progress/progress-reusable.tsx'],
+  },
+
+  // Sonner
+  {
+    name: 'sonner-demo',
+    type: 'registry:example',
+    registryDependencies: ['sonner'],
+    files: ['example/sonner/sonner-demo.tsx'],
   },
 
   // Group

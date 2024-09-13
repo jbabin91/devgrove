@@ -31,6 +31,9 @@ const LinksProperties = defineNestedType(() => ({
     api: {
       type: 'string',
     },
+    ariaDoc: {
+      type: 'string',
+    },
     doc: {
       type: 'string',
     },
