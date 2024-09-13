@@ -3,12 +3,12 @@
   "type": "registry:ui",
   "dependencies": ["react-aria-components"],
   "registryDependencies": [
-    "https://jollyui.dev/r/styles/default/field.json",
-    "https://jollyui.dev/r/styles/default/popover.json",
-    "https://jollyui.dev/r/styles/default/button.json",
-    "https://jollyui.dev/r/styles/default/calendar.json",
-    "https://jollyui.dev/r/styles/default/datefield.json",
-    "https://jollyui.dev/r/styles/default/field.json"
+    "https://ui.dev-grove.com/r/styles/default/field.json",
+    "https://ui.dev-grove.com/r/styles/default/popover.json",
+    "https://ui.dev-grove.com/r/styles/default/button.json",
+    "https://ui.dev-grove.com/r/styles/default/calendar.json",
+    "https://ui.dev-grove.com/r/styles/default/datefield.json",
+    "https://ui.dev-grove.com/r/styles/default/field.json"
   ],
   "files": [
     {

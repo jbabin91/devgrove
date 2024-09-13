@@ -1,6 +1,7 @@
 import {
   ArrowRightIcon,
   ArrowUpIcon,
+  BellIcon,
   CalendarIcon,
   CaretDownIcon,
   CaretSortIcon,
@@ -35,6 +36,7 @@ import {
 export const Icons = {
   ArrowRight: ArrowRightIcon,
   ArrowUp: ArrowUpIcon,
+  Bell: BellIcon,
   Calendar: CalendarIcon,
   Check: CheckIcon,
   ChevronDown: CaretDownIcon,

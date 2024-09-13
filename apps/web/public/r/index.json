@@ -1,5 +1,15 @@
 [
   {
+    "name": "badge",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/badge.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
     "name": "breadcrumbs",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
@@ -282,6 +292,17 @@
     "files": [
       {
         "path": "ui/slider.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "sonner",
+    "type": "registry:ui",
+    "dependencies": ["sonner", "next-themes"],
+    "files": [
+      {
+        "path": "ui/sonner.tsx",
         "type": "registry:ui"
       }
     ]

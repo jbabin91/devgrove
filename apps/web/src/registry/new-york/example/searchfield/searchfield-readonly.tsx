@@ -8,7 +8,11 @@ import {
 
 export function SearchFieldReadonly() {
   return (
-    <SearchField isReadOnly className="max-w-[200px]" defaultValue="jolly-ui">
+    <SearchField
+      isReadOnly
+      className="max-w-[200px]"
+      defaultValue="dev-grove-ui"
+    >
       <Label>Search</Label>
       <FieldGroup>
         <Icons.Search

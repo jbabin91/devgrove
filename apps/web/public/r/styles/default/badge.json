@@ -1,0 +1,12 @@
+{
+  "name": "badge",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "ui/badge.tsx",
+      "content": "import { cva, type VariantProps } from 'class-variance-authority';\n\nimport { cn } from '~/libs/utils';\n\n/**\n * Represents the configuration options for the badge variants.\n *\n * @typedef {Object} BadgeVariants\n * @property {string} default - The default variant style.\n * @property {string} secondary - The secondary variant style.\n * @property {string} destructive - The destructive variant style.\n * @property {string} outline - The outline variant style.\n */\nconst badgeVariants = cva(\n  'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',\n  {\n    variants: {\n      variant: {\n        default:\n          'border-transparent bg-primary text-primary-foreground hover:bg-primary/80',\n        secondary:\n          'border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80',\n        destructive:\n          'border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80',\n        outline: 'text-foreground',\n      },\n    },\n    defaultVariants: {\n      variant: 'default',\n    },\n  },\n);\n\n/**\n * Represents the props for the Badge component.\n */\ntype BadgeProps = {} & React.HTMLAttributes<HTMLDivElement> &\n  VariantProps<typeof badgeVariants>;\n\n/**\n * Renders a badge component with the specified variant and children.\n *\n * @param {BadgeProps} props - The props for the Badge component.\n * @param {string} [props.className] - The CSS class name for the badge.\n * @param {string} [props.variant] - The variant of the badge.\n * @param {React.ReactNode} [props.children] - The children to be rendered inside the badge.\n * @returns {JSX.Element} The rendered Badge component.\n */\nfunction Badge({\n  className,\n  variant,\n  children,\n  ...props\n}: BadgeProps): JSX.Element {\n  return (\n    <div className={cn(badgeVariants({ variant }), className)} {...props}>\n      {children}\n    </div>\n  );\n}\n\nexport type { BadgeProps };\nexport { Badge, badgeVariants };\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

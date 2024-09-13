@@ -2,7 +2,9 @@
   "name": "tag-group",
   "type": "registry:ui",
   "dependencies": ["react-aria-components", "class-variance-authority"],
-  "registryDependencies": ["https://jollyui.dev/r/styles/new-york/field.json"],
+  "registryDependencies": [
+    "https://ui.dev-grove.com/r/styles/new-york/field.json"
+  ],
   "files": [
     {
       "path": "ui/tag-group.tsx",

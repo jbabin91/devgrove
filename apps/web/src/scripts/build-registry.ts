@@ -417,7 +417,7 @@ async function buildStyles(registry: Registry) {
           ...item,
           files,
           registryDependencies: item.registryDependencies?.map(
-            (r) => `https://jollyui.dev/r/styles/${style.name}/${r}.json`,
+            (r) => `https://ui.dev-grove.com/r/styles/${style.name}/${r}.json`,
           ),
         });
 

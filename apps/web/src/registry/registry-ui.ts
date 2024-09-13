@@ -2,6 +2,11 @@ import { type Registry } from './schema';
 
 export const ui: Registry = [
   {
+    name: 'badge',
+    type: 'registry:ui',
+    files: ['ui/badge.tsx'],
+  },
+  {
     name: 'breadcrumbs',
     type: 'registry:ui',
     dependencies: ['react-aria-components'],
@@ -167,6 +172,12 @@ export const ui: Registry = [
     dependencies: ['react-aria-components'],
     registryDependencies: ['field'],
     files: ['ui/slider.tsx'],
+  },
+  {
+    name: 'sonner',
+    type: 'registry:ui',
+    dependencies: ['sonner', 'next-themes'],
+    files: ['ui/sonner.tsx'],
   },
   {
     name: 'switch',

@@ -5,6 +5,17 @@ import * as React from "react"
 
 export const Index: Record<string, any> = {
   "new-york": {
+    "badge": {
+      name: "badge",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["src/registry/new-york/ui/badge.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/ui/badge.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "breadcrumbs": {
       name: "breadcrumbs",
       type: "registry:ui",
@@ -264,6 +275,17 @@ export const Index: Record<string, any> = {
       registryDependencies: ["field"],
       files: ["src/registry/new-york/ui/slider.tsx"],
       component: React.lazy(() => import("~/registry/new-york/ui/slider.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "sonner": {
+      name: "sonner",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["src/registry/new-york/ui/sonner.tsx"],
+      component: React.lazy(() => import("~/registry/new-york/ui/sonner.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -3273,6 +3295,17 @@ export const Index: Record<string, any> = {
       chunks: []
     },
   },  "default": {
+    "badge": {
+      name: "badge",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["src/registry/default/ui/badge.tsx"],
+      component: React.lazy(() => import("~/registry/default/ui/badge.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
     "breadcrumbs": {
       name: "breadcrumbs",
       type: "registry:ui",
@@ -3532,6 +3565,17 @@ export const Index: Record<string, any> = {
       registryDependencies: ["field"],
       files: ["src/registry/default/ui/slider.tsx"],
       component: React.lazy(() => import("~/registry/default/ui/slider.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "sonner": {
+      name: "sonner",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["src/registry/default/ui/sonner.tsx"],
+      component: React.lazy(() => import("~/registry/default/ui/sonner.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",

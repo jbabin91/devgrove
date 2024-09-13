@@ -6,15 +6,13 @@ import {
   type CheckboxGroupProps as AriaCheckboxGroupProps,
   type CheckboxProps as AriaCheckboxProps,
   composeRenderProps,
-  FieldError,
-  Label,
   Text,
   type ValidationResult as AriaValidationResult,
 } from 'react-aria-components';
 
 import { cn } from '~/libs/utils';
 
-import { labelVariants } from './field';
+import { FieldError, Label, labelVariants } from './field';
 import { Icons } from './icons';
 
 /**
@@ -51,7 +49,21 @@ function Checkbox({
     >
       {composeRenderProps(children, (children, renderProps) => (
         <>
-          <div>
+          <div
+            className={cn(
+              'flex size-4 shrink-0 items-center justify-center rounded-sm border border-primary text-current ring-offset-background',
+              /* Focus Visible */
+              'group-data-[focus-visible]:outline-none group-data-[focus-visible]:ring-2 group-data-[focus-visible]:ring-ring group-data-[focus-visible]:ring-offset-2',
+              /* Selected */
+              'group-data-[indeterminate]:bg-primary group-data-[selected]:bg-primary group-data-[indeterminate]:text-primary-foreground  group-data-[selected]:text-primary-foreground',
+              /* Disabled */
+              'group-data-[disabled]:cursor-not-allowed group-data-[disabled]:opacity-50',
+              /* Invalid */
+              'group-data-[invalid]:border-destructive group-data-[invalid]:group-data-[selected]:bg-destructive group-data-[invalid]:group-data-[selected]:text-destructive-foreground',
+              /* Resets */
+              'focus-visible:outline-none',
+            )}
+          >
             {renderProps.isIndeterminate ? (
               <Icons.Minus className="size-4" />
             ) : renderProps.isSelected ? (

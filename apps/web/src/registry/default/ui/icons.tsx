@@ -1,4 +1,5 @@
 import {
+  BellRingIcon,
   BoldIcon,
   BrushIcon,
   CalendarIcon,
@@ -35,6 +36,7 @@ import {
  * Represents a collection of icons.
  */
 export const Icons = {
+  BellRing: BellRingIcon,
   Brush: BrushIcon,
   Calendar: CalendarIcon,
   Check: CheckIcon,

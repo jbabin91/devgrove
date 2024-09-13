@@ -4,12 +4,8 @@ import {
   Button as AriaButton,
   type ButtonProps as AriaButtonProps,
   composeRenderProps,
-  FieldError,
-  Label,
   ListBox as AriaListBox,
-  ListBoxItem,
   type ListBoxProps as AriaListBoxProps,
-  Popover,
   type PopoverProps as AriaPopoverProps,
   Select as AriaSelect,
   type SelectProps as AriaSelectProps,
@@ -21,8 +17,15 @@ import {
 
 import { cn } from '~/libs/utils';
 
+import { FieldError, Label } from './field';
 import { Icons } from './icons';
-import { ListBoxCollection, ListBoxHeader, ListBoxSection } from './list-box';
+import {
+  ListBoxCollection,
+  ListBoxHeader,
+  ListBoxItem,
+  ListBoxSection,
+} from './list-box';
+import { Popover } from './popover';
 
 /**
  * A custom select component.

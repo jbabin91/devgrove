@@ -3,9 +3,9 @@
   "type": "registry:ui",
   "dependencies": ["react-aria-components", "class-variance-authority"],
   "registryDependencies": [
-    "https://jollyui.dev/r/styles/default/button.json",
-    "https://jollyui.dev/r/styles/default/list-box.json",
-    "https://jollyui.dev/r/styles/default/select.json"
+    "https://ui.dev-grove.com/r/styles/default/button.json",
+    "https://ui.dev-grove.com/r/styles/default/list-box.json",
+    "https://ui.dev-grove.com/r/styles/default/select.json"
   ],
   "files": [
     {
