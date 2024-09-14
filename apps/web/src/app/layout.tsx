@@ -3,6 +3,7 @@ import '@docsearch/css';
 
 import type { Metadata, Viewport } from 'next';
 
+import { Analytics } from '~/components/analytics';
 import { TailwindIndicator } from '~/components/tailwind-indicator';
 import { siteConfig } from '~/config/site';
 import {
@@ -106,6 +107,7 @@ export default function RootLayout({
           <div vaul-drawer-wrapper="">
             <div className="relative flex min-h-screen flex-col bg-background">
               {children}
+              <Analytics />
               <Toaster />
             </div>
           </div>
