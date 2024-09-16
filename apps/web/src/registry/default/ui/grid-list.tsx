@@ -9,7 +9,7 @@ import {
   type GridListProps as AriaGridListProps,
 } from 'react-aria-components';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 
 import { Checkbox } from './checkbox';
 import { Icons } from './icons';

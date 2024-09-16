@@ -13,7 +13,7 @@
     "name": "breadcrumbs",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["button"],
+    "registryDependencies": ["icons"],
     "files": [
       {
         "path": "ui/breadcrumbs.tsx",
@@ -25,6 +25,7 @@
     "name": "button",
     "type": "registry:ui",
     "dependencies": ["react-aria-components", "class-variance-authority"],
+    "registryDependencies": ["icons"],
     "files": [
       {
         "path": "ui/button.tsx",
@@ -36,7 +37,7 @@
     "name": "calendar",
     "type": "registry:ui",
     "dependencies": ["react-aria-components", "@internationalized/date"],
-    "registryDependencies": ["button"],
+    "registryDependencies": ["button", "icons"],
     "files": [
       {
         "path": "ui/calendar.tsx",
@@ -48,7 +49,7 @@
     "name": "checkbox",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["field"],
+    "registryDependencies": ["field", "icons"],
     "files": [
       {
         "path": "ui/checkbox.tsx",
@@ -71,7 +72,7 @@
     "name": "combobox",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["field", "popover", "button", "list-box"],
+    "registryDependencies": ["field", "popover", "button", "list-box", "icons"],
     "files": [
       {
         "path": "ui/combobox.tsx",
@@ -89,7 +90,8 @@
       "button",
       "calendar",
       "datefield",
-      "field"
+      "field",
+      "icons"
     ],
     "files": [
       {
@@ -114,6 +116,7 @@
     "name": "dialog",
     "type": "registry:ui",
     "dependencies": ["react-aria-components", "class-variance-authority"],
+    "registryDependencies": ["icons"],
     "files": [
       {
         "path": "ui/dialog.tsx",
@@ -147,10 +150,20 @@
     "name": "grid-list",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["checkbox"],
+    "registryDependencies": ["checkbox", "icons"],
     "files": [
       {
         "path": "ui/grid-list.tsx",
+        "type": "registry:ui"
+      }
+    ]
+  },
+  {
+    "name": "icons",
+    "type": "registry:ui",
+    "files": [
+      {
+        "path": "ui/icons.tsx",
         "type": "registry:ui"
       }
     ]
@@ -171,6 +184,7 @@
     "name": "list-box",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
+    "registryDependencies": ["icons"],
     "files": [
       {
         "path": "ui/list-box.tsx",
@@ -182,7 +196,7 @@
     "name": "menu",
     "type": "registry:ui",
     "dependencies": ["react-aria-components", "class-variance-authority"],
-    "registryDependencies": ["button", "list-box", "select"],
+    "registryDependencies": ["button", "list-box", "select", "icons"],
     "files": [
       {
         "path": "ui/menu.tsx",
@@ -206,7 +220,7 @@
     "name": "numberfield",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["field", "button"],
+    "registryDependencies": ["field", "button", "icons"],
     "files": [
       {
         "path": "ui/numberfield.tsx",
@@ -241,7 +255,7 @@
     "name": "radio-group",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["field"],
+    "registryDependencies": ["field", "icons"],
     "files": [
       {
         "path": "ui/radio-group.tsx",
@@ -253,7 +267,7 @@
     "name": "searchfield",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["field"],
+    "registryDependencies": ["field", "icons"],
     "files": [
       {
         "path": "ui/searchfield.tsx",
@@ -265,7 +279,7 @@
     "name": "select",
     "type": "registry:ui",
     "dependencies": ["react-aria-components"],
-    "registryDependencies": ["field", "popover"],
+    "registryDependencies": ["field", "popover", "icons"],
     "files": [
       {
         "path": "ui/select.tsx",
@@ -333,7 +347,7 @@
     "name": "tag-group",
     "type": "registry:ui",
     "dependencies": ["react-aria-components", "class-variance-authority"],
-    "registryDependencies": ["field"],
+    "registryDependencies": ["field", "icons"],
     "files": [
       {
         "path": "ui/tag-group.tsx",

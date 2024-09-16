@@ -1,0 +1,12 @@
+{
+  "name": "icons",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "ui/icons.tsx",
+      "content": "import {\n  ArrowRightIcon,\n  ArrowUpIcon,\n  BellIcon,\n  CalendarIcon,\n  CaretDownIcon,\n  CaretSortIcon,\n  CaretUpIcon,\n  CheckIcon,\n  ChevronLeftIcon,\n  ChevronRightIcon,\n  Cross2Icon,\n  CursorArrowIcon,\n  DotFilledIcon,\n  DotsHorizontalIcon,\n  DragHandleHorizontalIcon,\n  EnvelopeOpenIcon,\n  FontBoldIcon,\n  MagicWandIcon,\n  MagnifyingGlassIcon,\n  MinusIcon,\n  MoonIcon,\n  MoveIcon,\n  Pencil1Icon,\n  Pencil2Icon,\n  PlusIcon,\n  ReloadIcon,\n  SlashIcon,\n  SunIcon,\n  UnderlineIcon,\n} from '@radix-ui/react-icons';\n\n/**\n * Represents a collection of icons.\n */\nexport const Icons = {\n  ArrowRight: ArrowRightIcon,\n  ArrowUp: ArrowUpIcon,\n  Bell: BellIcon,\n  Calendar: CalendarIcon,\n  Check: CheckIcon,\n  ChevronDown: CaretDownIcon,\n  ChevronLeft: ChevronLeftIcon,\n  ChevronRight: ChevronRightIcon,\n  ChevronsUpDown: CaretSortIcon,\n  ChevronUp: CaretUpIcon,\n  Close: Cross2Icon,\n  CursorArrow: CursorArrowIcon,\n  DotFilled: DotFilledIcon,\n  EnvelopeOpen: EnvelopeOpenIcon,\n  FontBold: FontBoldIcon,\n  FontItalic: FontBoldIcon,\n  GripHorizontal: DotsHorizontalIcon,\n  MagicWand: MagicWandIcon,\n  Minus: MinusIcon,\n  Moon: MoonIcon,\n  MoreHorizontal: DragHandleHorizontalIcon,\n  Move: MoveIcon,\n  Pencil1: Pencil1Icon,\n  Pencil2: Pencil2Icon,\n  Plus: PlusIcon,\n  Reload: ReloadIcon,\n  Search: MagnifyingGlassIcon,\n  Slash: SlashIcon,\n  Sun: SunIcon,\n  Underline: UnderlineIcon,\n};\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

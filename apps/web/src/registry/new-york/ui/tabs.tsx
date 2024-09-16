@@ -12,7 +12,7 @@ import {
   type TabsProps as AriaTabsProps,
 } from 'react-aria-components';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 
 /**
  * Renders a set of tabs.

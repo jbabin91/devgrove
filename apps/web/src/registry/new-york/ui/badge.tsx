@@ -1,6 +1,6 @@
 import { cva, type VariantProps } from 'class-variance-authority';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 
 /**
  * Represents the configuration options for the badge variants.

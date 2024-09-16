@@ -3,7 +3,7 @@
 import * as React from 'react';
 
 import { CopyButton, CopyWithClassNames } from '@/components/copy-button';
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 import { Tab, TabList, TabPanel, Tabs } from '@/registry/new-york/ui/tabs';
 
 type ComponentExampleProps = {

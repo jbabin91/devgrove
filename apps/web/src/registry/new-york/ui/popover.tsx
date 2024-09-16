@@ -9,7 +9,7 @@ import {
   type PopoverProps as AriaPopoverProps,
 } from 'react-aria-components';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 
 /**
  * Represents a popover trigger component.

@@ -3,7 +3,7 @@
 import { usePathname } from 'next/navigation';
 import { Link } from 'react-aria-components';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 import { type SidebarNavItem } from '@/types/nav';
 
 export type DocsSidebarNavProps = {

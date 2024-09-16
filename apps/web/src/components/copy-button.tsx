@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useState } from 'react';
 
 import { Icons } from '@/components/icons';
-import { type Event, trackEvent } from '@/libs/events';
-import { cn } from '@/libs/utils';
+import { type Event, trackEvent } from '@/lib/events';
+import { cn } from '@/lib/utils';
 import { Button, type ButtonProps } from '@/registry/new-york/ui/button';
 import {
   Menu,

@@ -2,7 +2,7 @@
 
 import { useMounted } from '@/hooks/use-mounted';
 import { useThemeStore } from '@/hooks/use-theme-store';
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 import {
   Select,
   SelectItem,

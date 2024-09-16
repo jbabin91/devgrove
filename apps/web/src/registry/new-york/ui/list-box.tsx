@@ -11,7 +11,7 @@ import {
   Section as AriaSection,
 } from 'react-aria-components';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 
 import { Icons } from './icons';
 

@@ -11,8 +11,8 @@ import { Mdx } from '@/components/mdx-components';
 import { DocsPager } from '@/components/pager';
 import { DashboardTableOfContents } from '@/components/toc';
 import { siteConfig } from '@/config/site';
-import { getTableOfContents } from '@/libs/toc';
-import { absoluteUrl, cn } from '@/libs/utils';
+import { getTableOfContents } from '@/lib/toc';
+import { absoluteUrl, cn } from '@/lib/utils';
 import { badgeVariants } from '@/registry/new-york/ui/badge';
 import {
   BreadcrumbItem,

@@ -1,0 +1,12 @@
+{
+  "name": "icons",
+  "type": "registry:ui",
+  "files": [
+    {
+      "path": "ui/icons.tsx",
+      "content": "import {\n  BellRingIcon,\n  BoldIcon,\n  BrushIcon,\n  CalendarIcon,\n  CheckIcon,\n  ChevronDownIcon,\n  ChevronLeftIcon,\n  ChevronRightIcon,\n  ChevronsUpDownIcon,\n  ChevronUpIcon,\n  CircleIcon,\n  GripHorizontalIcon,\n  ItalicIcon,\n  LassoSelectIcon,\n  LoaderCircleIcon,\n  MailOpenIcon,\n  MinusIcon,\n  MoonIcon,\n  MoreHorizontalIcon,\n  MousePointer2Icon,\n  MoveIcon,\n  MoveRightIcon,\n  MoveUpIcon,\n  PencilIcon,\n  PipetteIcon,\n  PlusIcon,\n  SearchIcon,\n  SlashIcon,\n  SunIcon,\n  UnderlineIcon,\n  XIcon,\n} from 'lucide-react';\n\n/**\n * Represents a collection of icons.\n */\nexport const Icons = {\n  BellRing: BellRingIcon,\n  Brush: BrushIcon,\n  Calendar: CalendarIcon,\n  Check: CheckIcon,\n  ChevronDown: ChevronDownIcon,\n  ChevronLeft: ChevronLeftIcon,\n  ChevronRight: ChevronRightIcon,\n  ChevronsUpDown: ChevronsUpDownIcon,\n  ChevronUp: ChevronUpIcon,\n  Circle: CircleIcon,\n  Close: XIcon,\n  FontBold: BoldIcon,\n  FontItalic: ItalicIcon,\n  GripHorizontal: GripHorizontalIcon,\n  LassoSelect: LassoSelectIcon,\n  MailOpen: MailOpenIcon,\n  Minus: MinusIcon,\n  Moon: MoonIcon,\n  MoreHorizontal: MoreHorizontalIcon,\n  MousePointer2: MousePointer2Icon,\n  Move: MoveIcon,\n  MoveRight: MoveRightIcon,\n  MoveUp: MoveUpIcon,\n  Pencil: PencilIcon,\n  Pipette: PipetteIcon,\n  Plus: PlusIcon,\n  Reload: LoaderCircleIcon,\n  Search: SearchIcon,\n  Slash: SlashIcon,\n  Sun: SunIcon,\n  Underline: UnderlineIcon,\n};\n",
+      "type": "registry:ui",
+      "target": ""
+    }
+  ]
+}

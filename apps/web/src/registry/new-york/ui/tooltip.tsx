@@ -7,7 +7,7 @@ import {
   TooltipTrigger as AriaTooltipTrigger,
 } from 'react-aria-components';
 
-import { cn } from '@/libs/utils';
+import { cn } from '@/lib/utils';
 
 /**
  * TooltipTrigger component is used to trigger a tooltip.

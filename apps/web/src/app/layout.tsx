@@ -13,8 +13,8 @@ import {
   fontOutfit,
   fontRaleway,
   fontSans,
-} from '@/libs/fonts';
-import { cn } from '@/libs/utils';
+} from '@/lib/fonts';
+import { cn } from '@/lib/utils';
 import { Providers } from '@/providers';
 import { Toaster } from '@/registry/new-york/ui/sonner';
 

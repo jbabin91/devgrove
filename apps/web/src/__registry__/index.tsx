@@ -19,7 +19,7 @@ export const Index: Record<string, any> = {
     "breadcrumbs": {
       name: "breadcrumbs",
       type: "registry:ui",
-      registryDependencies: ["button"],
+      registryDependencies: ["icons"],
       files: ["src/registry/new-york/ui/breadcrumbs.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/breadcrumbs.tsx")),
       source: "",
@@ -30,7 +30,7 @@ export const Index: Record<string, any> = {
     "button": {
       name: "button",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["icons"],
       files: ["src/registry/new-york/ui/button.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/button.tsx")),
       source: "",
@@ -41,7 +41,7 @@ export const Index: Record<string, any> = {
     "calendar": {
       name: "calendar",
       type: "registry:ui",
-      registryDependencies: ["button"],
+      registryDependencies: ["button","icons"],
       files: ["src/registry/new-york/ui/calendar.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/calendar.tsx")),
       source: "",
@@ -52,7 +52,7 @@ export const Index: Record<string, any> = {
     "checkbox": {
       name: "checkbox",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/new-york/ui/checkbox.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/checkbox.tsx")),
       source: "",
@@ -74,7 +74,7 @@ export const Index: Record<string, any> = {
     "combobox": {
       name: "combobox",
       type: "registry:ui",
-      registryDependencies: ["field","popover","button","list-box"],
+      registryDependencies: ["field","popover","button","list-box","icons"],
       files: ["src/registry/new-york/ui/combobox.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/combobox.tsx")),
       source: "",
@@ -85,7 +85,7 @@ export const Index: Record<string, any> = {
     "date-picker": {
       name: "date-picker",
       type: "registry:ui",
-      registryDependencies: ["field","popover","button","calendar","datefield","field"],
+      registryDependencies: ["field","popover","button","calendar","datefield","field","icons"],
       files: ["src/registry/new-york/ui/date-picker.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/date-picker.tsx")),
       source: "",
@@ -107,7 +107,7 @@ export const Index: Record<string, any> = {
     "dialog": {
       name: "dialog",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["icons"],
       files: ["src/registry/new-york/ui/dialog.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/dialog.tsx")),
       source: "",
@@ -140,9 +140,20 @@ export const Index: Record<string, any> = {
     "grid-list": {
       name: "grid-list",
       type: "registry:ui",
-      registryDependencies: ["checkbox"],
+      registryDependencies: ["checkbox","icons"],
       files: ["src/registry/new-york/ui/grid-list.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/grid-list.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "icons": {
+      name: "icons",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["src/registry/new-york/ui/icons.tsx"],
+      component: React.lazy(() => import("@/registry/new-york/ui/icons.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -162,7 +173,7 @@ export const Index: Record<string, any> = {
     "list-box": {
       name: "list-box",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["icons"],
       files: ["src/registry/new-york/ui/list-box.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/list-box.tsx")),
       source: "",
@@ -173,7 +184,7 @@ export const Index: Record<string, any> = {
     "menu": {
       name: "menu",
       type: "registry:ui",
-      registryDependencies: ["button","list-box","select"],
+      registryDependencies: ["button","list-box","select","icons"],
       files: ["src/registry/new-york/ui/menu.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/menu.tsx")),
       source: "",
@@ -195,7 +206,7 @@ export const Index: Record<string, any> = {
     "numberfield": {
       name: "numberfield",
       type: "registry:ui",
-      registryDependencies: ["field","button"],
+      registryDependencies: ["field","button","icons"],
       files: ["src/registry/new-york/ui/numberfield.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/numberfield.tsx")),
       source: "",
@@ -228,7 +239,7 @@ export const Index: Record<string, any> = {
     "radio-group": {
       name: "radio-group",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/new-york/ui/radio-group.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/radio-group.tsx")),
       source: "",
@@ -239,7 +250,7 @@ export const Index: Record<string, any> = {
     "searchfield": {
       name: "searchfield",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/new-york/ui/searchfield.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/searchfield.tsx")),
       source: "",
@@ -250,7 +261,7 @@ export const Index: Record<string, any> = {
     "select": {
       name: "select",
       type: "registry:ui",
-      registryDependencies: ["field","popover"],
+      registryDependencies: ["field","popover","icons"],
       files: ["src/registry/new-york/ui/select.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/select.tsx")),
       source: "",
@@ -316,7 +327,7 @@ export const Index: Record<string, any> = {
     "tag-group": {
       name: "tag-group",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/new-york/ui/tag-group.tsx"],
       component: React.lazy(() => import("@/registry/new-york/ui/tag-group.tsx")),
       source: "",
@@ -3364,7 +3375,7 @@ export const Index: Record<string, any> = {
     "breadcrumbs": {
       name: "breadcrumbs",
       type: "registry:ui",
-      registryDependencies: ["button"],
+      registryDependencies: ["icons"],
       files: ["src/registry/default/ui/breadcrumbs.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/breadcrumbs.tsx")),
       source: "",
@@ -3375,7 +3386,7 @@ export const Index: Record<string, any> = {
     "button": {
       name: "button",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["icons"],
       files: ["src/registry/default/ui/button.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/button.tsx")),
       source: "",
@@ -3386,7 +3397,7 @@ export const Index: Record<string, any> = {
     "calendar": {
       name: "calendar",
       type: "registry:ui",
-      registryDependencies: ["button"],
+      registryDependencies: ["button","icons"],
       files: ["src/registry/default/ui/calendar.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/calendar.tsx")),
       source: "",
@@ -3397,7 +3408,7 @@ export const Index: Record<string, any> = {
     "checkbox": {
       name: "checkbox",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/default/ui/checkbox.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/checkbox.tsx")),
       source: "",
@@ -3419,7 +3430,7 @@ export const Index: Record<string, any> = {
     "combobox": {
       name: "combobox",
       type: "registry:ui",
-      registryDependencies: ["field","popover","button","list-box"],
+      registryDependencies: ["field","popover","button","list-box","icons"],
       files: ["src/registry/default/ui/combobox.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/combobox.tsx")),
       source: "",
@@ -3430,7 +3441,7 @@ export const Index: Record<string, any> = {
     "date-picker": {
       name: "date-picker",
       type: "registry:ui",
-      registryDependencies: ["field","popover","button","calendar","datefield","field"],
+      registryDependencies: ["field","popover","button","calendar","datefield","field","icons"],
       files: ["src/registry/default/ui/date-picker.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/date-picker.tsx")),
       source: "",
@@ -3452,7 +3463,7 @@ export const Index: Record<string, any> = {
     "dialog": {
       name: "dialog",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["icons"],
       files: ["src/registry/default/ui/dialog.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/dialog.tsx")),
       source: "",
@@ -3485,9 +3496,20 @@ export const Index: Record<string, any> = {
     "grid-list": {
       name: "grid-list",
       type: "registry:ui",
-      registryDependencies: ["checkbox"],
+      registryDependencies: ["checkbox","icons"],
       files: ["src/registry/default/ui/grid-list.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/grid-list.tsx")),
+      source: "",
+      category: "undefined",
+      subcategory: "undefined",
+      chunks: []
+    },
+    "icons": {
+      name: "icons",
+      type: "registry:ui",
+      registryDependencies: undefined,
+      files: ["src/registry/default/ui/icons.tsx"],
+      component: React.lazy(() => import("@/registry/default/ui/icons.tsx")),
       source: "",
       category: "undefined",
       subcategory: "undefined",
@@ -3507,7 +3529,7 @@ export const Index: Record<string, any> = {
     "list-box": {
       name: "list-box",
       type: "registry:ui",
-      registryDependencies: undefined,
+      registryDependencies: ["icons"],
       files: ["src/registry/default/ui/list-box.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/list-box.tsx")),
       source: "",
@@ -3518,7 +3540,7 @@ export const Index: Record<string, any> = {
     "menu": {
       name: "menu",
       type: "registry:ui",
-      registryDependencies: ["button","list-box","select"],
+      registryDependencies: ["button","list-box","select","icons"],
       files: ["src/registry/default/ui/menu.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/menu.tsx")),
       source: "",
@@ -3540,7 +3562,7 @@ export const Index: Record<string, any> = {
     "numberfield": {
       name: "numberfield",
       type: "registry:ui",
-      registryDependencies: ["field","button"],
+      registryDependencies: ["field","button","icons"],
       files: ["src/registry/default/ui/numberfield.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/numberfield.tsx")),
       source: "",
@@ -3573,7 +3595,7 @@ export const Index: Record<string, any> = {
     "radio-group": {
       name: "radio-group",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/default/ui/radio-group.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/radio-group.tsx")),
       source: "",
@@ -3584,7 +3606,7 @@ export const Index: Record<string, any> = {
     "searchfield": {
       name: "searchfield",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/default/ui/searchfield.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/searchfield.tsx")),
       source: "",
@@ -3595,7 +3617,7 @@ export const Index: Record<string, any> = {
     "select": {
       name: "select",
       type: "registry:ui",
-      registryDependencies: ["field","popover"],
+      registryDependencies: ["field","popover","icons"],
       files: ["src/registry/default/ui/select.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/select.tsx")),
       source: "",
@@ -3661,7 +3683,7 @@ export const Index: Record<string, any> = {
     "tag-group": {
       name: "tag-group",
       type: "registry:ui",
-      registryDependencies: ["field"],
+      registryDependencies: ["field","icons"],
       files: ["src/registry/default/ui/tag-group.tsx"],
       component: React.lazy(() => import("@/registry/default/ui/tag-group.tsx")),
       source: "",
