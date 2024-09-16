@@ -1,4 +1,4 @@
-import { Label } from '~/registry/default/ui/field';
+import { Label } from '@/registry/default/ui/field';
 import {
   Select,
   SelectItem,
@@ -6,7 +6,7 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/default/ui/select';
+} from '@/registry/default/ui/select';
 
 export function SelectContent() {
   const options = [

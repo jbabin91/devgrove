@@ -1,12 +1,12 @@
 import { Text } from 'react-aria-components';
 
-import { FieldGroup, Label } from '~/registry/new-york/ui/field';
-import { Icons } from '~/registry/new-york/ui/icons';
+import { FieldGroup, Label } from '@/registry/new-york/ui/field';
+import { Icons } from '@/registry/new-york/ui/icons';
 import {
   SearchField,
   SearchFieldClear,
   SearchFieldInput,
-} from '~/registry/new-york/ui/searchfield';
+} from '@/registry/new-york/ui/searchfield';
 
 export function SearchFieldDescription() {
   return (

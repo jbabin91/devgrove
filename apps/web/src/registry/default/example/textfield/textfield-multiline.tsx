@@ -1,5 +1,5 @@
-import { Label } from '~/registry/default/ui/field';
-import { TextArea, TextField } from '~/registry/default/ui/textfield';
+import { Label } from '@/registry/default/ui/field';
+import { TextArea, TextField } from '@/registry/default/ui/textfield';
 
 export function TextFieldMultiline() {
   return (

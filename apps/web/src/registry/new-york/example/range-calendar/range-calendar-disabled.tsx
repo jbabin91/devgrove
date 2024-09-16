@@ -6,7 +6,7 @@ import {
   CalendarHeaderCell,
   CalendarHeading,
   RangeCalendar,
-} from '~/registry/new-york/ui/calendar';
+} from '@/registry/new-york/ui/calendar';
 
 export function RangeCalendarDisabled() {
   return (

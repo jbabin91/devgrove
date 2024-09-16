@@ -7,7 +7,7 @@ import {
   type ToggleButtonProps as AriaToggleButtonProps,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 /**
  * Represents the configuration options for the toggle component.

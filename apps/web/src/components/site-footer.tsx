@@ -2,7 +2,7 @@
 
 import { Link } from 'react-aria-components';
 
-import { siteConfig } from '~/config/site';
+import { siteConfig } from '@/config/site';
 
 export function SiteFooter() {
   return (

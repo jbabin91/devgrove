@@ -1,9 +1,9 @@
-import { FieldGroup, Label } from '~/registry/new-york/ui/field';
+import { FieldGroup, Label } from '@/registry/new-york/ui/field';
 import {
   NumberField,
   NumberFieldInput,
   NumberFieldSteppers,
-} from '~/registry/new-york/ui/numberfield';
+} from '@/registry/new-york/ui/numberfield';
 
 export function NumberFieldDisabled() {
   return (

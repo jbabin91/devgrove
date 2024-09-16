@@ -5,7 +5,7 @@ import {
   BreadcrumbPage,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/default/ui/breadcrumbs';
+} from '@/registry/default/ui/breadcrumbs';
 
 export function BreadcrumbsEllipsis() {
   return (

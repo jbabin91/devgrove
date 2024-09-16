@@ -9,17 +9,17 @@ import { rimraf } from 'rimraf';
 import { Project, ScriptKind, SyntaxKind } from 'ts-morph';
 import { type z } from 'zod';
 
-import { registry } from '~/registry';
-import { baseColors } from '~/registry/registry-base-colors';
-import { colorMapping, colors } from '~/registry/registry-colors';
-import { styles } from '~/registry/registry-styles';
+import { registry } from '@/registry';
+import { baseColors } from '@/registry/registry-base-colors';
+import { colorMapping, colors } from '@/registry/registry-colors';
+import { styles } from '@/registry/registry-styles';
 import {
   type Registry,
   type RegistryEntry,
   registryEntrySchema,
   type registryItemTypeSchema,
   registrySchema,
-} from '~/registry/schema';
+} from '@/registry/schema';
 
 const REGISTRY_PATH = path.join(process.cwd(), 'public/r');
 
@@ -27,7 +27,7 @@ const REGISTRY_INDEX_WHITELIST = new Set<
   z.infer<typeof registryItemTypeSchema>
 >([
   'registry:ui',
-  'registry:libs',
+  'registry:lib',
   'registry:hook',
   'registry:theme',
   'registry:block',
@@ -85,8 +85,8 @@ export const Index: Record<string, any> = {
       let chunks: Chunk[] = [];
       if (item.type === 'registry:block') {
         const file = resolveFiles[0];
-        const filename = path.basename(file!);
-        const raw = await fs.readFile(file!, 'utf8');
+        const filename = path.basename(file ?? '');
+        const raw = await fs.readFile(file ?? '', 'utf8');
         const tempFile = await createTempSourceFile(filename);
         const sourceFile = project.createSourceFile(tempFile, raw, {
           scriptKind: ScriptKind.TSX,
@@ -234,7 +234,7 @@ export const Index: Record<string, any> = {
             await fs.writeFile(targetFilePath, code, 'utf8');
 
             return {
-              component: `React.lazy(() => import("~/registry/${style.name}/${type}/${chunkName}")),`,
+              component: `React.lazy(() => import("@/registry/${style.name}/${type}/${chunkName}")),`,
               container: {
                 className: containerClassName,
               },
@@ -268,7 +268,7 @@ export const Index: Record<string, any> = {
         await fs.writeFile(sourcePath, sourceFile.getText());
       }
 
-      let componentPath = `~/registry/${style.name}/${type}/${item.name}`;
+      let componentPath = `@/registry/${style.name}/${type}/${item.name}`;
 
       if (item.files) {
         const files = item.files.map((file) =>
@@ -277,7 +277,7 @@ export const Index: Record<string, any> = {
             : file,
         );
         if (files?.length) {
-          componentPath = `~/registry/${style.name}/${files[0]?.path}`;
+          componentPath = `@/registry/${style.name}/${files[0]?.path}`;
         }
       }
 

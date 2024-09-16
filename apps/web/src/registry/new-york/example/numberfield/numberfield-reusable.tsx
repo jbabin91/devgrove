@@ -1,4 +1,4 @@
-import { GroveNumberField } from '~/registry/new-york/ui/numberfield';
+import { GroveNumberField } from '@/registry/new-york/ui/numberfield';
 
 export function NumberfieldReusable() {
   return (

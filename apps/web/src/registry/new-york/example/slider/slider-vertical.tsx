@@ -3,7 +3,7 @@ import {
   SliderFillTrack,
   SliderThumb,
   SliderTrack,
-} from '~/registry/new-york/ui/slider';
+} from '@/registry/new-york/ui/slider';
 
 export function SliderVertical() {
   return (

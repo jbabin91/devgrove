@@ -1,11 +1,11 @@
-import { Label } from '~/registry/new-york/ui/field';
+import { Label } from '@/registry/new-york/ui/field';
 import {
   Slider,
   SliderFillTrack,
   SliderOutput,
   SliderThumb,
   SliderTrack,
-} from '~/registry/new-york/ui/slider';
+} from '@/registry/new-york/ui/slider';
 
 export function SliderValues() {
   return (

@@ -4,8 +4,8 @@ import {
   BreadcrumbPage,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/default/ui/breadcrumbs';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/breadcrumbs';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function BreadcrumbsSeparator() {
   return (

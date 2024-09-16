@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { Label } from '~/registry/default/ui/field';
-import { Meter } from '~/registry/default/ui/meter';
+import { Label } from '@/registry/default/ui/field';
+import { Meter } from '@/registry/default/ui/meter';
 
 export function MeterDemo() {
   const [progress, setProgress] = useState(13);

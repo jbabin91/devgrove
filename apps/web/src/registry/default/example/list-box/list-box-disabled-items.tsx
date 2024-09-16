@@ -1,4 +1,4 @@
-import { ListBox, ListBoxItem } from '~/registry/default/ui/list-box';
+import { ListBox, ListBoxItem } from '@/registry/default/ui/list-box';
 
 export function ListBoxDisabledItems() {
   return (

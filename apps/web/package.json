@@ -52,7 +52,7 @@
     "jiti": "^1.21.6",
     "lodash.template": "^4.5.0",
     "mdast-util-toc": "^7.1.0",
-    "postcss": "^8.4.45",
+    "postcss": "^8.4.47",
     "postcss-load-config": "^6.0.1",
     "rehype": "^13.0.1",
     "rehype-autolink-headings": "^7.1.0",

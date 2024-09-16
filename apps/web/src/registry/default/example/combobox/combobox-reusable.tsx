@@ -1,4 +1,4 @@
-import { ComboboxItem, GroveComboBox } from '~/registry/default/ui/combobox';
+import { ComboboxItem, GroveComboBox } from '@/registry/default/ui/combobox';
 
 export function CheckboxReusable() {
   return (

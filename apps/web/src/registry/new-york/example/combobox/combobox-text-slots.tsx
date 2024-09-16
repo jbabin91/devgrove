@@ -1,15 +1,15 @@
 import { Text } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   Combobox,
   ComboboxInput,
   ComboboxItem,
   ComboboxListBox,
   ComboboxPopover,
-} from '~/registry/new-york/ui/combobox';
-import { FieldGroup, Label } from '~/registry/new-york/ui/field';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/registry/new-york/ui/combobox';
+import { FieldGroup, Label } from '@/registry/new-york/ui/field';
+import { Icons } from '@/registry/new-york/ui/icons';
 
 export function ComboboxTextSlot() {
   return (

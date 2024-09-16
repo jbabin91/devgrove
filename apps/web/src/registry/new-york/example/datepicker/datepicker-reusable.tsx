@@ -1,4 +1,4 @@
-import { GroveDatePicker } from '~/registry/new-york/ui/date-picker';
+import { GroveDatePicker } from '@/registry/new-york/ui/date-picker';
 
 export function DatepickerReusable() {
   return (

@@ -1,27 +1,27 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
-import '~/styles/mdx.css';
+import '@/styles/mdx.css';
 
 import { allDocs } from 'contentlayer/generated';
 import { type Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Balancer from 'react-wrap-balancer';
 
-import { Icons } from '~/components/icons';
-import { Mdx } from '~/components/mdx-components';
-import { DocsPager } from '~/components/pager';
-import { DashboardTableOfContents } from '~/components/toc';
-import { siteConfig } from '~/config/site';
-import { getTableOfContents } from '~/libs/toc';
-import { absoluteUrl, cn } from '~/libs/utils';
-import { badgeVariants } from '~/registry/new-york/ui/badge';
+import { Icons } from '@/components/icons';
+import { Mdx } from '@/components/mdx-components';
+import { DocsPager } from '@/components/pager';
+import { DashboardTableOfContents } from '@/components/toc';
+import { siteConfig } from '@/config/site';
+import { getTableOfContents } from '@/libs/toc';
+import { absoluteUrl, cn } from '@/libs/utils';
+import { badgeVariants } from '@/registry/new-york/ui/badge';
 import {
   BreadcrumbItem,
   BreadcrumbLink,
   BreadcrumbPage,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/new-york/ui/breadcrumbs';
-import { Link } from '~/registry/new-york/ui/link';
+} from '@/registry/new-york/ui/breadcrumbs';
+import { Link } from '@/registry/new-york/ui/link';
 
 type DocPageProps = {
   params: {

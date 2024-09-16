@@ -1,8 +1,8 @@
 'use client';
 
-import { Icons } from '~/components/icons';
-import { useMounted } from '~/hooks/use-mounted';
-import { cn } from '~/libs/utils';
+import { Icons } from '@/components/icons';
+import { useMounted } from '@/hooks/use-mounted';
+import { cn } from '@/libs/utils';
 
 type CodeBlockProps = {} & React.HTMLAttributes<HTMLDivElement>;
 

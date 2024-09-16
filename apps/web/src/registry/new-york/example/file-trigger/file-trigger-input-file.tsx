@@ -1,5 +1,5 @@
-import { Label } from '~/registry/default/ui/field';
-import { Input } from '~/registry/default/ui/textfield';
+import { Label } from '@/registry/default/ui/field';
+import { Input } from '@/registry/default/ui/textfield';
 
 export function InputFile() {
   return (

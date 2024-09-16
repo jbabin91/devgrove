@@ -13,7 +13,7 @@ import {
   Text,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 import { Label } from './field';
 import { Icons } from './icons';

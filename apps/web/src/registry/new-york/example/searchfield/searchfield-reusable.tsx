@@ -1,4 +1,4 @@
-import { GroveSearchField } from '~/registry/new-york/ui/searchfield';
+import { GroveSearchField } from '@/registry/new-york/ui/searchfield';
 
 export function SearchfieldReusable() {
   return (

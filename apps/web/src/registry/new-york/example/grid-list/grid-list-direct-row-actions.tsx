@@ -1,4 +1,4 @@
-import { GridList, GridListItem } from '~/registry/new-york/ui/grid-list';
+import { GridList, GridListItem } from '@/registry/new-york/ui/grid-list';
 
 export function GridListDirectRowActions() {
   return (

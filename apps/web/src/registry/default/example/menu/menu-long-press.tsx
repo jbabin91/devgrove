@@ -1,10 +1,10 @@
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/default/ui/menu';
+} from '@/registry/default/ui/menu';
 
 export function MenuLongPress() {
   return (

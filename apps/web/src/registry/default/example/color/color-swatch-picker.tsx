@@ -5,7 +5,7 @@ import {
   ColorSwatch,
   ColorSwatchPicker,
   ColorSwatchPickerItem,
-} from '~/registry/default/ui/color';
+} from '@/registry/default/ui/color';
 
 export function ColorSwatchPickerDemo() {
   const [color, setColor] = useState(parseColor('#A00'));

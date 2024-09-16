@@ -1,13 +1,13 @@
 import { Text } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Menu,
   MenuItem,
   MenuKeyboard,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/default/ui/menu';
+} from '@/registry/default/ui/menu';
 
 export function MenuTextSlots() {
   return (

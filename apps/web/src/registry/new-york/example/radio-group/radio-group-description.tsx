@@ -1,7 +1,7 @@
 import { Text } from 'react-aria-components';
 
-import { Label } from '~/registry/new-york/ui/field';
-import { Radio, RadioGroup } from '~/registry/new-york/ui/radio-group';
+import { Label } from '@/registry/new-york/ui/field';
+import { Radio, RadioGroup } from '@/registry/new-york/ui/radio-group';
 
 export function RadioGroupDescription() {
   return (

@@ -1,11 +1,11 @@
 import { Heading } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Popover,
   PopoverDialog,
   PopoverTrigger,
-} from '~/registry/default/ui/popover';
+} from '@/registry/default/ui/popover';
 
 export function DialogPopover() {
   return (

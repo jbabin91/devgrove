@@ -1,5 +1,5 @@
-import { Label } from '~/registry/new-york/ui/field';
-import { Tag, TagGroup, TagList } from '~/registry/new-york/ui/tag-group';
+import { Label } from '@/registry/new-york/ui/field';
+import { Tag, TagGroup, TagList } from '@/registry/new-york/ui/tag-group';
 
 export function TagGroupDisabledKeys() {
   const options = [

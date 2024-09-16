@@ -1,5 +1,5 @@
-import { useThemeStore } from '~/hooks/use-theme-store';
-import { type Style } from '~/registry/styles';
+import { useThemeStore } from '@/hooks/use-theme-store';
+import { type Style } from '@/registry/styles';
 
 type StyleWrapperProps = {
   styleName?: Style['name'];

@@ -1,8 +1,8 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
-import { Checkbox, CheckboxGroup } from '~/registry/default/ui/checkbox';
-import { FieldError, Label } from '~/registry/default/ui/field';
+import { Button } from '@/registry/default/ui/button';
+import { Checkbox, CheckboxGroup } from '@/registry/default/ui/checkbox';
+import { FieldError, Label } from '@/registry/default/ui/field';
 
 export function CheckboxGroupValidation() {
   return (

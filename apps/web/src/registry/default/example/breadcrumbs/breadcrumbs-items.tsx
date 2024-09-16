@@ -6,7 +6,7 @@ import {
   BreadcrumbLink,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/default/ui/breadcrumbs';
+} from '@/registry/default/ui/breadcrumbs';
 
 export function BreadcrumbsItems() {
   const [breadcrumbs, setBreadcrumbs] = useState([

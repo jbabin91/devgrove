@@ -1,4 +1,4 @@
-import { GroveTextField } from '~/registry/default/ui/textfield';
+import { GroveTextField } from '@/registry/default/ui/textfield';
 
 export function TextfieldReusable() {
   return (

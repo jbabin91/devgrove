@@ -4,8 +4,8 @@ import {
   BreadcrumbPage,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/new-york/ui/breadcrumbs';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/registry/new-york/ui/breadcrumbs';
+import { Icons } from '@/registry/new-york/ui/icons';
 
 export function BreadcrumbsSeparator() {
   return (

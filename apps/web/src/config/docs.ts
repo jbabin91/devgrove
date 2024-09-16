@@ -1,4 +1,4 @@
-import { type MainNavItem, type SidebarNavItem } from '~/types/nav';
+import { type MainNavItem, type SidebarNavItem } from '@/types/nav';
 
 type DocsConfig = {
   mainNav: MainNavItem[];

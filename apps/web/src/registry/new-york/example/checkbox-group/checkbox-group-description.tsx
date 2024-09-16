@@ -1,7 +1,7 @@
 import { Text } from 'react-aria-components';
 
-import { Checkbox, CheckboxGroup } from '~/registry/new-york/ui/checkbox';
-import { Label } from '~/registry/new-york/ui/field';
+import { Checkbox, CheckboxGroup } from '@/registry/new-york/ui/checkbox';
+import { Label } from '@/registry/new-york/ui/field';
 
 export function CheckboxGroupDescription() {
   return (

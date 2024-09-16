@@ -1,8 +1,8 @@
 'use client';
 
-import { useMounted } from '~/hooks/use-mounted';
-import { useThemeStore } from '~/hooks/use-theme-store';
-import { cn } from '~/libs/utils';
+import { useMounted } from '@/hooks/use-mounted';
+import { useThemeStore } from '@/hooks/use-theme-store';
+import { cn } from '@/libs/utils';
 import {
   Select,
   SelectItem,
@@ -10,8 +10,8 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/new-york/ui/select';
-import { type Style, styles } from '~/registry/styles';
+} from '@/registry/new-york/ui/select';
+import { type Style, styles } from '@/registry/styles';
 
 export function StyleSwitcher({ className }: { className?: string }) {
   const currentStyle = useThemeStore((state) => state.style);

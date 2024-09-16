@@ -1,4 +1,4 @@
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   DialogContent,
   DialogFooter,
@@ -6,9 +6,9 @@ import {
   DialogOverlay,
   DialogTitle,
   DialogTrigger,
-} from '~/registry/new-york/ui/dialog';
-import { Label } from '~/registry/new-york/ui/field';
-import { Input, TextField } from '~/registry/new-york/ui/textfield';
+} from '@/registry/new-york/ui/dialog';
+import { Label } from '@/registry/new-york/ui/field';
+import { Input, TextField } from '@/registry/new-york/ui/textfield';
 
 export function ModalSheet() {
   return (

@@ -7,7 +7,7 @@ import {
   parseColor,
 } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   ColorPicker,
   ColorSlider,
@@ -15,10 +15,10 @@ import {
   ColorThumb,
   SliderOutput,
   SliderTrack,
-} from '~/registry/default/ui/color';
-import { Dialog, DialogTrigger } from '~/registry/default/ui/dialog';
-import { Label } from '~/registry/default/ui/field';
-import { Popover } from '~/registry/default/ui/popover';
+} from '@/registry/default/ui/color';
+import { Dialog, DialogTrigger } from '@/registry/default/ui/dialog';
+import { Label } from '@/registry/default/ui/field';
+import { Popover } from '@/registry/default/ui/popover';
 import {
   Select,
   SelectItem,
@@ -26,7 +26,7 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/default/ui/select';
+} from '@/registry/default/ui/select';
 
 export function PickerSliders() {
   const [color, setColor] = useState(parseColor('hsl(60, 100%, 50%)'));

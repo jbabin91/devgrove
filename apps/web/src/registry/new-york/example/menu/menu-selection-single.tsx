@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import type { Selection } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/new-york/ui/menu';
+} from '@/registry/new-york/ui/menu';
 
 export function MenuSelectionSingle() {
   const [selected, setSelected] = useState<Selection>(new Set(['center']));

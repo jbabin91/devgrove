@@ -5,21 +5,21 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useMDXComponent } from 'next-contentlayer2/hooks';
 
-import { Callout } from '~/components/callout';
-import { CodeBlockWrapper } from '~/components/code-black-wrapper';
-import { ComponentCard, ComponentCards } from '~/components/component-cards';
-import { ComponentExample } from '~/components/component-example';
-import { ComponentPreview } from '~/components/component-preview';
-import { ComponentSource } from '~/components/component-source';
-import { CopyButton, CopyNpmCommandButton } from '~/components/copy-button';
-import { FrameworkDocs } from '~/components/framework-docs';
-import { StyleWrapper } from '~/components/style-wrapper';
-import { useThemeStore } from '~/hooks/use-theme-store';
-import { type Event } from '~/libs/events';
-import { cn } from '~/libs/utils';
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/new-york/ui/tabs';
-import { type Style } from '~/registry/styles';
-import { type NpmCommands } from '~/types/unist';
+import { Callout } from '@/components/callout';
+import { CodeBlockWrapper } from '@/components/code-black-wrapper';
+import { ComponentCard, ComponentCards } from '@/components/component-cards';
+import { ComponentExample } from '@/components/component-example';
+import { ComponentPreview } from '@/components/component-preview';
+import { ComponentSource } from '@/components/component-source';
+import { CopyButton, CopyNpmCommandButton } from '@/components/copy-button';
+import { FrameworkDocs } from '@/components/framework-docs';
+import { StyleWrapper } from '@/components/style-wrapper';
+import { useThemeStore } from '@/hooks/use-theme-store';
+import { type Event } from '@/libs/events';
+import { cn } from '@/libs/utils';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/new-york/ui/tabs';
+import { type Style } from '@/registry/styles';
+import { type NpmCommands } from '@/types/unist';
 
 const components = {
   Callout,

@@ -1,5 +1,5 @@
-import { cn } from '~/libs/utils';
-import { Button } from '~/registry/default/ui/button';
+import { cn } from '@/libs/utils';
+import { Button } from '@/registry/default/ui/button';
 import {
   Card,
   CardContent,
@@ -7,9 +7,9 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from '~/registry/default/ui/card';
-import { Icons } from '~/registry/default/ui/icons';
-import { Switch } from '~/registry/default/ui/switch';
+} from '@/registry/default/ui/card';
+import { Icons } from '@/registry/default/ui/icons';
+import { Switch } from '@/registry/default/ui/switch';
 
 const notifications = [
   {

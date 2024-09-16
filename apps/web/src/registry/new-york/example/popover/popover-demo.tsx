@@ -1,10 +1,10 @@
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   Popover,
   PopoverDialog,
   PopoverTrigger,
-} from '~/registry/new-york/ui/popover';
-import { Switch } from '~/registry/new-york/ui/switch';
+} from '@/registry/new-york/ui/popover';
+import { Switch } from '@/registry/new-york/ui/switch';
 
 export function PopoverDemo() {
   return (

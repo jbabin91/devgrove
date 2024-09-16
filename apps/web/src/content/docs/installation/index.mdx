@@ -96,7 +96,7 @@ npx shadcn@latest add https://ui.dev-grove.com/default/button
 The command above will add the `Button` component to your project. You can then import it like this:
 
 ```tsx {1,6} showLineNumbers
-import { Button } from '~/components/ui/button';
+import { Button } from '@/components/ui/button';
 
 export default function Home() {
   return (
@@ -149,22 +149,22 @@ npm install @radix-ui/react-icons
 
 ### Configure path aliases
 
-I use the `~` alias. This is how I configure it in tsconfig.json:
+I use the `@` alias. This is how I configure it in tsconfig.json:
 
 ```json {3-6} title="tsconfig.json"
 {
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./*"]
+      "@/*": ["./*"]
     }
   }
 }
 ```
 
-The `~` alias is a preference. You can use other aliases if you want.
+The `@` alias is a preference. You can use other aliases if you want.
 
-**If you use a different alias such as @, you'll need to update import statements when adding components.**
+**If you use a different alias such as ~, you'll need to update import statements when adding components.**
 
 ### Configure tailwind.config.js
 

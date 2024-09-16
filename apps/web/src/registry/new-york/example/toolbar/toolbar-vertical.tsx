@@ -2,10 +2,10 @@
 
 import { Group } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { Icons } from '~/registry/new-york/ui/icons';
-import { Separator } from '~/registry/new-york/ui/separator';
-import { Toolbar } from '~/registry/new-york/ui/toolbar';
+import { Button } from '@/registry/new-york/ui/button';
+import { Icons } from '@/registry/new-york/ui/icons';
+import { Separator } from '@/registry/new-york/ui/separator';
+import { Toolbar } from '@/registry/new-york/ui/toolbar';
 
 export function ToolbarVerticalDemo() {
   return (

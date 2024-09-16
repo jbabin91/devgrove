@@ -1,7 +1,7 @@
 import { useDragAndDrop } from 'react-aria-components';
 import { useListData } from 'react-stately';
 
-import { ListBox, ListBoxItem } from '~/registry/default/ui/list-box';
+import { ListBox, ListBoxItem } from '@/registry/default/ui/list-box';
 
 export function ListBoxDragAndDrop() {
   const list = useListData({

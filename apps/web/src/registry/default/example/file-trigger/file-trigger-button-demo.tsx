@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FileTrigger } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 
 export function FileTriggerButtonDemo() {
   // Demo to show how to get file name to display.

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { type Selection } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Menu,
   MenuCollection,
@@ -10,7 +10,7 @@ import {
   MenuPopover,
   MenuSection,
   MenuTrigger,
-} from '~/registry/default/ui/menu';
+} from '@/registry/default/ui/menu';
 
 export function MenuSectionsDynamic() {
   const [selected, setSelected] = useState<Selection>(new Set([1, 3]));

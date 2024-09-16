@@ -1,9 +1,9 @@
 import { type Doc } from 'contentlayer/generated';
 
-import { Icons } from '~/components/icons';
-import { docsConfig } from '~/config/docs';
-import { Link } from '~/registry/new-york/ui/link';
-import { type NavItem, type NavItemWithChildren } from '~/types/nav';
+import { Icons } from '@/components/icons';
+import { docsConfig } from '@/config/docs';
+import { Link } from '@/registry/new-york/ui/link';
+import { type NavItem, type NavItemWithChildren } from '@/types/nav';
 
 type DocsPagerProps = {
   doc: Doc;

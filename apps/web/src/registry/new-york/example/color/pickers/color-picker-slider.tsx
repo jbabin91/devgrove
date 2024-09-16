@@ -7,7 +7,7 @@ import {
   parseColor,
 } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   ColorPicker,
   ColorSlider,
@@ -15,10 +15,10 @@ import {
   ColorThumb,
   SliderOutput,
   SliderTrack,
-} from '~/registry/new-york/ui/color';
-import { Dialog, DialogTrigger } from '~/registry/new-york/ui/dialog';
-import { Label } from '~/registry/new-york/ui/field';
-import { Popover } from '~/registry/new-york/ui/popover';
+} from '@/registry/new-york/ui/color';
+import { Dialog, DialogTrigger } from '@/registry/new-york/ui/dialog';
+import { Label } from '@/registry/new-york/ui/field';
+import { Popover } from '@/registry/new-york/ui/popover';
 import {
   Select,
   SelectItem,
@@ -26,7 +26,7 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/new-york/ui/select';
+} from '@/registry/new-york/ui/select';
 
 export function PickerSliders() {
   const [color, setColor] = useState(parseColor('hsl(60, 100%, 50%)'));

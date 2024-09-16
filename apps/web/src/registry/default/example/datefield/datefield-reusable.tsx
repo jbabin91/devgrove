@@ -1,4 +1,4 @@
-import { GroveDateField } from '~/registry/default/ui/datefield';
+import { GroveDateField } from '@/registry/default/ui/datefield';
 
 export function DatefieldReusable() {
   return (

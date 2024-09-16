@@ -1,11 +1,11 @@
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuSubTrigger,
   MenuTrigger,
-} from '~/registry/default/ui/menu';
+} from '@/registry/default/ui/menu';
 
 export function MenuSubMenuDynamic() {
   const items = [

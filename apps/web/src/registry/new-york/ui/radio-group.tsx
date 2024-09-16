@@ -10,7 +10,7 @@ import {
   type ValidationResult as AriaValidationResult,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 import { FieldError, Label, labelVariants } from './field';
 import { Icons } from './icons';

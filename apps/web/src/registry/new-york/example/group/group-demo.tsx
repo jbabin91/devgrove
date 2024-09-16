@@ -1,9 +1,9 @@
 import { Input as AriaInput } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { FieldGroup, Label } from '~/registry/new-york/ui/field';
-import { Icons } from '~/registry/new-york/ui/icons';
-import { TextField } from '~/registry/new-york/ui/textfield';
+import { Button } from '@/registry/new-york/ui/button';
+import { FieldGroup, Label } from '@/registry/new-york/ui/field';
+import { Icons } from '@/registry/new-york/ui/icons';
+import { TextField } from '@/registry/new-york/ui/textfield';
 
 export function GroupDemo() {
   return (

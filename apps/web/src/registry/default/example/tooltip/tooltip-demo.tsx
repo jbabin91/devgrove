@@ -1,6 +1,6 @@
-import { Button } from '~/registry/default/ui/button';
-import { Icons } from '~/registry/default/ui/icons';
-import { Tooltip, TooltipTrigger } from '~/registry/default/ui/tooltip';
+import { Button } from '@/registry/default/ui/button';
+import { Icons } from '@/registry/default/ui/icons';
+import { Tooltip, TooltipTrigger } from '@/registry/default/ui/tooltip';
 
 export function TooltipDemo() {
   return (

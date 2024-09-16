@@ -1,4 +1,4 @@
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   Menu,
   MenuHeader,
@@ -6,7 +6,7 @@ import {
   MenuPopover,
   MenuSection,
   MenuTrigger,
-} from '~/registry/new-york/ui/menu';
+} from '@/registry/new-york/ui/menu';
 
 export function MenuSections() {
   return (

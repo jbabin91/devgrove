@@ -7,7 +7,7 @@ import {
   ListBoxHeader,
   ListBoxItem,
   ListBoxSection,
-} from '~/registry/default/ui/list-box';
+} from '@/registry/default/ui/list-box';
 
 export function ListBoxDynamic() {
   const options = [

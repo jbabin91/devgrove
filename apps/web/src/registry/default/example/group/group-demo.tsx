@@ -1,9 +1,9 @@
 import { Input as AriaInput } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
-import { FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
-import { TextField } from '~/registry/default/ui/textfield';
+import { Button } from '@/registry/default/ui/button';
+import { FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
+import { TextField } from '@/registry/default/ui/textfield';
 
 export function GroupDemo() {
   return (

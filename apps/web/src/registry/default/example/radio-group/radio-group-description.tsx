@@ -1,7 +1,7 @@
 import { Text } from 'react-aria-components';
 
-import { Label } from '~/registry/default/ui/field';
-import { Radio, RadioGroup } from '~/registry/default/ui/radio-group';
+import { Label } from '@/registry/default/ui/field';
+import { Radio, RadioGroup } from '@/registry/default/ui/radio-group';
 
 export function RadioGroupDescription() {
   return (

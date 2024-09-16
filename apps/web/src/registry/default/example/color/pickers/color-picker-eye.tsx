@@ -6,7 +6,7 @@ import {
   parseColor,
 } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   ColorArea,
   ColorField,
@@ -17,10 +17,10 @@ import {
   ColorSwatchPickerItem,
   ColorThumb,
   SliderTrack,
-} from '~/registry/default/ui/color';
-import { Dialog, DialogTrigger } from '~/registry/default/ui/dialog';
-import { Icons } from '~/registry/default/ui/icons';
-import { Popover } from '~/registry/default/ui/popover';
+} from '@/registry/default/ui/color';
+import { Dialog, DialogTrigger } from '@/registry/default/ui/dialog';
+import { Icons } from '@/registry/default/ui/icons';
+import { Popover } from '@/registry/default/ui/popover';
 import {
   Select,
   SelectItem,
@@ -28,8 +28,8 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/default/ui/select';
-import { Input } from '~/registry/default/ui/textfield';
+} from '@/registry/default/ui/select';
+import { Input } from '@/registry/default/ui/textfield';
 
 function EyeDropperButton() {
   const state = useContext(ColorPickerStateContext);

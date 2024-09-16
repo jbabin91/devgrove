@@ -2,10 +2,10 @@
 
 import { Group } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
-import { Icons } from '~/registry/default/ui/icons';
-import { Separator } from '~/registry/default/ui/separator';
-import { Toolbar } from '~/registry/default/ui/toolbar';
+import { Button } from '@/registry/default/ui/button';
+import { Icons } from '@/registry/default/ui/icons';
+import { Separator } from '@/registry/default/ui/separator';
+import { Toolbar } from '@/registry/default/ui/toolbar';
 
 export function ToolbarVerticalDemo() {
   return (

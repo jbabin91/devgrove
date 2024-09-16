@@ -1,5 +1,5 @@
-import { Button } from '~/registry/default/ui/button';
-import { Icons } from '~/registry/default/ui/icons';
+import { Button } from '@/registry/default/ui/button';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function ButtonWithIcon() {
   return (

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { Selection } from 'react-aria-components';
 
-import { Label } from '~/registry/new-york/ui/field';
-import { Tag, TagGroup, TagList } from '~/registry/new-york/ui/tag-group';
+import { Label } from '@/registry/new-york/ui/field';
+import { Tag, TagGroup, TagList } from '@/registry/new-york/ui/tag-group';
 
 export function TagGroupSelection() {
   const [selected, setSelected] = useState<Selection>(new Set(['parking']));

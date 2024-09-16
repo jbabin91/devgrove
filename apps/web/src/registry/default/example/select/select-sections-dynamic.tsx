@@ -1,4 +1,4 @@
-import { Label } from '~/registry/default/ui/field';
+import { Label } from '@/registry/default/ui/field';
 import {
   Select,
   SelectCollection,
@@ -9,7 +9,7 @@ import {
   SelectSection,
   SelectTrigger,
   SelectValue,
-} from '~/registry/default/ui/select';
+} from '@/registry/default/ui/select';
 
 export function SelectSectionsDynamic() {
   const options = [

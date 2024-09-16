@@ -8,16 +8,16 @@ import {
   syncFontFamily,
   syncGrayColor,
   syncThemeColor,
-} from '~/hooks/use-theme-generator';
-import { useThemeStore } from '~/hooks/use-theme-store';
-import { Button } from '~/registry/new-york/ui/button';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/hooks/use-theme-generator';
+import { useThemeStore } from '@/hooks/use-theme-store';
+import { Button } from '@/registry/new-york/ui/button';
+import { Icons } from '@/registry/new-york/ui/icons';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/new-york/ui/menu';
+} from '@/registry/new-york/ui/menu';
 
 export function ModeToggle() {
   const { setTheme, resolvedTheme } = useTheme();

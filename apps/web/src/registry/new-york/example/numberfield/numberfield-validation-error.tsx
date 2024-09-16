@@ -1,12 +1,12 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { FieldError, FieldGroup, Label } from '~/registry/new-york/ui/field';
+import { Button } from '@/registry/new-york/ui/button';
+import { FieldError, FieldGroup, Label } from '@/registry/new-york/ui/field';
 import {
   NumberField,
   NumberFieldInput,
   NumberFieldSteppers,
-} from '~/registry/new-york/ui/numberfield';
+} from '@/registry/new-york/ui/numberfield';
 
 export function NumberFieldValidationError() {
   return (

@@ -3,10 +3,10 @@
 import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react';
 import { useCallback, useState } from 'react';
 
-import { Icons } from '~/components/icons';
-import { env } from '~/config/env';
-import { cn } from '~/libs/utils';
-import { Button } from '~/registry/new-york/ui/button';
+import { Icons } from '@/components/icons';
+import { env } from '@/config/env';
+import { cn } from '@/libs/utils';
+import { Button } from '@/registry/new-york/ui/button';
 
 export function Search() {
   const [isOpen, setIsOpen] = useState(false);

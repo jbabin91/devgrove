@@ -1,4 +1,4 @@
-import { GroveSelect, SelectItem } from '~/registry/default/ui/select';
+import { GroveSelect, SelectItem } from '@/registry/default/ui/select';
 
 export function SelectReusable() {
   return (

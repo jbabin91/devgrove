@@ -1,4 +1,4 @@
-import { GroveSelect, SelectItem } from '~/registry/new-york/ui/select';
+import { GroveSelect, SelectItem } from '@/registry/new-york/ui/select';
 
 export function SelectReusable() {
   return (

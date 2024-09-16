@@ -7,7 +7,7 @@ import {
   composeRenderProps,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 import { Icons } from './icons';
 

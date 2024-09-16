@@ -1,4 +1,4 @@
-import { ListBox, ListBoxItem } from '~/registry/new-york/ui/list-box';
+import { ListBox, ListBoxItem } from '@/registry/new-york/ui/list-box';
 
 export function ListBoxLinks() {
   return (

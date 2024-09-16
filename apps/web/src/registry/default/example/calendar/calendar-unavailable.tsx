@@ -9,7 +9,7 @@ import {
   CalendarGridHeader,
   CalendarHeaderCell,
   CalendarHeading,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 
 export function CalendarUnavailable() {
   const now = today(getLocalTimeZone());

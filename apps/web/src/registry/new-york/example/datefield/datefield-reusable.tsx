@@ -1,4 +1,4 @@
-import { GroveDateField } from '~/registry/new-york/ui/datefield';
+import { GroveDateField } from '@/registry/new-york/ui/datefield';
 
 export function DatefieldReusable() {
   return (

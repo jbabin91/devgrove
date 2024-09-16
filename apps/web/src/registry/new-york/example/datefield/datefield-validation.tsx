@@ -1,8 +1,8 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { DateField, DateInput } from '~/registry/new-york/ui/datefield';
-import { FieldError, Label } from '~/registry/new-york/ui/field';
+import { Button } from '@/registry/new-york/ui/button';
+import { DateField, DateInput } from '@/registry/new-york/ui/datefield';
+import { FieldError, Label } from '@/registry/new-york/ui/field';
 
 export function DateFieldValidation() {
   return (

@@ -1,7 +1,7 @@
 import { useListData } from 'react-stately';
 
-import { Label } from '~/registry/default/ui/field';
-import { Tag, TagGroup, TagList } from '~/registry/default/ui/tag-group';
+import { Label } from '@/registry/default/ui/field';
+import { Tag, TagGroup, TagList } from '@/registry/default/ui/tag-group';
 
 export function TagGroupRemove() {
   const list = useListData({

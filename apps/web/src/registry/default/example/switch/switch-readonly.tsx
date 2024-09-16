@@ -1,4 +1,4 @@
-import { Switch } from '~/registry/default/ui/switch';
+import { Switch } from '@/registry/default/ui/switch';
 
 export function SwitchReadonly() {
   return (

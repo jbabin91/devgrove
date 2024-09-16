@@ -1,9 +1,9 @@
 import { getLocalTimeZone, today } from '@internationalized/date';
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
-import { DateField, DateInput } from '~/registry/default/ui/datefield';
-import { FieldError, Label } from '~/registry/default/ui/field';
+import { Button } from '@/registry/default/ui/button';
+import { DateField, DateInput } from '@/registry/default/ui/datefield';
+import { FieldError, Label } from '@/registry/default/ui/field';
 
 export function DateFieldValidationMinMax() {
   return (

@@ -2,17 +2,17 @@
 
 import { useCallback, useEffect, useState } from 'react';
 
-import { Icons } from '~/components/icons';
-import { type Event, trackEvent } from '~/libs/events';
-import { cn } from '~/libs/utils';
-import { Button, type ButtonProps } from '~/registry/new-york/ui/button';
+import { Icons } from '@/components/icons';
+import { type Event, trackEvent } from '@/libs/events';
+import { cn } from '@/libs/utils';
+import { Button, type ButtonProps } from '@/registry/new-york/ui/button';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/new-york/ui/menu';
-import { type NpmCommands } from '~/types/unist';
+} from '@/registry/new-york/ui/menu';
+import { type NpmCommands } from '@/types/unist';
 
 export function copyToClipboardWithMeta(value: string, event?: Event) {
   navigator.clipboard.writeText(value);

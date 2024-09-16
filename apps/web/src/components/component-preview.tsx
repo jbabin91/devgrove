@@ -2,14 +2,14 @@
 
 import * as React from 'react';
 
-import { Index } from '~/__registry__';
-import { CopyButton, CopyWithClassNames } from '~/components/copy-button';
-import { Icons } from '~/components/icons';
-import { StyleSwitcher } from '~/components/style-switcher';
-import { useThemeStore } from '~/hooks/use-theme-store';
-import { cn } from '~/libs/utils';
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/default/ui/tabs';
-import { styles } from '~/registry/styles';
+import { Index } from '@/__registry__';
+import { CopyButton, CopyWithClassNames } from '@/components/copy-button';
+import { Icons } from '@/components/icons';
+import { StyleSwitcher } from '@/components/style-switcher';
+import { useThemeStore } from '@/hooks/use-theme-store';
+import { cn } from '@/libs/utils';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/default/ui/tabs';
+import { styles } from '@/registry/styles';
 
 type ComponentPreviewProps = {
   name: string;

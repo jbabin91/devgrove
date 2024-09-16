@@ -1,10 +1,10 @@
-import { FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
+import { FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
 import {
   SearchField,
   SearchFieldClear,
   SearchFieldInput,
-} from '~/registry/default/ui/searchfield';
+} from '@/registry/default/ui/searchfield';
 
 export function SearchFieldDisabled() {
   return (

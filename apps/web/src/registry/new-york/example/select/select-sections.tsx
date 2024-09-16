@@ -1,4 +1,4 @@
-import { Label } from '~/registry/new-york/ui/field';
+import { Label } from '@/registry/new-york/ui/field';
 import {
   Select,
   SelectHeader,
@@ -8,7 +8,7 @@ import {
   SelectSection,
   SelectTrigger,
   SelectValue,
-} from '~/registry/new-york/ui/select';
+} from '@/registry/new-york/ui/select';
 
 export function SelectSections() {
   return (

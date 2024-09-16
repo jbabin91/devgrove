@@ -1,4 +1,4 @@
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   Combobox,
   ComboboxHeader,
@@ -7,9 +7,9 @@ import {
   ComboboxListBox,
   ComboboxPopover,
   ComboboxSection,
-} from '~/registry/new-york/ui/combobox';
-import { FieldGroup, Label } from '~/registry/new-york/ui/field';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/registry/new-york/ui/combobox';
+import { FieldGroup, Label } from '@/registry/new-york/ui/field';
+import { Icons } from '@/registry/new-york/ui/icons';
 
 export function ComoboxSections() {
   return (

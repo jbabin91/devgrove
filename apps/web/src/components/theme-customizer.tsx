@@ -5,21 +5,21 @@ import { usePathname } from 'next/navigation';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
-import { copyToClipboardWithMeta } from '~/components/copy-button';
-import { Icons } from '~/components/icons';
-import { useThemeGenerator } from '~/hooks/use-theme-generator';
-import { cn } from '~/libs/utils';
-import { Button, buttonVariants } from '~/registry/new-york/ui/button';
+import { copyToClipboardWithMeta } from '@/components/copy-button';
+import { Icons } from '@/components/icons';
+import { useThemeGenerator } from '@/hooks/use-theme-generator';
+import { cn } from '@/libs/utils';
+import { Button, buttonVariants } from '@/registry/new-york/ui/button';
 import {
   DialogContent,
   DialogHeader,
   DialogOverlay,
   DialogTitle,
   DialogTrigger,
-} from '~/registry/new-york/ui/dialog';
-import { Label } from '~/registry/new-york/ui/field';
-import { Link } from '~/registry/new-york/ui/link';
-import { ListBox, ListBoxItem } from '~/registry/new-york/ui/list-box';
+} from '@/registry/new-york/ui/dialog';
+import { Label } from '@/registry/new-york/ui/field';
+import { Link } from '@/registry/new-york/ui/link';
+import { ListBox, ListBoxItem } from '@/registry/new-york/ui/list-box';
 import {
   Select,
   SelectCollection,
@@ -28,8 +28,8 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/new-york/ui/select';
-import { type Gray, type Theme } from '~/registry/themes';
+} from '@/registry/new-york/ui/select';
+import { type Gray, type Theme } from '@/registry/themes';
 
 export function ThemeCustomizer({
   hide = false,

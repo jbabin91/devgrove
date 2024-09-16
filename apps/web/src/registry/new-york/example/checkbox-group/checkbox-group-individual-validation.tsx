@@ -1,8 +1,8 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { Checkbox, CheckboxGroup } from '~/registry/new-york/ui/checkbox';
-import { FieldError, Label } from '~/registry/new-york/ui/field';
+import { Button } from '@/registry/new-york/ui/button';
+import { Checkbox, CheckboxGroup } from '@/registry/new-york/ui/checkbox';
+import { FieldError, Label } from '@/registry/new-york/ui/field';
 
 export function CheckboxGroupIndividualValidation() {
   return (

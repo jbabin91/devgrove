@@ -2,9 +2,9 @@
 
 import { useEffect, useMemo, useState } from 'react';
 
-import { useMounted } from '~/hooks/use-mounted';
-import { type TableOfContents } from '~/libs/toc';
-import { cn } from '~/libs/utils';
+import { useMounted } from '@/hooks/use-mounted';
+import { type TableOfContents } from '@/libs/toc';
+import { cn } from '@/libs/utils';
 
 type TocProps = {
   toc: TableOfContents;

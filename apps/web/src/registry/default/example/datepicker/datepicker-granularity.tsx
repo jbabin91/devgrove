@@ -1,7 +1,7 @@
 import { parseAbsoluteToLocal } from '@internationalized/date';
 import { useState } from 'react';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Calendar,
   CalendarCell,
@@ -10,14 +10,14 @@ import {
   CalendarGridHeader,
   CalendarHeaderCell,
   CalendarHeading,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 import {
   DatePicker,
   DatePickerContent,
-} from '~/registry/default/ui/date-picker';
-import { DateInput } from '~/registry/default/ui/datefield';
-import { FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/date-picker';
+import { DateInput } from '@/registry/default/ui/datefield';
+import { FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function DatepickerGranularity() {
   const [date, setDate] = useState(

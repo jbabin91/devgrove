@@ -1,11 +1,11 @@
-import { Icons } from '~/components/icons';
-import { MainNav } from '~/components/main-nav';
-import { MobileNav } from '~/components/mobile-nav';
-import { ModeToggle } from '~/components/mode-toggle';
-import { Search } from '~/components/search-component';
-import { ThemeCustomizer } from '~/components/theme-customizer';
-import { siteConfig } from '~/config/site';
-import { Link } from '~/registry/new-york/ui/link';
+import { Icons } from '@/components/icons';
+import { MainNav } from '@/components/main-nav';
+import { MobileNav } from '@/components/mobile-nav';
+import { ModeToggle } from '@/components/mode-toggle';
+import { Search } from '@/components/search-component';
+import { ThemeCustomizer } from '@/components/theme-customizer';
+import { siteConfig } from '@/config/site';
+import { Link } from '@/registry/new-york/ui/link';
 
 export function SiteHeader() {
   return (

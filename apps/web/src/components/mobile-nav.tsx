@@ -3,15 +3,15 @@
 import { Fragment } from 'react';
 import { Header, Link, Section } from 'react-aria-components';
 
-import { docsConfig } from '~/config/docs';
-import { siteConfig } from '~/config/site';
-import { Button } from '~/registry/new-york/ui/button';
+import { docsConfig } from '@/config/docs';
+import { siteConfig } from '@/config/site';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   DialogContent,
   DialogOverlay,
   DialogTrigger,
-} from '~/registry/new-york/ui/dialog';
-import { ListBox, ListBoxItem } from '~/registry/new-york/ui/list-box';
+} from '@/registry/new-york/ui/dialog';
+import { ListBox, ListBoxItem } from '@/registry/new-york/ui/list-box';
 
 import { Icons } from './icons';
 

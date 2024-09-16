@@ -1,9 +1,9 @@
 import { Time } from '@internationalized/date';
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { DateInput, TimeField } from '~/registry/new-york/ui/datefield';
-import { FieldError, Label } from '~/registry/new-york/ui/field';
+import { Button } from '@/registry/new-york/ui/button';
+import { DateInput, TimeField } from '@/registry/new-york/ui/datefield';
+import { FieldError, Label } from '@/registry/new-york/ui/field';
 
 export function TimeFieldCustomValidation() {
   return (

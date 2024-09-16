@@ -1,7 +1,7 @@
 import { useDragAndDrop } from 'react-aria-components';
 import { useListData } from 'react-stately';
 
-import { GridList, GridListItem } from '~/registry/default/ui/grid-list';
+import { GridList, GridListItem } from '@/registry/default/ui/grid-list';
 
 export function GridListDragAndDrop() {
   //useListData is a convenience hook, not a requirement. You can manage your state however you wish.

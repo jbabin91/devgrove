@@ -9,7 +9,7 @@ import {
   CalendarHeaderCell,
   CalendarHeading,
   RangeCalendar,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 
 export function RangeCalendarNonContinuous() {
   const { locale } = useLocale();

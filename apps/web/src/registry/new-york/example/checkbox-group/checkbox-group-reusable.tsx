@@ -1,4 +1,4 @@
-import { Checkbox, GroveCheckboxGroup } from '~/registry/new-york/ui/checkbox';
+import { Checkbox, GroveCheckboxGroup } from '@/registry/new-york/ui/checkbox';
 
 export function CheckboxReusable() {
   return (

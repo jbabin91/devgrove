@@ -2,7 +2,7 @@ import {
   ColorSlider,
   ColorThumb,
   SliderTrack,
-} from '~/registry/new-york/ui/color';
+} from '@/registry/new-york/ui/color';
 
 export function ColorSliderDemo() {
   return (

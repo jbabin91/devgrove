@@ -4,8 +4,8 @@ import {
 } from '@internationalized/date';
 import { useState } from 'react';
 
-import { DateField, DateInput } from '~/registry/new-york/ui/datefield';
-import { Label } from '~/registry/new-york/ui/field';
+import { DateField, DateInput } from '@/registry/new-york/ui/datefield';
+import { Label } from '@/registry/new-york/ui/field';
 
 export function DateFieldGranularity() {
   const [date, setDate] = useState(

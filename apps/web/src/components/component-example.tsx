@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 
-import { CopyButton, CopyWithClassNames } from '~/components/copy-button';
-import { cn } from '~/libs/utils';
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/new-york/ui/tabs';
+import { CopyButton, CopyWithClassNames } from '@/components/copy-button';
+import { cn } from '@/libs/utils';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/new-york/ui/tabs';
 
 type ComponentExampleProps = {
   extractedClassNames?: string;

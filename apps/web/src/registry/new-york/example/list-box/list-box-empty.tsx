@@ -1,4 +1,4 @@
-import { ListBox } from '~/registry/new-york/ui/list-box';
+import { ListBox } from '@/registry/new-york/ui/list-box';
 
 export function ListBoxEmpty() {
   return (

@@ -6,14 +6,14 @@ import {
   BreadcrumbPage,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/default/ui/breadcrumbs';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/breadcrumbs';
+import { Icons } from '@/registry/default/ui/icons';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/default/ui/menu';
+} from '@/registry/default/ui/menu';
 
 export function BreadcrumbsDropdown() {
   return (

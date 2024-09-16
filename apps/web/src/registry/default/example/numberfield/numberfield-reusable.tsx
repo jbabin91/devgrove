@@ -1,4 +1,4 @@
-import { GroveNumberField } from '~/registry/default/ui/numberfield';
+import { GroveNumberField } from '@/registry/default/ui/numberfield';
 
 export function NumberfieldReusable() {
   return (

@@ -1,7 +1,7 @@
 import { parseAbsoluteToLocal } from '@internationalized/date';
 
-import { DateInput, TimeField } from '~/registry/default/ui/datefield';
-import { Label } from '~/registry/default/ui/field';
+import { DateInput, TimeField } from '@/registry/default/ui/datefield';
+import { Label } from '@/registry/default/ui/field';
 
 export function TimeFieldGranularity() {
   return (

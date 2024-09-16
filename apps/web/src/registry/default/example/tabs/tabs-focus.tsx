@@ -1,5 +1,5 @@
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/default/ui/tabs';
-import { Input } from '~/registry/default/ui/textfield';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/default/ui/tabs';
+import { Input } from '@/registry/default/ui/textfield';
 
 export function TabsFocus() {
   return (

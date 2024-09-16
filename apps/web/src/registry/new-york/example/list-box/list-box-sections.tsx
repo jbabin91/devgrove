@@ -3,7 +3,7 @@ import {
   ListBoxHeader,
   ListBoxItem,
   ListBoxSection,
-} from '~/registry/new-york/ui/list-box';
+} from '@/registry/new-york/ui/list-box';
 
 export function ListBoxSections() {
   return (

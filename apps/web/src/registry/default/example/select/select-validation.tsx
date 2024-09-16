@@ -1,7 +1,7 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
-import { FieldError, Label } from '~/registry/default/ui/field';
+import { Button } from '@/registry/default/ui/button';
+import { FieldError, Label } from '@/registry/default/ui/field';
 import {
   Select,
   SelectItem,
@@ -9,7 +9,7 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/default/ui/select';
+} from '@/registry/default/ui/select';
 
 export function SelectValidation() {
   return (

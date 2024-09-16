@@ -13,7 +13,7 @@ import {
   type TextProps as AriaTextProps,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 /**
  * Represents the variants for the label in the field component.

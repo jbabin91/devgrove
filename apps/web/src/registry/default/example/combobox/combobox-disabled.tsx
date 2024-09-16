@@ -1,13 +1,13 @@
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Combobox,
   ComboboxInput,
   ComboboxItem,
   ComboboxListBox,
   ComboboxPopover,
-} from '~/registry/default/ui/combobox';
-import { FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/combobox';
+import { FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function ComboboxDisabled() {
   return (

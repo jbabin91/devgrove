@@ -6,7 +6,7 @@ import {
   CalendarHeaderCell,
   CalendarHeading,
   RangeCalendar,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 
 export function RangeCalendarDemo() {
   return (

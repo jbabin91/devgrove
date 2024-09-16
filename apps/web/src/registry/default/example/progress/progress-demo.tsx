@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
-import { Label } from '~/registry/default/ui/field';
-import { Progress } from '~/registry/default/ui/progress';
+import { Label } from '@/registry/default/ui/field';
+import { Progress } from '@/registry/default/ui/progress';
 
 export function ProgressDemo() {
   const [progress, setProgress] = useState(13);

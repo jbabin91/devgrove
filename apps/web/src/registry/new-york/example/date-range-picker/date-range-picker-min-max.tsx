@@ -1,7 +1,7 @@
 import { getLocalTimeZone, today } from '@internationalized/date';
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   CalendarCell,
   CalendarGrid,
@@ -10,14 +10,14 @@ import {
   CalendarHeaderCell,
   CalendarHeading,
   RangeCalendar,
-} from '~/registry/new-york/ui/calendar';
+} from '@/registry/new-york/ui/calendar';
 import {
   DatePickerContent,
   DateRangePicker,
-} from '~/registry/new-york/ui/date-picker';
-import { DateInput } from '~/registry/new-york/ui/datefield';
-import { FieldError, FieldGroup, Label } from '~/registry/new-york/ui/field';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/registry/new-york/ui/date-picker';
+import { DateInput } from '@/registry/new-york/ui/datefield';
+import { FieldError, FieldGroup, Label } from '@/registry/new-york/ui/field';
+import { Icons } from '@/registry/new-york/ui/icons';
 
 export function DateRangePickerMinMax() {
   return (

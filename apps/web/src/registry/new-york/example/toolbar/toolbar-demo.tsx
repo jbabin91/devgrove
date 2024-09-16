@@ -2,12 +2,12 @@
 
 import { Group } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { Checkbox } from '~/registry/new-york/ui/checkbox';
-import { Icons } from '~/registry/new-york/ui/icons';
-import { Separator } from '~/registry/new-york/ui/separator';
-import { Toggle } from '~/registry/new-york/ui/toggle';
-import { Toolbar } from '~/registry/new-york/ui/toolbar';
+import { Button } from '@/registry/new-york/ui/button';
+import { Checkbox } from '@/registry/new-york/ui/checkbox';
+import { Icons } from '@/registry/new-york/ui/icons';
+import { Separator } from '@/registry/new-york/ui/separator';
+import { Toggle } from '@/registry/new-york/ui/toggle';
+import { Toolbar } from '@/registry/new-york/ui/toolbar';
 
 export function ToolbarDemo() {
   return (

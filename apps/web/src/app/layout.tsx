@@ -1,11 +1,11 @@
-import '~/styles/globals.css';
+import '@/styles/globals.css';
 import '@docsearch/css';
 
 import type { Metadata, Viewport } from 'next';
 
-import { Analytics } from '~/components/analytics';
-import { TailwindIndicator } from '~/components/tailwind-indicator';
-import { siteConfig } from '~/config/site';
+import { Analytics } from '@/components/analytics';
+import { TailwindIndicator } from '@/components/tailwind-indicator';
+import { siteConfig } from '@/config/site';
 import {
   fontInter,
   fontJakarta,
@@ -13,10 +13,10 @@ import {
   fontOutfit,
   fontRaleway,
   fontSans,
-} from '~/libs/fonts';
-import { cn } from '~/libs/utils';
-import { Providers } from '~/providers';
-import { Toaster } from '~/registry/new-york/ui/sonner';
+} from '@/libs/fonts';
+import { cn } from '@/libs/utils';
+import { Providers } from '@/providers';
+import { Toaster } from '@/registry/new-york/ui/sonner';
 
 export const metadata: Metadata = {
   authors: [

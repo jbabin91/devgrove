@@ -1,4 +1,4 @@
-import { GroveTagGroup, Tag } from '~/registry/new-york/ui/tag-group';
+import { GroveTagGroup, Tag } from '@/registry/new-york/ui/tag-group';
 
 export function TagGroupReusable() {
   return (

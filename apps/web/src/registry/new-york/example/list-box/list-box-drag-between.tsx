@@ -3,7 +3,7 @@
 import { isTextDropItem, useDragAndDrop } from 'react-aria-components';
 import { useListData } from 'react-stately';
 
-import { ListBox, ListBoxItem } from '~/registry/new-york/ui/list-box';
+import { ListBox, ListBoxItem } from '@/registry/new-york/ui/list-box';
 
 type FileItem = {
   id: string;

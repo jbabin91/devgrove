@@ -6,7 +6,7 @@ import {
   type DropZoneProps as AriaDropZoneProps,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 /**
  * Renders a drop zone component.

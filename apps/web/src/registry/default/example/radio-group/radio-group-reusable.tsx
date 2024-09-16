@@ -1,4 +1,4 @@
-import { GroveRadioGroup, Radio } from '~/registry/default/ui/radio-group';
+import { GroveRadioGroup, Radio } from '@/registry/default/ui/radio-group';
 
 export function RadioGroupReusable() {
   return (

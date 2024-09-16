@@ -1,4 +1,4 @@
-import { ComboboxItem, GroveComboBox } from '~/registry/new-york/ui/combobox';
+import { ComboboxItem, GroveComboBox } from '@/registry/new-york/ui/combobox';
 
 export function CheckboxReusable() {
   return (

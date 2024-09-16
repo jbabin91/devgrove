@@ -1,5 +1,5 @@
-import { Button } from '~/registry/default/ui/button';
-import { Tooltip, TooltipTrigger } from '~/registry/default/ui/tooltip';
+import { Button } from '@/registry/default/ui/button';
+import { Tooltip, TooltipTrigger } from '@/registry/default/ui/tooltip';
 
 export function TooltipPosition() {
   return (

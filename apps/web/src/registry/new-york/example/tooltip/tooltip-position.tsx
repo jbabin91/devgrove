@@ -1,5 +1,5 @@
-import { Button } from '~/registry/new-york/ui/button';
-import { Tooltip, TooltipTrigger } from '~/registry/new-york/ui/tooltip';
+import { Button } from '@/registry/new-york/ui/button';
+import { Tooltip, TooltipTrigger } from '@/registry/new-york/ui/tooltip';
 
 export function TooltipPosition() {
   return (

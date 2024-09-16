@@ -3,7 +3,7 @@ import {
   SliderFillTrack,
   SliderThumb,
   SliderTrack,
-} from '~/registry/default/ui/slider';
+} from '@/registry/default/ui/slider';
 
 export function SliderVertical() {
   return (

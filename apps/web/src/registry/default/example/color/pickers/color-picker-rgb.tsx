@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { getColorChannels, parseColor } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   ColorArea,
   ColorField,
@@ -12,11 +12,11 @@ import {
   ColorSwatchPickerItem,
   ColorThumb,
   SliderTrack,
-} from '~/registry/default/ui/color';
-import { Dialog, DialogTrigger } from '~/registry/default/ui/dialog';
-import { Label } from '~/registry/default/ui/field';
-import { Popover } from '~/registry/default/ui/popover';
-import { Input } from '~/registry/default/ui/textfield';
+} from '@/registry/default/ui/color';
+import { Dialog, DialogTrigger } from '@/registry/default/ui/dialog';
+import { Label } from '@/registry/default/ui/field';
+import { Popover } from '@/registry/default/ui/popover';
+import { Input } from '@/registry/default/ui/textfield';
 
 export function RgbPicker() {
   const [color, setColor] = useState(parseColor('rgb(0, 255, 0)'));

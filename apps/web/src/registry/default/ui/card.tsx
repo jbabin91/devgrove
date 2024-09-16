@@ -1,4 +1,4 @@
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 /**
  * Represents the props for a Card component.

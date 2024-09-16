@@ -1,4 +1,4 @@
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Combobox,
   ComboboxCollection,
@@ -8,9 +8,9 @@ import {
   ComboboxListBox,
   ComboboxPopover,
   ComboboxSection,
-} from '~/registry/default/ui/combobox';
-import { FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/combobox';
+import { FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function ComboboxSectionsDynamic() {
   const options = [

@@ -4,15 +4,15 @@ import {
   BreadcrumbPage,
   Breadcrumbs,
   BreadcrumbSeparator,
-} from '~/registry/new-york/ui/breadcrumbs';
-import { Button } from '~/registry/new-york/ui/button';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/registry/new-york/ui/breadcrumbs';
+import { Button } from '@/registry/new-york/ui/button';
+import { Icons } from '@/registry/new-york/ui/icons';
 import {
   Menu,
   MenuItem,
   MenuPopover,
   MenuTrigger,
-} from '~/registry/new-york/ui/menu';
+} from '@/registry/new-york/ui/menu';
 
 export function BreadcrumbsDropdown() {
   return (

@@ -1,14 +1,14 @@
 import { type Registry } from './schema';
 
-export const libs: Registry = [
+export const lib: Registry = [
   {
     name: 'utils',
-    type: 'registry:libs',
+    type: 'registry:lib',
     dependencies: ['clsx', 'tailwind-merge'],
     files: [
       {
-        path: 'libs/utils.ts',
-        type: 'registry:libs',
+        path: 'lib/utils.ts',
+        type: 'registry:lib',
       },
     ],
   },

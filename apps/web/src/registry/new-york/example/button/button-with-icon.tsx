@@ -1,5 +1,5 @@
-import { Button } from '~/registry/new-york/ui/button';
-import { Icons } from '~/registry/new-york/ui/icons';
+import { Button } from '@/registry/new-york/ui/button';
+import { Icons } from '@/registry/new-york/ui/icons';
 
 export function ButtonWithIcon() {
   return (

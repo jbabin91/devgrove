@@ -1,4 +1,4 @@
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   DialogContent,
   DialogFooter,
@@ -6,9 +6,9 @@ import {
   DialogOverlay,
   DialogTitle,
   DialogTrigger,
-} from '~/registry/default/ui/dialog';
-import { Label } from '~/registry/default/ui/field';
-import { Input, TextField } from '~/registry/default/ui/textfield';
+} from '@/registry/default/ui/dialog';
+import { Label } from '@/registry/default/ui/field';
+import { Input, TextField } from '@/registry/default/ui/textfield';
 
 export function ModalDemo() {
   return (

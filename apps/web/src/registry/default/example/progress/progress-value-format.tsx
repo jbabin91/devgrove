@@ -1,5 +1,5 @@
-import { Label } from '~/registry/default/ui/field';
-import { Progress } from '~/registry/default/ui/progress';
+import { Label } from '@/registry/default/ui/field';
+import { Progress } from '@/registry/default/ui/progress';
 
 export function ProgressValueFormat() {
   return (

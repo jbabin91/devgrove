@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { parseColor } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   ColorArea,
   ColorField,
@@ -12,11 +12,11 @@ import {
   ColorSwatchPickerItem,
   ColorThumb,
   SliderTrack,
-} from '~/registry/new-york/ui/color';
-import { Dialog, DialogTrigger } from '~/registry/new-york/ui/dialog';
-import { Label } from '~/registry/new-york/ui/field';
-import { Popover } from '~/registry/new-york/ui/popover';
-import { Input } from '~/registry/new-york/ui/textfield';
+} from '@/registry/new-york/ui/color';
+import { Dialog, DialogTrigger } from '@/registry/new-york/ui/dialog';
+import { Label } from '@/registry/new-york/ui/field';
+import { Popover } from '@/registry/new-york/ui/popover';
+import { Input } from '@/registry/new-york/ui/textfield';
 
 export function HexaPicker() {
   const [color, setColor] = useState(parseColor('#FF000050'));

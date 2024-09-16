@@ -1,7 +1,7 @@
 import { parseZonedDateTime } from '@internationalized/date';
 
-import { DateInput, TimeField } from '~/registry/new-york/ui/datefield';
-import { Label } from '~/registry/new-york/ui/field';
+import { DateInput, TimeField } from '@/registry/new-york/ui/datefield';
+import { Label } from '@/registry/new-york/ui/field';
 
 export function TimeFieldTimezone() {
   return (

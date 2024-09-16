@@ -1,15 +1,15 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   Combobox,
   ComboboxInput,
   ComboboxItem,
   ComboboxListBox,
   ComboboxPopover,
-} from '~/registry/default/ui/combobox';
-import { FieldError, FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/combobox';
+import { FieldError, FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function ComboboxValidation() {
   return (

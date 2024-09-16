@@ -1,8 +1,8 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { FieldError, Label } from '~/registry/new-york/ui/field';
-import { Input, TextField } from '~/registry/new-york/ui/textfield';
+import { Button } from '@/registry/new-york/ui/button';
+import { FieldError, Label } from '@/registry/new-york/ui/field';
+import { Input, TextField } from '@/registry/new-york/ui/textfield';
 
 export function TextFieldValidation() {
   return (

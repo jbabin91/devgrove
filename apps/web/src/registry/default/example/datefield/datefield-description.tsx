@@ -1,7 +1,7 @@
 import { Text } from 'react-aria-components';
 
-import { DateField, DateInput } from '~/registry/default/ui/datefield';
-import { Label } from '~/registry/default/ui/field';
+import { DateField, DateInput } from '@/registry/default/ui/datefield';
+import { Label } from '@/registry/default/ui/field';
 
 export function DateFieldDescription() {
   return (

@@ -1,4 +1,4 @@
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/new-york/ui/tabs';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/new-york/ui/tabs';
 
 export function TabDemo() {
   return (

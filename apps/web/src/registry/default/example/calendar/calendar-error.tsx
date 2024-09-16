@@ -10,7 +10,7 @@ import {
   CalendarGridHeader,
   CalendarHeaderCell,
   CalendarHeading,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 
 export function CalendarError() {
   const [date, setDate] = useState(today(getLocalTimeZone()));

@@ -1,4 +1,4 @@
-import { GroveRadioGroup, Radio } from '~/registry/new-york/ui/radio-group';
+import { GroveRadioGroup, Radio } from '@/registry/new-york/ui/radio-group';
 
 export function RadioGroupReusable() {
   return (

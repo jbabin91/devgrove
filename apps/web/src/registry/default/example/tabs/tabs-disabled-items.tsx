@@ -1,4 +1,4 @@
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/default/ui/tabs';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/default/ui/tabs';
 
 export function TabsDisabledItems() {
   return (

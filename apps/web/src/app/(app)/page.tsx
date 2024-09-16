@@ -1,5 +1,5 @@
-import { Announcement } from '~/components/announcement';
-import { Link } from '~/registry/new-york/ui/link';
+import { Announcement } from '@/components/announcement';
+import { Link } from '@/registry/new-york/ui/link';
 
 export default function Home() {
   return (

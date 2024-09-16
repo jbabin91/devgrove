@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Collection } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
-import { Tab, TabList, TabPanel, Tabs } from '~/registry/default/ui/tabs';
+import { Button } from '@/registry/default/ui/button';
+import { Tab, TabList, TabPanel, Tabs } from '@/registry/default/ui/tabs';
 
 export function TabsDynamic() {
   const [tabs, setTabs] = useState([

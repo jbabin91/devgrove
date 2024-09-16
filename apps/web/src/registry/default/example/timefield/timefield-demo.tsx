@@ -1,5 +1,5 @@
-import { DateInput, TimeField } from '~/registry/default/ui/datefield';
-import { Label } from '~/registry/default/ui/field';
+import { DateInput, TimeField } from '@/registry/default/ui/datefield';
+import { Label } from '@/registry/default/ui/field';
 
 export function TimeFieldDemo() {
   return (

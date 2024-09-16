@@ -1,4 +1,4 @@
-import { Link } from '~/registry/new-york/ui/link';
+import { Link } from '@/registry/new-york/ui/link';
 
 export function LinkVariants() {
   return (

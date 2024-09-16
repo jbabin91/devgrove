@@ -1,4 +1,4 @@
-import { GroveMenu, MenuItem } from '~/registry/new-york/ui/menu';
+import { GroveMenu, MenuItem } from '@/registry/new-york/ui/menu';
 
 export function MenuReusable() {
   return (

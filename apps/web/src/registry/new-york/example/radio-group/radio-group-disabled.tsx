@@ -1,5 +1,5 @@
-import { Label } from '~/registry/new-york/ui/field';
-import { Radio, RadioGroup } from '~/registry/new-york/ui/radio-group';
+import { Label } from '@/registry/new-york/ui/field';
+import { Radio, RadioGroup } from '@/registry/new-york/ui/radio-group';
 
 export function RadioGroupDisabled() {
   return (

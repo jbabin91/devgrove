@@ -6,7 +6,7 @@ import {
   parseColor,
 } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   ColorArea,
   ColorField,
@@ -17,10 +17,10 @@ import {
   ColorSwatchPickerItem,
   ColorThumb,
   SliderTrack,
-} from '~/registry/new-york/ui/color';
-import { Dialog, DialogTrigger } from '~/registry/new-york/ui/dialog';
-import { Icons } from '~/registry/new-york/ui/icons';
-import { Popover } from '~/registry/new-york/ui/popover';
+} from '@/registry/new-york/ui/color';
+import { Dialog, DialogTrigger } from '@/registry/new-york/ui/dialog';
+import { Icons } from '@/registry/new-york/ui/icons';
+import { Popover } from '@/registry/new-york/ui/popover';
 import {
   Select,
   SelectItem,
@@ -28,8 +28,8 @@ import {
   SelectPopover,
   SelectTrigger,
   SelectValue,
-} from '~/registry/new-york/ui/select';
-import { Input } from '~/registry/new-york/ui/textfield';
+} from '@/registry/new-york/ui/select';
+import { Input } from '@/registry/new-york/ui/textfield';
 
 function EyeDropperButton() {
   const state = useContext(ColorPickerStateContext);

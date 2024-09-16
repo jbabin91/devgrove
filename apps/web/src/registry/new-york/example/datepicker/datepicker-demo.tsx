@@ -1,4 +1,4 @@
-import { Button } from '~/registry/new-york/ui/button';
+import { Button } from '@/registry/new-york/ui/button';
 import {
   Calendar,
   CalendarCell,
@@ -7,14 +7,14 @@ import {
   CalendarGridHeader,
   CalendarHeaderCell,
   CalendarHeading,
-} from '~/registry/new-york/ui/calendar';
+} from '@/registry/new-york/ui/calendar';
 import {
   DatePicker,
   DatePickerContent,
-} from '~/registry/new-york/ui/date-picker';
-import { DateInput } from '~/registry/new-york/ui/datefield';
-import { FieldGroup, Label } from '~/registry/new-york/ui/field';
-import { Icons } from '~/registry/new-york/ui/icons';
+} from '@/registry/new-york/ui/date-picker';
+import { DateInput } from '@/registry/new-york/ui/datefield';
+import { FieldGroup, Label } from '@/registry/new-york/ui/field';
+import { Icons } from '@/registry/new-york/ui/icons';
 
 export function DatepickerDemo() {
   return (

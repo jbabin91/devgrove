@@ -1,9 +1,9 @@
-import { FieldGroup, Label } from '~/registry/default/ui/field';
+import { FieldGroup, Label } from '@/registry/default/ui/field';
 import {
   NumberField,
   NumberFieldInput,
   NumberFieldSteppers,
-} from '~/registry/default/ui/numberfield';
+} from '@/registry/default/ui/numberfield';
 
 export function NumberFieldStepValues() {
   return (

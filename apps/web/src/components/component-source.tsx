@@ -1,7 +1,7 @@
 'use client';
 
-import { CodeBlockWrapper } from '~/components/code-black-wrapper';
-import { cn } from '~/libs/utils';
+import { CodeBlockWrapper } from '@/components/code-black-wrapper';
+import { cn } from '@/libs/utils';
 
 type ComponentSourceProps = {
   src: string;

@@ -1,4 +1,4 @@
-import { GroveDateRangePicker } from '~/registry/new-york/ui/date-picker';
+import { GroveDateRangePicker } from '@/registry/new-york/ui/date-picker';
 
 export function DateRangePickerReusable() {
   return (

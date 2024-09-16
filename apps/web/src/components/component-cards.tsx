@@ -3,8 +3,8 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from '~/registry/new-york/ui/card';
-import { Link } from '~/registry/new-york/ui/link';
+} from '@/registry/new-york/ui/card';
+import { Link } from '@/registry/new-york/ui/link';
 
 const componentCards = {
   button: {

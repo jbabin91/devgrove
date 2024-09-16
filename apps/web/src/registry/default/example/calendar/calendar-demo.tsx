@@ -6,7 +6,7 @@ import {
   CalendarGridHeader,
   CalendarHeaderCell,
   CalendarHeading,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 
 export function CalendarDemo() {
   return (

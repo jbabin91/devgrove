@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FileTrigger, Text } from 'react-aria-components';
 
-import { Button } from '~/registry/new-york/ui/button';
-import { DropZone } from '~/registry/new-york/ui/dropzone';
+import { Button } from '@/registry/new-york/ui/button';
+import { DropZone } from '@/registry/new-york/ui/dropzone';
 
 export function DropZoneFile() {
   const [files, setFiles] = useState<string>();

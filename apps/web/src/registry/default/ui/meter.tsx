@@ -6,7 +6,7 @@ import {
   type MeterProps as AriaMeterProps,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 import { Label, labelVariants } from './field';
 

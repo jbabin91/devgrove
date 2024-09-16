@@ -2,7 +2,7 @@ import {
   ColorSlider,
   ColorThumb,
   SliderTrack,
-} from '~/registry/default/ui/color';
+} from '@/registry/default/ui/color';
 
 export function ColorSliderDemo() {
   return (

@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 
-import { type GrayColor, type ThemeColor } from '~/registry/themes';
+import { type GrayColor, type ThemeColor } from '@/registry/themes';
 
 import type { BorderRadius, FontFamily } from './use-theme-generator';
 

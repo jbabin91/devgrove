@@ -1,4 +1,4 @@
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   DialogContent,
   DialogDescription,
@@ -7,7 +7,7 @@ import {
   DialogOverlay,
   DialogTitle,
   DialogTrigger,
-} from '~/registry/default/ui/dialog';
+} from '@/registry/default/ui/dialog';
 
 export function ModalKeyboardDismissable() {
   return (

@@ -23,7 +23,7 @@ import {
   type SliderTrackProps as AriaSliderTrackProps,
 } from 'react-aria-components';
 
-import { cn } from '~/libs/utils';
+import { cn } from '@/libs/utils';
 
 /**
  * Represents a color slider component.

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Text } from 'react-aria-components';
 
-import { DropZone } from '~/registry/default/ui/dropzone';
+import { DropZone } from '@/registry/default/ui/dropzone';
 
 export function DropZoneDemo() {
   const [dropped, setDropped] = useState(false);

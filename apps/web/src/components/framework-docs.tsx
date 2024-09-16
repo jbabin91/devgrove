@@ -2,7 +2,7 @@
 
 import { allDocs } from 'contentlayer/generated';
 
-import { Mdx } from '~/components/mdx-components';
+import { Mdx } from '@/components/mdx-components';
 
 type FrameworkDocsProps = {
   data: string;

@@ -1,4 +1,4 @@
-import { Link } from '~/registry/default/ui/link';
+import { Link } from '@/registry/default/ui/link';
 
 export function LinkDemo() {
   return (

@@ -3,7 +3,7 @@ import {
   grayColors,
   type ThemeColor,
   themes,
-} from '~/registry/themes';
+} from '@/registry/themes';
 
 import { useThemeStore } from './use-theme-store';
 

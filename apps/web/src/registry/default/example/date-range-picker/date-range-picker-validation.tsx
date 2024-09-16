@@ -1,6 +1,6 @@
 import { Form } from 'react-aria-components';
 
-import { Button } from '~/registry/default/ui/button';
+import { Button } from '@/registry/default/ui/button';
 import {
   CalendarCell,
   CalendarGrid,
@@ -9,14 +9,14 @@ import {
   CalendarHeaderCell,
   CalendarHeading,
   RangeCalendar,
-} from '~/registry/default/ui/calendar';
+} from '@/registry/default/ui/calendar';
 import {
   DatePickerContent,
   DateRangePicker,
-} from '~/registry/default/ui/date-picker';
-import { DateInput } from '~/registry/default/ui/datefield';
-import { FieldError, FieldGroup, Label } from '~/registry/default/ui/field';
-import { Icons } from '~/registry/default/ui/icons';
+} from '@/registry/default/ui/date-picker';
+import { DateInput } from '@/registry/default/ui/datefield';
+import { FieldError, FieldGroup, Label } from '@/registry/default/ui/field';
+import { Icons } from '@/registry/default/ui/icons';
 
 export function DateRangePickerValidation() {
   return (
